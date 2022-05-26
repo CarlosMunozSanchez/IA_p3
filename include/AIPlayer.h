@@ -70,11 +70,27 @@ class AIPlayer: public Player{
          * @return double 
          */
         static double ValoracionTest(const Parchis &estado, int jugador);
+        
+        void thinkAleatorio(color & c_piece, int & id_piece, int & dice) const;
+        
+        void thinkAleatorioMasInteligente(color & c_piece, int & id_piece, int & dice) const;
+        
+        void thinkFichaMasAdelantada(color & c_piece, int & id_piece, int & dice) const;
+        
+		  void thinkMejorOpcion(color & c_piece, int & id_piece, int & dice) const;
 
         /**
-         * @brief Propuesta de declaración de la función poda alfa-beta.
-         * La propuesta es solo sugerencia, los parámetros de la declaración podrían variar.
+         * @brief función de búsqueda.
+			* @param actual Instancia de Parchis con el estado actual de la partida
+			* @param jugador Indice del jugador al que le toca jugar
+			* @param profundidad Para la llamada recursiva, indicador de la profundidad en la que se encuentra
+			* @param profundidad_max Límite de profundidad
+			* @param c_piece Color de la pieza a la que le toca mover
+			* @param id_piece Id de la pieza que debe mover
+			* @param dice Tirada que se va a efectuar
+			* @param alpha, beta Cotas para poda alfa-beta
+			* @param (*heuristic)(const Parchis &, int) función heurística
          */
-        //double Poda_AlfaBeta(const Parchis &actual, int jugador, int profundidad, int profundidad_max, color &c_piece, int &id_piece, int &dice, double alpha, double beta, double (*heuristic)(const Parchis &, int)) const;
+        double busqueda(const Parchis &actual, int jugador, int profundidad, int profundidad_max, color &c_piece, int &id_piece, int &dice, double alpha, double beta, double (*heuristic)(const Parchis &, int)) const;
 };
 #endif
