@@ -1,6 +1,9 @@
 # include "AIPlayer.h"
 # include "Parchis.h"
 
+//#include <thread>
+//#include <chrono>
+
 const double masinf = 9999999999.0, menosinf = -9999999999.0;
 const double gana = masinf - 1, pierde = menosinf + 1;
 const int num_pieces = 4;
@@ -163,47 +166,62 @@ void AIPlayer::thinkMejorOpcion(color & c_piece, int & id_piece, int & dice) con
 //Funciones para los algoritmos de búsqueda
 
 double AIPlayer::busqueda(const Parchis &actual, int jugador, int profundidad, int profundidad_max, color &c_piece, int &id_piece, int &dice, double alpha, double beta, double (*heuristic)(const Parchis &, int)) const {
-
-	Parchis siguiente_hijo;
-	int decided_dice;
-	int decided_piece;
+	
+	cout << "Explorando con minimax. Profundidad: " << profundidad << endl;
+	
+	//valor de la heurística asociada al nodo
 	double v = jugador == 0 ? menosinf : masinf;
+	bool podar 
 	
+	//variables para almacenamiento de movimientos
+	color color_p = none;
+	int id_p = -1;
+	int d = -1;
 	
-	if(profundidad !=  profundidad_max and !siguiente_hijo.gameOver()){ //Exploro el árbol de búsqueda mientras no llegue a un nodo terminal		
-		
-		while(!(siguiente_hijo == actual)){ //Genero todos los hijos del nodo
+	Parchis siguiente_hijo;
+	
+	int i = 1;
+	//Si no es un nodo terminal, lo exploro
+	if(profundidad < profundidad_max and !actual.gameOver()){
+		//genero todos los hijos que pueda
+		while(!(siguiente_hijo == actual)){
 			double v_aux;
+			int next_j;
 			
-			//Genero el siguiente hijo
-			siguiente_hijo = actual.generateNextMove(c_piece, id_piece, dice); 
+			cout << "Hijos generados por este padre a profundidad " << profundidad << ": " << i++ << endl;
+	
+			//Nuevo hijo. Las var. se actualizan al movimiento efectuado
+			siguiente_hijo = actual.generateNextMoveDescending(color_p, id_p, d);			
 			
-			//Actualizo al jugador
-			jugador = siguiente_hijo.getCurrentPlayerId();
+			next_j = siguiente_hijo.getCurrentPlayerId();
 			
-			//Inicio la busqueda en el hijo y obtengo la heurística asociada
-			v_aux = busqueda(siguiente_hijo, jugador, ++profundidad, profundidad_max, c_piece, id_piece, dice, alpha, beta, heuristic);
+			//Antes de explorarlo, compruebo que no he vuelto al nodo actual
+			if(!(siguiente_hijo == actual)){
+				//Explorar el siguiente hijo
+				v_aux = busqueda(siguiente_hijo, next_j, profundidad+1, profundidad_max, color_p, id_p, d, alpha, beta, heuristic);
 				
-			//Actualizo la heurísitca del nodo padre
-			if((jugador == 0 and v_aux > v) or (jugador == 1 and v_aux < v)){
-				v = v_aux;
-				decided_dice = dice;
-				decided_piece = id_piece;
+				//Actualizar el valor de la heurística del nodo
+				if((jugador == 0 and v_aux > v) or (jugador == 1 and v_aux < v)){
+					v = v_aux;
+					
+					
+					
+					if(profundidad == 0){ //Si es el nodo que empezó la recursividad, actualizo los movimientos
+						c_piece = color_p;
+						id_piece = id_p;
+						dice = d;
+					}
+				}
 			}
 		}
 		
+		cout << "Todos los hijos de este padre (profundidad " << profundidad << ") se han explorado" << endl;
 	}
-	else{ //Si el nodo es terminal, calculo la heurística asociada al tablero
-		v = heuristic(siguiente_hijo, jugador);
-	}
-	
-	//Si es el nodo padre, actualizo los valores del movimiento seleccionado
-	if(profundidad == 0){
-		dice = decided_dice;
-		id_piece = decided_piece;
+	//nodo terminal
+	else{
+		v = heuristic(actual, jugador);
 	}
 	
-	//Devuelvo la heurística del nodo
 	return v;
 }
 
@@ -285,18 +303,23 @@ void AIPlayer::think(color & c_piece, int & id_piece, int & dice) const{
     	  
     	  break;
     	  case 1: //Heurística ValoraciónTest con búsqueda
-    	  		busqueda(*actual, actual->getCurrentPlayerId(), 0, PROFUNDIDAD_MINIMAX, c_piece, id_piece, dice, 0, 0, ValoracionTest);
-        break;
+    	  		cout << "Buscando movimiento... ->" << endl;
+    	  		busqueda(*actual, jugador, 0, PROFUNDIDAD_MINIMAX, c_piece, id_piece, dice, menosinf, masinf, ValoracionTest);
+       	   break;
         case 2:
+        		cout << "Seleccionando movimiento aleatorio" << endl;
             thinkAleatorio(c_piece, id_piece, dice);
             break;
         case 3:
+       		cout << "Seleccionando movimiento aleatorio+" << endl;
             thinkAleatorioMasInteligente(c_piece, id_piece, dice);            
             break;
         case 4:
+        		cout << "Seleccionando movimiento para ficha adelantada" << endl;
             thinkFichaMasAdelantada(c_piece, id_piece, dice);
             break;
         case 5:
+        		cout << "Seleccionando mejor movimiento corto plazo" << endl;
         		thinkMejorOpcion(c_piece, id_piece, dice);
         		break;
     }
