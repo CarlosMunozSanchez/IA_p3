@@ -167,11 +167,11 @@ void AIPlayer::thinkMejorOpcion(color & c_piece, int & id_piece, int & dice) con
 
 double AIPlayer::busqueda(const Parchis &actual, int jugador, int profundidad, int profundidad_max, color &c_piece, int &id_piece, int &dice, double alpha, double beta, double (*heuristic)(const Parchis &, int)) const {
 	
-	cout << "Explorando con minimax. Profundidad: " << profundidad << endl;
+	//cout << "Explorando con alfa-beta. Profundidad: " << profundidad << endl;
 	
 	//valor de la heurística asociada al nodo
 	double v = jugador == 0 ? menosinf : masinf;
-	bool podar 
+	bool podar = false;
 	
 	//variables para almacenamiento de movimientos
 	color color_p = none;
@@ -180,15 +180,15 @@ double AIPlayer::busqueda(const Parchis &actual, int jugador, int profundidad, i
 	
 	Parchis siguiente_hijo;
 	
-	int i = 1;
+	int i = 0;
 	//Si no es un nodo terminal, lo exploro
 	if(profundidad < profundidad_max and !actual.gameOver()){
 		//genero todos los hijos que pueda
-		while(!(siguiente_hijo == actual)){
+		while(!(siguiente_hijo == actual) and !podar){
 			double v_aux;
 			int next_j;
 			
-			cout << "Hijos generados por este padre a profundidad " << profundidad << ": " << i++ << endl;
+			//cout << "Hijos generados por este padre a profundidad " << profundidad << ": " << i++ << endl;
 	
 			//Nuevo hijo. Las var. se actualizan al movimiento efectuado
 			siguiente_hijo = actual.generateNextMoveDescending(color_p, id_p, d);			
@@ -204,6 +204,27 @@ double AIPlayer::busqueda(const Parchis &actual, int jugador, int profundidad, i
 				if((jugador == 0 and v_aux > v) or (jugador == 1 and v_aux < v)){
 					v = v_aux;
 					
+					if(jugador == 0){
+						if(v >= alpha){
+							alpha = v;
+						}
+						
+						if(alpha >= beta){
+							v = beta;
+							podar = true;
+							cout << "Podando..." << endl;
+						}
+					}
+					else{
+						if(v <= beta){							
+							beta = v;
+						}
+						if(beta <= alpha){
+							v = alpha;
+							podar = true;
+							cout << "Podando..." << endl;
+						}
+					}
 					
 					
 					if(profundidad == 0){ //Si es el nodo que empezó la recursividad, actualizo los movimientos
@@ -215,14 +236,101 @@ double AIPlayer::busqueda(const Parchis &actual, int jugador, int profundidad, i
 			}
 		}
 		
-		cout << "Todos los hijos de este padre (profundidad " << profundidad << ") se han explorado" << endl;
+		//cout << "Todos los hijos de este padre (profundidad " << profundidad << ") se han explorado" << endl;
 	}
 	//nodo terminal
 	else{
-		v = heuristic(actual, jugador);
+		//Interpretamos el tablero siempre desde el punto de vista del j0
+		//así, j0 quiere maximizar el valor y j1 quiere minimizarlo
+		v = heuristic(actual, 0);
 	}
 	
 	return v;
+}
+
+double AIPlayer::GrandMaster(const Parchis &estado, int jugador){
+	/*
+	* Heurística para el jugador inteligente
+	* 
+	* Evaluación de un tablero:
+	* 
+	* Puntuación máxima real: 100
+	* Jugador gana: gana (masinf)
+	* Jugador pierde: pierde (menosinf)
+	*
+	* 40% -> tener pocas amenazas directas (máximo 40 pts)
+	* 25% -> piezas en meta (máximo 25 pts)
+	* 25% -> bloquear a piezas rivales (máximo 25 pts)
+	* 10% -> tener las piezas adelantadas (máximo 10 pts)
+	*
+	*/
+	
+	int ganador = estado.getWinner();
+	int oponente = (jugador + 1) % 2;
+
+	// Si hay un ganador, devuelvo más/menos infinito, según si he ganado yo o el oponente.
+	if (ganador == jugador)
+	{
+	  return gana;
+	}
+	else if (ganador == oponente)
+	{
+	  return pierde;
+	}
+	else
+	{
+		// Colores que juega mi jugador y colores del oponente
+		vector<color> my_colors = estado.getPlayerColors(jugador);
+		vector<color> op_colors = estado.getPlayerColors(oponente);
+		
+		Board tablero = estado.getBoard();
+
+		int ptos_meta = 25;
+		
+		int ptos_distancia = 10; 
+		int cerca_de_meta = 8;
+		
+		int ptos_amenazas = 40;
+		
+		int ptos_bloqueo = 25;
+
+		double puntuacion_jugador = 0;
+
+		//-------------piezas en meta-------------------
+		//Miro cuántas pieza tengo en la meta
+		for(int i = 0; i < my_colors.size(); i++){
+			puntuacion_jugador += (ptos_meta/ (num_pieces-1)) * estado.piecesAtGoal(my_colors[i]);
+		}
+
+
+		//-----------distancia a meta-----------------------
+		//calculo la distancia media de mis piezas a la meta
+		int distancia_media = 0;
+		for(int i = 0; i < my_colors.size(); i++){ //para cada color
+			for(int j = 0; j < num_pieces; j++){	//para cada ficha
+				distancia_media += estado.distanceToGoal(my_colors[i], j);
+			}
+		}
+		
+		distancia_media = distancia_media / (num_pieces*my_colors.size());
+		
+		//cálculo del valor correspondiente por relación inversamente propocional entre distancia a meta y puntos
+		// cerca_meta ---------> ptos_distancia (estar cerca de la meta te da el máximo puntuaje)
+		// distancia_media ----> x (si estoy a distancia_media de la meta, qué puntuación corresponde?)
+		puntuacion_jugador += (cerca_de_meta * ptos_distancia) / distancia_media;
+		/*
+		//--------------Barreras---------------------------
+		int enemigos_bloqueados = 0;
+		
+		for(int i = 0; i < op_colors.size(); i++){ //para cada color de mi oponente
+			for(int j = 0; i < num_pieces; j++){	//para cada ficha
+				for(int k = tablero.(getPiece(op_colors[i], i); k < 
+			}
+		}
+		*/
+		
+		return puntuacion_jugador;		
+	}
 }
 
 
@@ -300,11 +408,12 @@ void AIPlayer::think(color & c_piece, int & id_piece, int & dice) const{
     
     switch(id){
     	  case 0: //Heurística definitiva con búsqueda
-    	  
+    	  		cout << "Buscando movimiento... ->" << endl;
+    	  		busqueda(*actual, jugador, 0, PROFUNDIDAD_ALFABETA, c_piece, id_piece, dice, menosinf, masinf, GrandMaster);
     	  break;
     	  case 1: //Heurística ValoraciónTest con búsqueda
     	  		cout << "Buscando movimiento... ->" << endl;
-    	  		busqueda(*actual, jugador, 0, PROFUNDIDAD_MINIMAX, c_piece, id_piece, dice, menosinf, masinf, ValoracionTest);
+    	  		busqueda(*actual, jugador, 0, PROFUNDIDAD_ALFABETA, c_piece, id_piece, dice, menosinf, masinf, ValoracionTest);
        	   break;
         case 2:
         		cout << "Seleccionando movimiento aleatorio" << endl;

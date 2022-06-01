@@ -71,6 +71,15 @@ class AIPlayer: public Player{
          */
         static double ValoracionTest(const Parchis &estado, int jugador);
         
+        /**
+         * @brief Heurística final del jugador inteligente
+         * 
+         * @param estado Instancia de Parchis con el estado actual de la partida.
+         * @param jugador Id del jugador actual (0 o 1)
+         * @return double 
+         */
+        static double GrandMaster(const Parchis &estado, int jugador);
+        
         void thinkAleatorio(color & c_piece, int & id_piece, int & dice) const;
         
         void thinkAleatorioMasInteligente(color & c_piece, int & id_piece, int & dice) const;
