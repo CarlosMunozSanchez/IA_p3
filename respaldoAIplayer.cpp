@@ -7,16 +7,8 @@
 const double masinf = 9999999999.0, menosinf = -9999999999.0;
 const double gana = masinf - 1, pierde = menosinf + 1;
 const int num_pieces = 4;
-const int num_colors = 4;
 const int PROFUNDIDAD_MINIMAX = 4;  // Umbral maximo de profundidad para el metodo MiniMax
 const int PROFUNDIDAD_ALFABETA = 6; // Umbral maximo de profundidad para la poda Alfa_Beta
-
-const int final_red_box = 34;
-const int final_blue_box = 17;
-const int final_green_box = 51;
-const int final_yellow_box = 68;
-
-const int num_casillas = 68;
 
 bool AIPlayer::move(){
     cout << "Realizo un movimiento automatico" << endl;
@@ -301,7 +293,6 @@ double AIPlayer::GrandMaster(const Parchis &estado, int jugador){
 		int ptos_amenazas = 40;
 		
 		int ptos_bloqueo = 25;
-		int factor_bloqueo = 7;
 
 		double puntuacion_jugador = 0;
 
@@ -326,79 +317,17 @@ double AIPlayer::GrandMaster(const Parchis &estado, int jugador){
 		//cálculo del valor correspondiente por relación inversamente propocional entre distancia a meta y puntos
 		// cerca_meta ---------> ptos_distancia (estar cerca de la meta te da el máximo puntuaje)
 		// distancia_media ----> x (si estoy a distancia_media de la meta, qué puntuación corresponde?)
-		
-		//evitamos excepciones de punto flotante
-		if(distancia_media == 0){
-			distancia_media = 1;
-		}
 		puntuacion_jugador += (cerca_de_meta * ptos_distancia) / distancia_media;
-		
-		//evitamos que la puntuación supere valores inesperados 
-		if(puntuacion_jugador > (ptos_distancia + ptos_meta)){
-			puntuacion_jugador = ptos_distancia + ptos_meta;
-		}
-		
+		/*
 		//--------------Barreras---------------------------
-		//si bloqueo a muchos enemigos con mis barreras, mejor
-		double puntuacion_bloquear = 0;
+		int enemigos_bloqueados = 0;
 		
-		for(int i = 0; i < op_colors.size(); i++){ //para cada color de mi rival
-			for(int j = 0; j < num_pieces; j++){	//para cada ficha
-			
-				int casilla_final;
-				vector<color> barreras;
-				
-				switch(i){
-					case yellow:
-						casilla_final = final_yellow_box;
-						break;
-					case red:
-						casilla_final = final_red_box;
-						break;
-					case green:
-						casilla_final = final_green_box;
-						break;
-					case blue:
-						casilla_final = final_blue_box;
-						break;					
-				}
-				
-				//para la ficha en casilla <casilla_inicial>, veo si le estoy bloqueando el paso a la meta
-				
-				//Obtengo la casilla
-				Box casilla_inicial = tablero.getPiece(op_colors[i], j);
-				//Si es una casilla normal, compruebo el bloqueo
-				if(casilla_inicial.type == normal){
-				
-					Box casilla_aux = casilla_inicial;
-					casilla_aux.num++;
-					
-					bool bloqueo = false;
-					
-					while(!bloqueo and casilla_aux.num < casilla_final and puntuacion_bloquear < ptos_bloqueo){
-						color aux = estado.isWall(casilla_aux);
-						//si estoy bloqueando a una ficha del color rival, lo apuntamos
-						if(aux == my_colors[0] or aux == my_colors[1]){
-							//doy más puntos si el bloqueo es cercano a la pieza
-							//doy más puntos si la pieza bloqueada está cerca de la meta
-							puntuacion_bloquear += (factor_bloqueo / (abs(casilla_aux.num - casilla_inicial.num) % num_casillas)); 
-							puntuacion_bloquear += (factor_bloqueo / (abs(casilla_final - casilla_inicial.num) % num_casillas));
-							bloqueo = true;
-						}
-						
-						casilla_aux.num++;
-					} 
-				}
-				
+		for(int i = 0; i < op_colors.size(); i++){ //para cada color de mi oponente
+			for(int j = 0; i < num_pieces; j++){	//para cada ficha
+				for(int k = tablero.(getPiece(op_colors[i], i); k < 
 			}
 		}
-		
-		//evitamos que la puntuación supere valores inesperados
-		if(puntuacion_bloquear > ptos_bloqueo){
-			puntuacion_bloquear = ptos_bloqueo;
-		}
-		
-		puntuacion_jugador += puntuacion_bloquear;
+		*/
 		
 		return puntuacion_jugador;		
 	}
@@ -442,7 +371,7 @@ double AIPlayer::ValoracionTest(const Parchis &estado, int jugador)
                 {
                     puntuacion_jugador++;
                 }
-                else if (estado.getBoard().getPiece(c, j).type == goal)
+                else if (estado.getBoard().getPiece(c, j).type == home)
                 {
                     puntuacion_jugador += 5;
                 }
@@ -463,7 +392,7 @@ double AIPlayer::ValoracionTest(const Parchis &estado, int jugador)
                     // Valoro negativamente que la ficha esté en casilla segura o meta.
                     puntuacion_oponente++;
                 }
-                else if (estado.getBoard().getPiece(c, j).type == goal)
+                else if (estado.getBoard().getPiece(c, j).type == home)
                 {
                     puntuacion_oponente += 5;
                 }
