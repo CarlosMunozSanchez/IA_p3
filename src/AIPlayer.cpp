@@ -293,14 +293,15 @@ double HeuristicaGrandMaster(const Parchis &estado, int jugador){
 		
 		Board tablero = estado.getBoard();
 
-		int ptos_meta = 25;
+		int ptos_meta = 35;
 		
-		int ptos_distancia = 10; 
+		int ptos_distancia = 20; 
 		int cerca_de_meta = 8;
 		
-		int ptos_amenazas = 40;
+		int ptos_amenazas = 25;
+		const int penalizacion_amenaza = -10;
 		
-		int ptos_bloqueo = 25;
+		int ptos_bloqueo = 20;
 		int factor_bloqueo = 7;
 
 		double puntuacion_jugador = 0;
@@ -342,6 +343,7 @@ double HeuristicaGrandMaster(const Parchis &estado, int jugador){
 		//si bloqueo a muchos enemigos con mis barreras, mejor
 		double puntuacion_bloquear = 0;
 		
+		//TODO: optimizable: que el bucle pare cuando se sature la puntuación max.
 		for(int i = 0; i < op_colors.size(); i++){ //para cada color de mi rival
 			for(int j = 0; j < num_pieces; j++){	//para cada ficha
 			
@@ -399,6 +401,39 @@ double HeuristicaGrandMaster(const Parchis &estado, int jugador){
 		}
 		
 		puntuacion_jugador += puntuacion_bloquear;
+		
+		//--------------Amenazas---------------------------
+		bool amenaza;
+		int puntuacion_amenazas = ptos_amenazas;
+		for(int i = 0; i < my_colors.size(); i++){ //para cada uno de mis colores
+			for(int j = 0; j < num_pieces; j++){	//para cada pieza
+				//mi casilla
+				Box my_box = tablero.getPiece(my_colors[i], j);
+				amenaza = false;
+				//Si no estoy en una casilla segura o barrera
+				if(!estado.isSafeBox(my_box) and !estado.isWall(my_box)){
+			
+					for(int k = 0; k < op_colors.size() and !amenaza; k++){ //para cada color de mi rival
+						for(int l = 0; l < num_pieces and !amenaza; l++){	//para cada pieza
+							//Si no existe amenaza
+							if(estado.distanceBoxtoBox(op_colors[k], l, my_colors[i], j) > 0){
+								amenaza = true;
+								puntuacion_amenazas += penalizacion_amenaza;
+							}
+						
+						}
+					}
+				}
+			}
+		}
+		
+		//evitamos que la puntuación supere valores inesperados
+		if(puntuacion_amenazas < 0){
+			puntuacion_amenazas = 0;
+		}
+		
+		puntuacion_jugador += puntuacion_amenazas;
+		
 		return puntuacion_jugador;		
 	}
 }

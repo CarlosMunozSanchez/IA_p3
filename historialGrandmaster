@@ -1,0 +1,28 @@
+Historial de cambios en el peso de las variables:
+
+int ptos_meta = 35;
+		
+
+	
+		ptos_meta	ptos_distancia		ptos_amenazas	ptos_bloqueo	
+v1:	25				10						40					25
+v2:	35				10						30					25
+v3:	35				20						25					20
+v4:
+v5:
+v6:
+v7:
+
+historial de partidos:
+		ValoracionTest		Ninja 1		Ninja 2		Ninja 3
+v1:       pierde				x				x				x
+v2:	j1: p  j2: g			
+v3:	j1: g	 j2: g
+v4:
+v5:
+v6:
+v7:
+
+ranking de versiones:
+
+v3 > v2 > v1
