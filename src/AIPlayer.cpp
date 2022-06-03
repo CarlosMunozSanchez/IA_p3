@@ -220,7 +220,7 @@ double AIPlayer::busqueda(const Parchis &actual, int jugador, int profundidad, i
 						if(alpha >= beta){
 							v = beta;
 							podar = true;
-							cout << "Podando..." << endl;
+							//cout << "Podando..." << endl;
 						}
 					}
 					else{
@@ -230,10 +230,9 @@ double AIPlayer::busqueda(const Parchis &actual, int jugador, int profundidad, i
 						if(beta <= alpha){
 							v = alpha;
 							podar = true;
-							cout << "Podando..." << endl;
+							//cout << "Podando..." << endl;
 						}
-					}
-					
+					}					
 					
 					if(profundidad == 0){ //Si es el nodo que empezó la recursividad, actualizo los movimientos
 						c_piece = color_p;
@@ -242,6 +241,7 @@ double AIPlayer::busqueda(const Parchis &actual, int jugador, int profundidad, i
 					}
 				}
 			}
+
 		}
 		
 		//cout << "Todos los hijos de este padre (profundidad " << profundidad << ") se han explorado" << endl;
@@ -256,7 +256,7 @@ double AIPlayer::busqueda(const Parchis &actual, int jugador, int profundidad, i
 	return v;
 }
 
-double AIPlayer::GrandMaster(const Parchis &estado, int jugador){
+double HeuristicaGrandMaster(const Parchis &estado, int jugador){
 	/*
 	* Heurística para el jugador inteligente
 	* 
@@ -399,9 +399,20 @@ double AIPlayer::GrandMaster(const Parchis &estado, int jugador){
 		}
 		
 		puntuacion_jugador += puntuacion_bloquear;
-		
 		return puntuacion_jugador;		
 	}
+}
+
+double AIPlayer::GrandMaster(const Parchis &estado, int jugador){
+	double puntuacion_jugador, puntuacion_oponente;
+	
+	puntuacion_jugador = HeuristicaGrandMaster(estado, jugador);
+	puntuacion_oponente = HeuristicaGrandMaster(estado, ((jugador+1) % 2));
+	
+	if(puntuacion_jugador == gana or puntuacion_jugador == pierde)
+		return puntuacion_jugador;
+	
+	return puntuacion_jugador - puntuacion_oponente;
 }
 
 
