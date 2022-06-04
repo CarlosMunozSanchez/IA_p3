@@ -210,23 +210,23 @@ Color actual: Amarillo
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Amarillo 0 5
+Movimiento elegido: Amarillo 0 4
 ----------------
 Turno: 27
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
+Jugador actual: 0 (Master)
+Color actual: Amarillo
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Azul 1 6
+Movimiento elegido: Amarillo 2 20
 ----------------
 Turno: 28
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
+Jugador actual: 0 (Master)
+Color actual: Amarillo
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Azul 1 4
+Movimiento elegido: Amarillo 0 20
 ----------------
 Turno: 29
 Jugador actual: 1 (ValoracionTest)
@@ -234,7 +234,7 @@ Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Azul 1 20
+Movimiento elegido: Azul 0 5
 ----------------
 Turno: 30
 Jugador actual: 0 (Master)
@@ -250,15 +250,15 @@ Color actual: Rojo
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Rojo 0 5
+Movimiento elegido: Rojo 0 3
 ----------------
 Turno: 32
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
+Jugador actual: 0 (Master)
+Color actual: Rojo
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Verde 1 6
+Movimiento elegido: Rojo 1 20
 ----------------
 Turno: 33
 Jugador actual: 1 (ValoracionTest)
@@ -266,23 +266,23 @@ Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Verde 1 3
+Movimiento elegido: Verde 0 5
 ----------------
 Turno: 34
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde 1 20
-----------------
-Turno: 35
 Jugador actual: 0 (Master)
 Color actual: Amarillo
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Amarillo 2 4
+Movimiento elegido: Amarillo 1 5
+----------------
+Turno: 35
+Jugador actual: 1 (ValoracionTest)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Azul 0 6
 ----------------
 Turno: 36
 Jugador actual: 1 (ValoracionTest)
@@ -290,7 +290,7 @@ Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Azul 0 3
+Movimiento elegido: Azul 2 4
 ----------------
 Turno: 37
 Jugador actual: 0 (Master)
@@ -298,7 +298,7 @@ Color actual: Rojo
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Rojo 2 1
+Movimiento elegido: Rojo 0 5
 ----------------
 Turno: 38
 Jugador actual: 1 (ValoracionTest)
@@ -306,9 +306,17 @@ Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Verde 1 4
+Movimiento elegido: Verde 1 6
 ----------------
 Turno: 39
+Jugador actual: 1 (ValoracionTest)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Verde 1 4
+----------------
+Turno: 40
 Jugador actual: 0 (Master)
 Color actual: Amarillo
 ----------------
@@ -316,7 +324,7 @@ Realizo un movimiento automatico
 Buscando movimiento... ->
 Movimiento elegido: Amarillo 0 3
 ----------------
-Turno: 40
+Turno: 41
 Jugador actual: 1 (ValoracionTest)
 Color actual: Azul
 ----------------
@@ -324,21 +332,13 @@ Realizo un movimiento automatico
 Buscando movimiento... ->
 Movimiento elegido: Azul 0 2
 ----------------
-Turno: 41
+Turno: 42
 Jugador actual: 0 (Master)
 Color actual: Rojo
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Rojo 0 4
-----------------
-Turno: 42
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde 0 5
+Movimiento elegido: Rojo 1 4
 ----------------
 Turno: 43
 Jugador actual: 1 (ValoracionTest)
@@ -346,7 +346,7 @@ Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Verde 0 20
+Movimiento elegido: Verde 0 3
 ----------------
 Turno: 44
 Jugador actual: 0 (Master)
@@ -354,7 +354,7 @@ Color actual: Amarillo
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Amarillo 2 2
+Movimiento elegido: Amarillo 0 2
 ----------------
 Turno: 45
 Jugador actual: 1 (ValoracionTest)
@@ -362,7 +362,7 @@ Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Azul 1 5
+Movimiento elegido: Azul 2 3
 ----------------
 Turno: 46
 Jugador actual: 0 (Master)
@@ -370,7 +370,7 @@ Color actual: Rojo
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Rojo 2 3
+Movimiento elegido: Rojo 2 2
 ----------------
 Turno: 47
 Jugador actual: 1 (ValoracionTest)
@@ -378,7 +378,7 @@ Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Verde 0 2
+Movimiento elegido: Verde 1 2
 ----------------
 Turno: 48
 Jugador actual: 0 (Master)
@@ -386,7 +386,7 @@ Color actual: Amarillo
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Amarillo 2 1
+Movimiento elegido: Amarillo 0 1
 ----------------
 Turno: 49
 Jugador actual: 1 (ValoracionTest)
@@ -402,7 +402,7 @@ Color actual: Rojo
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Rojo 2 2
+Movimiento elegido: Rojo 0 1
 ----------------
 Turno: 51
 Jugador actual: 1 (ValoracionTest)
@@ -410,15 +410,15 @@ Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Verde 3 1
+Movimiento elegido: Verde 0 1
 ----------------
 Turno: 52
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
+Jugador actual: 0 (Master)
+Color actual: Amarillo
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Verde 3 20
+Movimiento elegido: Amarillo 2 4
 ----------------
 Turno: 53
 Jugador actual: 0 (Master)
@@ -426,23 +426,23 @@ Color actual: Amarillo
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Amarillo 3 6
+Movimiento elegido: Amarillo 0 20
 ----------------
 Turno: 54
-Jugador actual: 0 (Master)
-Color actual: Amarillo
+Jugador actual: 1 (ValoracionTest)
+Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Amarillo 0 2
+Movimiento elegido: Azul 0 6
 ----------------
 Turno: 55
-Jugador actual: 0 (Master)
-Color actual: Amarillo
+Jugador actual: 1 (ValoracionTest)
+Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Amarillo 0 20
+Movimiento elegido: Azul 0 1
 ----------------
 Turno: 56
 Jugador actual: 1 (ValoracionTest)
@@ -450,15 +450,15 @@ Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Azul 2 6
+Movimiento elegido: Azul 0 20
 ----------------
 Turno: 57
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
+Jugador actual: 0 (Master)
+Color actual: Rojo
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Azul 2 5
+Movimiento elegido: Rojo 0 6
 ----------------
 Turno: 58
 Jugador actual: 0 (Master)
@@ -474,89 +474,33 @@ Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Verde 1 6
+Movimiento elegido: Verde 0 5
 ----------------
 Turno: 60
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
+Jugador actual: 0 (Master)
+Color actual: Amarillo
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Verde 1 20
+Movimiento elegido: Amarillo 0 6
 ----------------
 Turno: 61
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
+Jugador actual: 0 (Master)
+Color actual: Amarillo
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Verde 1 2
+Movimiento elegido: Amarillo 1 5
 ----------------
 Turno: 62
 Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
+Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Verde 0 10
+Movimiento elegido: Azul 1 5
 ----------------
 Turno: 63
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Amarillo 2 3
-----------------
-Turno: 64
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 3 4
-----------------
-Turno: 65
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Rojo 0 6
-----------------
-Turno: 66
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Rojo 2 3
-----------------
-Turno: 67
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde 0 3
-----------------
-Turno: 68
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Amarillo 0 4
-----------------
-Turno: 69
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 3 3
-----------------
-Turno: 70
 Jugador actual: 0 (Master)
 Color actual: Rojo
 ----------------
@@ -564,135 +508,7 @@ Realizo un movimiento automatico
 Buscando movimiento... ->
 Movimiento elegido: Rojo 0 4
 ----------------
-Turno: 71
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde 0 4
-----------------
-Turno: 72
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Amarillo 1 5
-----------------
-Turno: 73
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 3 2
-----------------
-Turno: 74
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Rojo 0 2
-----------------
-Turno: 75
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde 0 5
-----------------
-Turno: 76
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Amarillo 0 1
-----------------
-Turno: 77
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Amarillo 0 20
-----------------
-Turno: 78
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Amarillo 1 10
-----------------
-Turno: 79
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 3 1
-----------------
-Turno: 80
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Rojo 0 1
-----------------
-Turno: 81
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde 0 1
-----------------
-Turno: 82
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Amarillo 1 5
-----------------
-Turno: 83
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 3 6
-----------------
-Turno: 84
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 0 5
-----------------
-Turno: 85
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Rojo 0 6
-----------------
-Turno: 86
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Rojo 0 5
-----------------
-Turno: 87
+Turno: 64
 Jugador actual: 1 (ValoracionTest)
 Color actual: Verde
 ----------------
@@ -700,239 +516,23 @@ Realizo un movimiento automatico
 Buscando movimiento... ->
 Movimiento elegido: Verde 0 6
 ----------------
-Turno: 88
+Turno: 65
 Jugador actual: 1 (ValoracionTest)
 Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Verde 2 5
+Movimiento elegido: Verde 1 4
 ----------------
-Turno: 89
+Turno: 66
 Jugador actual: 0 (Master)
 Color actual: Amarillo
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Amarillo 2 6
+Movimiento elegido: Amarillo 3 3
 ----------------
-Turno: 90
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Amarillo 1 4
-----------------
-Turno: 91
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 3 4
-----------------
-Turno: 92
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Rojo 3 3
-----------------
-Turno: 93
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Rojo 0 20
-----------------
-Turno: 94
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde 0 4
-----------------
-Turno: 95
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Amarillo 2 3
-----------------
-Turno: 96
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul -9999 3
-----------------
-Turno: 97
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Rojo 0 4
-----------------
-Turno: 98
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde 2 2
-----------------
-Turno: 99
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Amarillo 1 2
-----------------
-Turno: 100
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 0 2
-----------------
-Turno: 101
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 0 20
-----------------
-Turno: 102
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Rojo 0 2
-----------------
-Turno: 103
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde 0 3
-----------------
-Turno: 104
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Amarillo 1 1
-----------------
-Turno: 105
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 0 1
-----------------
-Turno: 106
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Rojo 0 1
-----------------
-Turno: 107
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde 2 1
-----------------
-Turno: 108
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Amarillo 1 6
-----------------
-Turno: 109
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Amarillo 1 5
-----------------
-Turno: 110
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 0 6
-----------------
-Turno: 111
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 0 5
-----------------
-Turno: 112
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Rojo 0 6
-----------------
-Turno: 113
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Rojo 0 5
-----------------
-Turno: 114
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde 2 6
-----------------
-Turno: 115
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde 0 4
-----------------
-Turno: 116
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Amarillo 1 4
-----------------
-Turno: 117
+Turno: 67
 Jugador actual: 1 (ValoracionTest)
 Color actual: Azul
 ----------------
@@ -940,31 +540,39 @@ Realizo un movimiento automatico
 Buscando movimiento... ->
 Movimiento elegido: Azul 0 4
 ----------------
-Turno: 118
+Turno: 68
 Jugador actual: 0 (Master)
 Color actual: Rojo
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Rojo 0 4
+Movimiento elegido: Rojo 1 3
 ----------------
-Turno: 119
+Turno: 69
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Rojo 3 20
+----------------
+Turno: 70
 Jugador actual: 1 (ValoracionTest)
 Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Verde 0 3
+Movimiento elegido: Verde 2 3
 ----------------
-Turno: 120
+Turno: 71
 Jugador actual: 0 (Master)
 Color actual: Amarillo
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Amarillo 1 3
+Movimiento elegido: Amarillo 0 2
 ----------------
-Turno: 121
+Turno: 72
 Jugador actual: 1 (ValoracionTest)
 Color actual: Azul
 ----------------
@@ -972,7 +580,183 @@ Realizo un movimiento automatico
 Buscando movimiento... ->
 Movimiento elegido: Azul 0 3
 ----------------
-Turno: 122
+Turno: 73
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Rojo 0 2
+----------------
+Turno: 74
+Jugador actual: 1 (ValoracionTest)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Verde 1 2
+----------------
+Turno: 75
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Amarillo 0 1
+----------------
+Turno: 76
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Amarillo 1 10
+----------------
+Turno: 77
+Jugador actual: 1 (ValoracionTest)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Azul 1 2
+----------------
+Turno: 78
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Rojo 0 1
+----------------
+Turno: 79
+Jugador actual: 1 (ValoracionTest)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Verde 2 1
+----------------
+Turno: 80
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Amarillo 2 5
+----------------
+Turno: 81
+Jugador actual: 1 (ValoracionTest)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Azul 1 6
+----------------
+Turno: 82
+Jugador actual: 1 (ValoracionTest)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Azul 1 5
+----------------
+Turno: 83
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Rojo 1 6
+----------------
+Turno: 84
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Rojo 1 5
+----------------
+Turno: 85
+Jugador actual: 1 (ValoracionTest)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Verde 0 5
+----------------
+Turno: 86
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Amarillo 2 6
+----------------
+Turno: 87
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Amarillo 3 4
+----------------
+Turno: 88
+Jugador actual: 1 (ValoracionTest)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Azul 1 4
+----------------
+Turno: 89
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Rojo 0 4
+----------------
+Turno: 90
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Rojo 3 20
+----------------
+Turno: 91
+Jugador actual: 1 (ValoracionTest)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Verde 2 6
+----------------
+Turno: 92
+Jugador actual: 1 (ValoracionTest)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Verde 2 4
+----------------
+Turno: 93
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Amarillo 2 3
+----------------
+Turno: 94
+Jugador actual: 1 (ValoracionTest)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Azul 0 3
+----------------
+Turno: 95
 Jugador actual: 0 (Master)
 Color actual: Rojo
 ----------------
@@ -980,13 +764,229 @@ Realizo un movimiento automatico
 Buscando movimiento... ->
 Movimiento elegido: Rojo 0 3
 ----------------
+Turno: 96
+Jugador actual: 1 (ValoracionTest)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Verde 2 3
+----------------
+Turno: 97
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Amarillo 2 2
+----------------
+Turno: 98
+Jugador actual: 1 (ValoracionTest)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Azul 0 1
+----------------
+Turno: 99
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Rojo 1 1
+----------------
+Turno: 100
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Rojo 0 20
+----------------
+Turno: 101
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Rojo 1 10
+----------------
+Turno: 102
+Jugador actual: 1 (ValoracionTest)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Verde 2 1
+----------------
+Turno: 103
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Amarillo 1 1
+----------------
+Turno: 104
+Jugador actual: 1 (ValoracionTest)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Azul 0 2
+----------------
+Turno: 105
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Rojo 1 2
+----------------
+Turno: 106
+Jugador actual: 1 (ValoracionTest)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Verde 2 2
+----------------
+Turno: 107
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Amarillo 1 6
+----------------
+Turno: 108
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Amarillo 2 5
+----------------
+Turno: 109
+Jugador actual: 1 (ValoracionTest)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Azul 0 6
+----------------
+Turno: 110
+Jugador actual: 1 (ValoracionTest)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Azul 3 4
+----------------
+Turno: 111
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Rojo 1 6
+----------------
+Turno: 112
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Rojo 1 5
+----------------
+Turno: 113
+Jugador actual: 1 (ValoracionTest)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Verde 1 5
+----------------
+Turno: 114
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Amarillo 2 4
+----------------
+Turno: 115
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Amarillo 2 20
+----------------
+Turno: 116
+Jugador actual: 1 (ValoracionTest)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Azul 0 5
+----------------
+Turno: 117
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Rojo 3 4
+----------------
+Turno: 118
+Jugador actual: 1 (ValoracionTest)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Verde 2 4
+----------------
+Turno: 119
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Amarillo 3 2
+----------------
+Turno: 120
+Jugador actual: 1 (ValoracionTest)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Azul 0 3
+----------------
+Turno: 121
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Rojo 1 3
+----------------
+Turno: 122
+Jugador actual: 1 (ValoracionTest)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Verde 0 6
+----------------
 Turno: 123
 Jugador actual: 1 (ValoracionTest)
 Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Verde 2 5
+Movimiento elegido: Verde 0 2
 ----------------
 Turno: 124
 Jugador actual: 0 (Master)
@@ -994,7 +994,7 @@ Color actual: Amarillo
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Amarillo 1 2
+Movimiento elegido: Amarillo 3 3
 ----------------
 Turno: 125
 Jugador actual: 1 (ValoracionTest)
@@ -1010,41 +1010,9 @@ Color actual: Rojo
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Rojo 0 2
+Movimiento elegido: Rojo 1 1
 ----------------
 Turno: 127
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde 2 1
-----------------
-Turno: 128
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Amarillo 1 1
-----------------
-Turno: 129
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 0 1
-----------------
-Turno: 130
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Rojo 0 1
-----------------
-Turno: 131
 Jugador actual: 0 (Master)
 Color actual: Rojo
 ----------------
@@ -1052,415 +1020,15 @@ Realizo un movimiento automatico
 Buscando movimiento... ->
 Movimiento elegido: Rojo 3 10
 ----------------
-Turno: 132
+Turno: 128
 Jugador actual: 1 (ValoracionTest)
 Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Verde 0 2
+Movimiento elegido: Verde 0 3
 ----------------
-Turno: 133
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde 2 10
-----------------
-Turno: 134
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Amarillo 1 6
-----------------
-Turno: 135
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Amarillo 2 5
-----------------
-Turno: 136
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 0 6
-----------------
-Turno: 137
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 1 5
-----------------
-Turno: 138
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Rojo 3 6
-----------------
-Turno: 139
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Rojo 1 5
-----------------
-Turno: 140
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde 2 5
-----------------
-Turno: 141
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Amarillo 1 4
-----------------
-Turno: 142
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 1 3
-----------------
-Turno: 143
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Rojo 1 4
-----------------
-Turno: 144
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde 2 6
-----------------
-Turno: 145
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde 3 3
-----------------
-Turno: 146
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde 2 20
-----------------
-Turno: 147
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde 3 10
-----------------
-Turno: 148
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Amarillo 1 3
-----------------
-Turno: 149
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 0 4
-----------------
-Turno: 150
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Rojo 1 3
-----------------
-Turno: 151
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde 3 4
-----------------
-Turno: 152
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Amarillo 1 2
-----------------
-Turno: 153
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 0 2
-----------------
-Turno: 154
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Rojo 1 2
-----------------
-Turno: 155
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde 3 2
-----------------
-Turno: 156
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Amarillo 1 1
-----------------
-Turno: 157
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 0 1
-----------------
-Turno: 158
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Rojo 1 1
-----------------
-Turno: 159
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde 3 1
-----------------
-Turno: 160
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Amarillo 1 6
-----------------
-Turno: 161
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Amarillo 2 3
-----------------
-Turno: 162
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Amarillo 2 20
-----------------
-Turno: 163
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 0 6
-----------------
-Turno: 164
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 0 5
-----------------
-Turno: 165
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Rojo 1 6
-----------------
-Turno: 166
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Rojo 1 5
-----------------
-Turno: 167
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde -9999 6
-----------------
-Turno: 168
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde 3 5
-----------------
-Turno: 169
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Amarillo 1 5
-----------------
-Turno: 170
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 0 4
-----------------
-Turno: 171
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul -9999 10
-----------------
-Turno: 172
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Rojo 1 4
-----------------
-Turno: 173
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde 3 4
-----------------
-Turno: 174
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Amarillo 2 4
-----------------
-Turno: 175
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul -9999 3
-----------------
-Turno: 176
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Rojo 1 3
-----------------
-Turno: 177
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde 3 3
-----------------
-Turno: 178
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Amarillo 1 2
-----------------
-Turno: 179
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Amarillo 2 10
-----------------
-Turno: 180
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul -9999 2
-----------------
-Turno: 181
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Rojo 1 2
-----------------
-Turno: 182
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde 3 2
-----------------
-Turno: 183
+Turno: 129
 Jugador actual: 0 (Master)
 Color actual: Amarillo
 ----------------
@@ -1468,47 +1036,39 @@ Realizo un movimiento automatico
 Buscando movimiento... ->
 Movimiento elegido: Amarillo 2 1
 ----------------
-Turno: 184
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Amarillo -9999 10
-----------------
-Turno: 185
+Turno: 130
 Jugador actual: 1 (ValoracionTest)
 Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Azul -9999 1
+Movimiento elegido: Azul 0 1
 ----------------
-Turno: 186
+Turno: 131
 Jugador actual: 0 (Master)
 Color actual: Rojo
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Rojo 1 1
+Movimiento elegido: Rojo 2 2
 ----------------
-Turno: 187
+Turno: 132
 Jugador actual: 1 (ValoracionTest)
 Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Verde 3 1
+Movimiento elegido: Verde 0 1
 ----------------
-Turno: 188
+Turno: 133
 Jugador actual: 0 (Master)
 Color actual: Amarillo
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Amarillo -9999 6
+Movimiento elegido: Amarillo 2 6
 ----------------
-Turno: 189
+Turno: 134
 Jugador actual: 0 (Master)
 Color actual: Amarillo
 ----------------
@@ -1516,207 +1076,7 @@ Realizo un movimiento automatico
 Buscando movimiento... ->
 Movimiento elegido: Amarillo 3 5
 ----------------
-Turno: 190
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul -9999 6
-----------------
-Turno: 191
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 1 5
-----------------
-Turno: 192
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Rojo 1 6
-----------------
-Turno: 193
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Rojo 3 2
-----------------
-Turno: 194
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde -9999 6
-----------------
-Turno: 195
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde 3 5
-----------------
-Turno: 196
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Amarillo 3 4
-----------------
-Turno: 197
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 1 4
-----------------
-Turno: 198
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Rojo 2 5
-----------------
-Turno: 199
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde 3 4
-----------------
-Turno: 200
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Amarillo 3 3
-----------------
-Turno: 201
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 1 3
-----------------
-Turno: 202
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Rojo 3 3
-----------------
-Turno: 203
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde -9999 2
-----------------
-Turno: 204
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Amarillo 3 2
-----------------
-Turno: 205
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 1 2
-----------------
-Turno: 206
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Rojo 2 4
-----------------
-Turno: 207
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde -9999 3
-----------------
-Turno: 208
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Amarillo 3 1
-----------------
-Turno: 209
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 1 1
-----------------
-Turno: 210
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Rojo 2 1
-----------------
-Turno: 211
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde -9999 1
-----------------
-Turno: 212
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Amarillo 3 6
-----------------
-Turno: 213
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Amarillo 3 5
-----------------
-Turno: 214
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 1 6
-----------------
-Turno: 215
+Turno: 135
 Jugador actual: 1 (ValoracionTest)
 Color actual: Azul
 ----------------
@@ -1724,7 +1084,15 @@ Realizo un movimiento automatico
 Buscando movimiento... ->
 Movimiento elegido: Azul 2 5
 ----------------
-Turno: 216
+Turno: 136
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Rojo 2 6
+----------------
+Turno: 137
 Jugador actual: 0 (Master)
 Color actual: Rojo
 ----------------
@@ -1732,71 +1100,31 @@ Realizo un movimiento automatico
 Buscando movimiento... ->
 Movimiento elegido: Rojo 2 5
 ----------------
-Turno: 217
+Turno: 138
 Jugador actual: 1 (ValoracionTest)
 Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Verde -9999 5
+Movimiento elegido: Verde 0 4
 ----------------
-Turno: 218
+Turno: 139
 Jugador actual: 0 (Master)
 Color actual: Amarillo
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Amarillo 3 4
+Movimiento elegido: Amarillo -9999 4
 ----------------
-Turno: 219
+Turno: 140
 Jugador actual: 1 (ValoracionTest)
 Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Azul 1 4
+Movimiento elegido: Azul 0 4
 ----------------
-Turno: 220
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Rojo 2 4
-----------------
-Turno: 221
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde -9999 6
-----------------
-Turno: 222
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde -9999 4
-----------------
-Turno: 223
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Amarillo 3 3
-----------------
-Turno: 224
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 1 3
-----------------
-Turno: 225
+Turno: 141
 Jugador actual: 0 (Master)
 Color actual: Rojo
 ----------------
@@ -1804,15 +1132,23 @@ Realizo un movimiento automatico
 Buscando movimiento... ->
 Movimiento elegido: Rojo 2 3
 ----------------
-Turno: 226
+Turno: 142
 Jugador actual: 1 (ValoracionTest)
 Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Verde -9999 3
+Movimiento elegido: Verde 0 6
 ----------------
-Turno: 227
+Turno: 143
+Jugador actual: 1 (ValoracionTest)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Verde 0 2
+----------------
+Turno: 144
 Jugador actual: 0 (Master)
 Color actual: Amarillo
 ----------------
@@ -1820,151 +1156,15 @@ Realizo un movimiento automatico
 Buscando movimiento... ->
 Movimiento elegido: Amarillo 3 2
 ----------------
-Turno: 228
+Turno: 145
 Jugador actual: 1 (ValoracionTest)
 Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Azul 1 2
+Movimiento elegido: Azul 0 3
 ----------------
-Turno: 229
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Rojo 2 2
-----------------
-Turno: 230
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde -9999 2
-----------------
-Turno: 231
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Amarillo 3 1
-----------------
-Turno: 232
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 1 1
-----------------
-Turno: 233
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Rojo 2 1
-----------------
-Turno: 234
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde -9999 1
-----------------
-Turno: 235
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Amarillo 3 6
-----------------
-Turno: 236
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Amarillo 3 4
-----------------
-Turno: 237
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 3 5
-----------------
-Turno: 238
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Rojo 1 6
-----------------
-Turno: 239
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Rojo 3 6
-----------------
-Turno: 240
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Rojo 2 5
-----------------
-Turno: 241
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde 3 6
-----------------
-Turno: 242
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde -9999 5
-----------------
-Turno: 243
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Amarillo 3 5
-----------------
-Turno: 244
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 2 6
-----------------
-Turno: 245
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 1 4
-----------------
-Turno: 246
+Turno: 146
 Jugador actual: 0 (Master)
 Color actual: Rojo
 ----------------
@@ -1972,55 +1172,23 @@ Realizo un movimiento automatico
 Buscando movimiento... ->
 Movimiento elegido: Rojo 2 4
 ----------------
-Turno: 247
+Turno: 147
 Jugador actual: 1 (ValoracionTest)
 Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Verde -9999 4
+Movimiento elegido: Verde 0 5
 ----------------
-Turno: 248
+Turno: 148
 Jugador actual: 0 (Master)
 Color actual: Amarillo
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Amarillo 3 3
+Movimiento elegido: Amarillo -9999 3
 ----------------
-Turno: 249
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 1 3
-----------------
-Turno: 250
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Rojo 2 3
-----------------
-Turno: 251
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde -9999 3
-----------------
-Turno: 252
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Amarillo 3 2
-----------------
-Turno: 253
+Turno: 149
 Jugador actual: 1 (ValoracionTest)
 Color actual: Azul
 ----------------
@@ -2028,7 +1196,7 @@ Realizo un movimiento automatico
 Buscando movimiento... ->
 Movimiento elegido: Azul 2 2
 ----------------
-Turno: 254
+Turno: 150
 Jugador actual: 0 (Master)
 Color actual: Rojo
 ----------------
@@ -2036,31 +1204,31 @@ Realizo un movimiento automatico
 Buscando movimiento... ->
 Movimiento elegido: Rojo 2 2
 ----------------
-Turno: 255
+Turno: 151
 Jugador actual: 1 (ValoracionTest)
 Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Verde -9999 2
+Movimiento elegido: Verde 0 3
 ----------------
-Turno: 256
+Turno: 152
 Jugador actual: 0 (Master)
 Color actual: Amarillo
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Amarillo 3 1
+Movimiento elegido: Amarillo 2 1
 ----------------
-Turno: 257
+Turno: 153
 Jugador actual: 1 (ValoracionTest)
 Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Azul 1 1
+Movimiento elegido: Azul 2 1
 ----------------
-Turno: 258
+Turno: 154
 Jugador actual: 0 (Master)
 Color actual: Rojo
 ----------------
@@ -2068,31 +1236,23 @@ Realizo un movimiento automatico
 Buscando movimiento... ->
 Movimiento elegido: Rojo 2 1
 ----------------
-Turno: 259
+Turno: 155
 Jugador actual: 1 (ValoracionTest)
 Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Verde -9999 1
+Movimiento elegido: Verde 2 1
 ----------------
-Turno: 260
+Turno: 156
 Jugador actual: 0 (Master)
 Color actual: Amarillo
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Amarillo 3 6
+Movimiento elegido: Amarillo -9999 5
 ----------------
-Turno: 261
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Amarillo 3 5
-----------------
-Turno: 262
+Turno: 157
 Jugador actual: 1 (ValoracionTest)
 Color actual: Azul
 ----------------
@@ -2100,87 +1260,15 @@ Realizo un movimiento automatico
 Buscando movimiento... ->
 Movimiento elegido: Azul 1 6
 ----------------
-Turno: 263
+Turno: 158
 Jugador actual: 1 (ValoracionTest)
 Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Azul 1 5
+Movimiento elegido: Azul 1 6
 ----------------
-Turno: 264
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Rojo 2 5
-----------------
-Turno: 265
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde -9999 6
-----------------
-Turno: 266
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde -9999 5
-----------------
-Turno: 267
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Amarillo 3 4
-----------------
-Turno: 268
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 1 4
-----------------
-Turno: 269
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Rojo 1 6
-----------------
-Turno: 270
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Rojo 1 4
-----------------
-Turno: 271
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde 3 4
-----------------
-Turno: 272
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Amarillo 3 3
-----------------
-Turno: 273
+Turno: 159
 Jugador actual: 1 (ValoracionTest)
 Color actual: Azul
 ----------------
@@ -2188,31 +1276,127 @@ Realizo un movimiento automatico
 Buscando movimiento... ->
 Movimiento elegido: Azul 1 3
 ----------------
-Turno: 274
+Turno: 160
 Jugador actual: 0 (Master)
 Color actual: Rojo
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Rojo 1 3
+Movimiento elegido: Rojo 2 6
 ----------------
-Turno: 275
+Turno: 161
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Rojo 2 5
+----------------
+Turno: 162
 Jugador actual: 1 (ValoracionTest)
 Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Verde 3 3
+Movimiento elegido: Verde 0 6
 ----------------
-Turno: 276
+Turno: 163
+Jugador actual: 1 (ValoracionTest)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Verde 0 5
+----------------
+Turno: 164
 Jugador actual: 0 (Master)
 Color actual: Amarillo
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Amarillo 3 2
+Movimiento elegido: Amarillo 1 6
 ----------------
-Turno: 277
+Turno: 165
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Amarillo 3 1
+----------------
+Turno: 166
+Jugador actual: 1 (ValoracionTest)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Azul 2 5
+----------------
+Turno: 167
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Rojo 2 4
+----------------
+Turno: 168
+Jugador actual: 1 (ValoracionTest)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Verde 3 4
+----------------
+Turno: 169
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Amarillo 1 4
+----------------
+Turno: 170
+Jugador actual: 1 (ValoracionTest)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Azul 2 4
+----------------
+Turno: 171
+Jugador actual: 1 (ValoracionTest)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Azul 1 20
+----------------
+Turno: 172
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Rojo 3 3
+----------------
+Turno: 173
+Jugador actual: 1 (ValoracionTest)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Verde 1 3
+----------------
+Turno: 174
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Amarillo 1 3
+----------------
+Turno: 175
 Jugador actual: 1 (ValoracionTest)
 Color actual: Azul
 ----------------
@@ -2220,30 +1404,270 @@ Realizo un movimiento automatico
 Buscando movimiento... ->
 Movimiento elegido: Azul 1 2
 ----------------
-Turno: 278
+Turno: 176
 Jugador actual: 0 (Master)
 Color actual: Rojo
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Rojo 1 2
+Movimiento elegido: Rojo 3 2
 ----------------
-Turno: 279
+Turno: 177
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Rojo 2 10
+----------------
+Turno: 178
 Jugador actual: 1 (ValoracionTest)
 Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Verde 3 2
+Movimiento elegido: Verde 1 2
 ----------------
-Turno: 280
+Turno: 179
 Jugador actual: 0 (Master)
 Color actual: Amarillo
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Amarillo 3 1
+Movimiento elegido: Amarillo 1 2
+----------------
+Turno: 180
+Jugador actual: 1 (ValoracionTest)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Azul 2 1
+----------------
+Turno: 181
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Rojo 2 1
+----------------
+Turno: 182
+Jugador actual: 1 (ValoracionTest)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Verde 1 1
+----------------
+Turno: 183
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Amarillo 2 6
+----------------
+Turno: 184
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Amarillo 1 5
+----------------
+Turno: 185
+Jugador actual: 1 (ValoracionTest)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Azul 1 5
+----------------
+Turno: 186
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Rojo -9999 6
+----------------
+Turno: 187
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Rojo -9999 5
+----------------
+Turno: 188
+Jugador actual: 1 (ValoracionTest)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Verde 1 6
+----------------
+Turno: 189
+Jugador actual: 1 (ValoracionTest)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Verde 0 5
+----------------
+Turno: 190
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Amarillo 1 4
+----------------
+Turno: 191
+Jugador actual: 1 (ValoracionTest)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Azul 0 2
+----------------
+Turno: 192
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Rojo 2 4
+----------------
+Turno: 193
+Jugador actual: 1 (ValoracionTest)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Verde 1 1
+----------------
+Turno: 194
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Amarillo 1 3
+----------------
+Turno: 195
+Jugador actual: 1 (ValoracionTest)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Azul 1 6
+----------------
+Turno: 196
+Jugador actual: 1 (ValoracionTest)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Azul 1 4
+----------------
+Turno: 197
+Jugador actual: 1 (ValoracionTest)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Azul 0 10
+----------------
+Turno: 198
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Rojo 2 3
+----------------
+Turno: 199
+Jugador actual: 1 (ValoracionTest)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Verde 0 4
+----------------
+Turno: 200
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Amarillo 2 2
+----------------
+Turno: 201
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Amarillo 1 20
+----------------
+Turno: 202
+Jugador actual: 1 (ValoracionTest)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Azul 2 3
+----------------
+Turno: 203
+Jugador actual: 1 (ValoracionTest)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Azul 3 20
+----------------
+Turno: 204
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Rojo 2 2
+----------------
+Turno: 205
+Jugador actual: 1 (ValoracionTest)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Verde 0 3
+----------------
+Turno: 206
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Amarillo 1 1
+----------------
+Turno: 207
+Jugador actual: 1 (ValoracionTest)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Azul 2 1
+----------------
+Turno: 208
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Rojo 2 1
 ++++++++++++++++++++++++
 La partida ha terminado
-Ha ganado el jugador 0 (Amarillo)
+Ha ganado el jugador 0 (Rojo)
 ++++++++++++++++++++++++

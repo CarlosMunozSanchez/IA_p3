@@ -3,9 +3,33 @@ Connected to server 172.25.8.52:8884
 HELLO sent.
 version: 6
 args: ninjagame 
+105 QUEUED received
+Lo sentimos. El servidor está completo en este momento. Se te ha puesto en cola.
+queuePos: 6
+Tu posición en la cola es: #6
+105 QUEUED received
+Lo sentimos. El servidor está completo en este momento. Se te ha puesto en cola.
+queuePos: 5
+Tu posición en la cola es: #5
+105 QUEUED received
+Lo sentimos. El servidor está completo en este momento. Se te ha puesto en cola.
+queuePos: 4
+Tu posición en la cola es: #4
+105 QUEUED received
+Lo sentimos. El servidor está completo en este momento. Se te ha puesto en cola.
+queuePos: 3
+Tu posición en la cola es: #3
+105 QUEUED received
+Lo sentimos. El servidor está completo en este momento. Se te ha puesto en cola.
+queuePos: 2
+Tu posición en la cola es: #2
+105 QUEUED received
+Lo sentimos. El servidor está completo en este momento. Se te ha puesto en cola.
+queuePos: 1
+Tu posición en la cola es: #1
 204 ACCEPTED received
-ip_addr: 150.214.203.126 port: 8893
-Connected to server 150.214.203.126:8893
+ip_addr: 172.25.8.57 port: 8898
+Connected to server 172.25.8.57:8898
 GAME_PARAMETERS sent
 player: 1 name: Master init_board: 1 ai_id: 1
 206 OK_START_GAME received
@@ -51,9 +75,6 @@ Turno: 4
 Jugador actual: 0 (Ninja 1: asequible?)
 Color actual: Rojo
 ----------------
-Esperando movimiento del oponente...
-102 TEST_ALIVE received
-102 TEST_ALIVE received. Still alive.
 Esperando movimiento del oponente...
 301 MOVED received
 Move: 3 Azul 1 6
@@ -467,6 +488,9 @@ Jugador actual: 0 (Ninja 1: asequible?)
 Color actual: Rojo
 ----------------
 Esperando movimiento del oponente...
+102 TEST_ALIVE received
+102 TEST_ALIVE received. Still alive.
+Esperando movimiento del oponente...
 301 MOVED received
 Move: 37 Azul 0 4
 Old move received. Already up to date.
@@ -630,9 +654,9 @@ Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Azul 0 1
+Movimiento elegido: Azul 1 1
 301 MOVED sent
-Move: 51 Azul 0 1
+Move: 51 Azul 1 1
 ----------------
 Turno: 51
 Jugador actual: 0 (Ninja 1: asequible?)
@@ -640,7 +664,7 @@ Color actual: Rojo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 51 Azul 0 1
+Move: 51 Azul 1 1
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
@@ -702,9 +726,9 @@ Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Azul 0 6
+Movimiento elegido: Azul 1 6
 301 MOVED sent
-Move: 57 Azul 0 6
+Move: 57 Azul 1 6
 ----------------
 Turno: 57
 Jugador actual: 1 (Master)
@@ -712,9 +736,9 @@ Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Azul 0 5
+Movimiento elegido: Azul 1 5
 301 MOVED sent
-Move: 58 Azul 0 5
+Move: 58 Azul 1 5
 ----------------
 Turno: 58
 Jugador actual: 0 (Ninja 1: asequible?)
@@ -722,11 +746,11 @@ Color actual: Rojo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 57 Azul 0 6
+Move: 57 Azul 1 6
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 58 Azul 0 5
+Move: 58 Azul 1 5
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
@@ -741,10 +765,10 @@ Color actual: Rojo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 60 Rojo 0 4
+Move: 60 Rojo 1 1
 Current move received. Moving...
 301 MOVED sent
-Move: 60 Rojo 0 4
+Move: 60 Rojo 1 1
 ----------------
 Turno: 60
 Jugador actual: 0 (Ninja 1: asequible?)
@@ -752,10 +776,10 @@ Color actual: Rojo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 61 Rojo 2 20
+Move: 61 Rojo 1 20
 Current move received. Moving...
 301 MOVED sent
-Move: 61 Rojo 2 20
+Move: 61 Rojo 1 20
 ----------------
 Turno: 61
 Jugador actual: 1 (Master)
@@ -763,9 +787,9 @@ Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Verde 3 6
+Movimiento elegido: Verde 2 1
 301 MOVED sent
-Move: 62 Verde 3 6
+Move: 62 Verde 2 1
 ----------------
 Turno: 62
 Jugador actual: 1 (Master)
@@ -773,19 +797,28 @@ Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Verde 2 1
+Movimiento elegido: Verde 3 20
 301 MOVED sent
-Move: 63 Verde 2 1
+Move: 63 Verde 3 20
 ----------------
 Turno: 63
-Jugador actual: 1 (Master)
-Color actual: Verde
+Jugador actual: 0 (Ninja 1: asequible?)
+Color actual: Amarillo
 ----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde 2 20
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 62 Verde 2 1
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 63 Verde 3 20
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 64 Amarillo 3 3
+Current move received. Moving...
 301 MOVED sent
-Move: 64 Verde 2 20
+Move: 64 Amarillo 3 3
 ----------------
 Turno: 64
 Jugador actual: 0 (Ninja 1: asequible?)
@@ -793,22 +826,10 @@ Color actual: Amarillo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 62 Verde 3 6
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 63 Verde 2 1
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 64 Verde 2 20
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 65 Amarillo 0 5
+Move: 65 Amarillo -9999 20
 Current move received. Moving...
 301 MOVED sent
-Move: 65 Amarillo 0 5
+Move: 65 Amarillo -9999 20
 ----------------
 Turno: 65
 Jugador actual: 1 (Master)
@@ -816,38 +837,34 @@ Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Azul 2 3
+Movimiento elegido: Azul 3 4
 301 MOVED sent
-Move: 66 Azul 2 3
+Move: 66 Azul 3 4
 ----------------
 Turno: 66
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 0 20
-301 MOVED sent
-Move: 67 Azul 0 20
-----------------
-Turno: 67
 Jugador actual: 0 (Ninja 1: asequible?)
 Color actual: Rojo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 66 Azul 2 3
+Move: 66 Azul 3 4
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 67 Azul 0 20
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 68 Rojo 0 5
+Move: 67 Rojo 3 5
 Current move received. Moving...
 301 MOVED sent
-Move: 68 Rojo 0 5
+Move: 67 Rojo 3 5
+----------------
+Turno: 67
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Verde 2 6
+301 MOVED sent
+Move: 68 Verde 2 6
 ----------------
 Turno: 68
 Jugador actual: 1 (Master)
@@ -855,9 +872,9 @@ Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Verde 3 5
+Movimiento elegido: Verde 0 5
 301 MOVED sent
-Move: 69 Verde 3 5
+Move: 69 Verde 0 5
 ----------------
 Turno: 69
 Jugador actual: 0 (Ninja 1: asequible?)
@@ -865,14 +882,18 @@ Color actual: Amarillo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 69 Verde 3 5
+Move: 68 Verde 2 6
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 70 Amarillo 0 4
+Move: 69 Verde 0 5
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 70 Amarillo 0 5
 Current move received. Moving...
 301 MOVED sent
-Move: 70 Amarillo 0 4
+Move: 70 Amarillo 0 5
 ----------------
 Turno: 70
 Jugador actual: 1 (Master)
@@ -880,9 +901,9 @@ Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Azul 0 4
+Movimiento elegido: Azul 3 3
 301 MOVED sent
-Move: 71 Azul 0 4
+Move: 71 Azul 3 3
 ----------------
 Turno: 71
 Jugador actual: 0 (Ninja 1: asequible?)
@@ -890,60 +911,67 @@ Color actual: Rojo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 71 Azul 0 4
+Move: 71 Azul 3 3
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 72 Rojo 2 3
+Move: 72 Rojo 1 4
 Current move received. Moving...
 301 MOVED sent
-Move: 72 Rojo 2 3
+Move: 72 Rojo 1 4
 ----------------
 Turno: 72
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 73 Rojo 0 10
-Current move received. Moving...
-301 MOVED sent
-Move: 73 Rojo 0 10
-----------------
-Turno: 73
 Jugador actual: 1 (Master)
 Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Verde 3 4
+Movimiento elegido: Verde 0 4
 301 MOVED sent
-Move: 74 Verde 3 4
+Move: 73 Verde 0 4
 ----------------
-Turno: 74
+Turno: 73
 Jugador actual: 0 (Ninja 1: asequible?)
 Color actual: Amarillo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 74 Verde 3 4
+Move: 73 Verde 0 4
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 75 Amarillo 0 3
+Move: 74 Amarillo 0 4
 Current move received. Moving...
 301 MOVED sent
-Move: 75 Amarillo 0 3
+Move: 74 Amarillo 0 4
 ----------------
-Turno: 75
+Turno: 74
 Jugador actual: 1 (Master)
 Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Azul 0 2
+Movimiento elegido: Azul 3 2
 301 MOVED sent
-Move: 76 Azul 0 2
+Move: 75 Azul 3 2
+----------------
+Turno: 75
+Jugador actual: 0 (Ninja 1: asequible?)
+Color actual: Rojo
+----------------
+Esperando movimiento del oponente...
+102 TEST_ALIVE received
+102 TEST_ALIVE received. Still alive.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 75 Azul 3 2
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 76 Rojo 3 3
+Current move received. Moving...
+301 MOVED sent
+Move: 76 Rojo 3 3
 ----------------
 Turno: 76
 Jugador actual: 0 (Ninja 1: asequible?)
@@ -951,14 +979,10 @@ Color actual: Rojo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 76 Azul 0 2
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 77 Rojo 0 2
+Move: 77 Rojo 1 20
 Current move received. Moving...
 301 MOVED sent
-Move: 77 Rojo 0 2
+Move: 77 Rojo 1 20
 ----------------
 Turno: 77
 Jugador actual: 1 (Master)
@@ -966,9 +990,9 @@ Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Verde 3 3
+Movimiento elegido: Verde 2 3
 301 MOVED sent
-Move: 78 Verde 3 3
+Move: 78 Verde 2 3
 ----------------
 Turno: 78
 Jugador actual: 0 (Ninja 1: asequible?)
@@ -976,7 +1000,7 @@ Color actual: Amarillo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 78 Verde 3 3
+Move: 78 Verde 2 3
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
@@ -991,9 +1015,9 @@ Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Azul 0 1
+Movimiento elegido: Azul 3 1
 301 MOVED sent
-Move: 80 Azul 0 1
+Move: 80 Azul 3 1
 ----------------
 Turno: 80
 Jugador actual: 0 (Ninja 1: asequible?)
@@ -1001,14 +1025,14 @@ Color actual: Rojo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 80 Azul 0 1
+Move: 80 Azul 3 1
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 81 Rojo 0 1
+Move: 81 Rojo 2 2
 Current move received. Moving...
 301 MOVED sent
-Move: 81 Rojo 0 1
+Move: 81 Rojo 2 2
 ----------------
 Turno: 81
 Jugador actual: 1 (Master)
@@ -1016,9 +1040,9 @@ Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Verde 3 2
+Movimiento elegido: Verde 2 2
 301 MOVED sent
-Move: 82 Verde 3 2
+Move: 82 Verde 2 2
 ----------------
 Turno: 82
 Jugador actual: 0 (Ninja 1: asequible?)
@@ -1026,98 +1050,148 @@ Color actual: Amarillo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 82 Verde 3 2
+Move: 82 Verde 2 2
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 83 Amarillo 1 6
+Move: 83 Amarillo 2 5
 Current move received. Moving...
 301 MOVED sent
-Move: 83 Amarillo 1 6
+Move: 83 Amarillo 2 5
 ----------------
 Turno: 83
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Amarillo
+Jugador actual: 1 (Master)
+Color actual: Azul
 ----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 84 Amarillo 3 3
-Current move received. Moving...
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Azul 1 5
 301 MOVED sent
-Move: 84 Amarillo 3 3
+Move: 84 Azul 1 5
 ----------------
 Turno: 84
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 85 Amarillo 0 20
-Current move received. Moving...
-301 MOVED sent
-Move: 85 Amarillo 0 20
-----------------
-Turno: 85
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 86 Amarillo 1 20
-Current move received. Moving...
-301 MOVED sent
-Move: 86 Amarillo 1 20
-----------------
-Turno: 86
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 0 6
-301 MOVED sent
-Move: 87 Azul 0 6
-----------------
-Turno: 87
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 0 5
-301 MOVED sent
-Move: 88 Azul 0 5
-----------------
-Turno: 88
 Jugador actual: 0 (Ninja 1: asequible?)
 Color actual: Rojo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 87 Azul 0 6
+Move: 84 Azul 1 5
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 88 Azul 0 5
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 89 Rojo 0 5
+Move: 85 Rojo 1 5
 Current move received. Moving...
 301 MOVED sent
-Move: 89 Rojo 0 5
+Move: 85 Rojo 1 5
 ----------------
-Turno: 89
+Turno: 85
 Jugador actual: 1 (Master)
 Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Verde 2 6
+Movimiento elegido: Verde 2 2
 301 MOVED sent
-Move: 90 Verde 2 6
+Move: 86 Verde 2 2
+----------------
+Turno: 86
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Verde -9999 20
+301 MOVED sent
+Move: 87 Verde -9999 20
+----------------
+Turno: 87
+Jugador actual: 0 (Ninja 1: asequible?)
+Color actual: Amarillo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 86 Verde 2 2
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 87 Verde -9999 20
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 88 Amarillo 2 6
+Current move received. Moving...
+301 MOVED sent
+Move: 88 Amarillo 2 6
+----------------
+Turno: 88
+Jugador actual: 0 (Ninja 1: asequible?)
+Color actual: Amarillo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 89 Amarillo -9999 20
+Current move received. Moving...
+301 MOVED sent
+Move: 89 Amarillo -9999 20
+----------------
+Turno: 89
+Jugador actual: 0 (Ninja 1: asequible?)
+Color actual: Amarillo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 90 Amarillo 1 4
+Current move received. Moving...
+301 MOVED sent
+Move: 90 Amarillo 1 4
 ----------------
 Turno: 90
+Jugador actual: 1 (Master)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Azul 3 4
+301 MOVED sent
+Move: 91 Azul 3 4
+----------------
+Turno: 91
+Jugador actual: 0 (Ninja 1: asequible?)
+Color actual: Rojo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 91 Azul 3 4
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 92 Rojo 3 6
+Current move received. Moving...
+301 MOVED sent
+Move: 92 Rojo 3 6
+----------------
+Turno: 92
+Jugador actual: 0 (Ninja 1: asequible?)
+Color actual: Rojo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 93 Rojo 2 4
+Current move received. Moving...
+301 MOVED sent
+Move: 93 Rojo 2 4
+----------------
+Turno: 93
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Verde -9999 6
+301 MOVED sent
+Move: 94 Verde -9999 6
+----------------
+Turno: 94
 Jugador actual: 1 (Master)
 Color actual: Verde
 ----------------
@@ -1125,64 +1199,53 @@ Realizo un movimiento automatico
 Buscando movimiento... ->
 Movimiento elegido: Verde 0 5
 301 MOVED sent
-Move: 91 Verde 0 5
+Move: 95 Verde 0 5
 ----------------
-Turno: 91
+Turno: 95
 Jugador actual: 0 (Ninja 1: asequible?)
 Color actual: Amarillo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 90 Verde 2 6
+Move: 94 Verde -9999 6
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 91 Verde 0 5
+Move: 95 Verde 0 5
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 92 Amarillo 2 5
+Move: 96 Amarillo 2 3
 Current move received. Moving...
 301 MOVED sent
-Move: 92 Amarillo 2 5
+Move: 96 Amarillo 2 3
 ----------------
-Turno: 92
+Turno: 96
 Jugador actual: 1 (Master)
 Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Azul 0 4
+Movimiento elegido: Azul 1 3
 301 MOVED sent
-Move: 93 Azul 0 4
+Move: 97 Azul 1 3
 ----------------
-Turno: 93
+Turno: 97
 Jugador actual: 0 (Ninja 1: asequible?)
 Color actual: Rojo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 93 Azul 0 4
+Move: 97 Azul 1 3
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 94 Rojo 0 6
+Move: 98 Rojo 2 2
 Current move received. Moving...
 301 MOVED sent
-Move: 94 Rojo 0 6
+Move: 98 Rojo 2 2
 ----------------
-Turno: 94
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 95 Rojo 0 4
-Current move received. Moving...
-301 MOVED sent
-Move: 95 Rojo 0 4
-----------------
-Turno: 95
+Turno: 98
 Jugador actual: 1 (Master)
 Color actual: Verde
 ----------------
@@ -1190,49 +1253,49 @@ Realizo un movimiento automatico
 Buscando movimiento... ->
 Movimiento elegido: Verde 0 4
 301 MOVED sent
-Move: 96 Verde 0 4
+Move: 99 Verde 0 4
 ----------------
-Turno: 96
+Turno: 99
 Jugador actual: 0 (Ninja 1: asequible?)
 Color actual: Amarillo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 96 Verde 0 4
+Move: 99 Verde 0 4
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 97 Amarillo 1 4
+Move: 100 Amarillo 2 2
 Current move received. Moving...
 301 MOVED sent
-Move: 97 Amarillo 1 4
+Move: 100 Amarillo 2 2
 ----------------
-Turno: 97
+Turno: 100
 Jugador actual: 1 (Master)
 Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Azul 0 3
+Movimiento elegido: Azul 1 2
 301 MOVED sent
-Move: 98 Azul 0 3
+Move: 101 Azul 1 2
 ----------------
-Turno: 98
+Turno: 101
 Jugador actual: 0 (Ninja 1: asequible?)
 Color actual: Rojo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 98 Azul 0 3
+Move: 101 Azul 1 2
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 99 Rojo 0 3
+Move: 102 Rojo 3 3
 Current move received. Moving...
 301 MOVED sent
-Move: 99 Rojo 0 3
+Move: 102 Rojo 3 3
 ----------------
-Turno: 99
+Turno: 102
 Jugador actual: 1 (Master)
 Color actual: Verde
 ----------------
@@ -1240,72 +1303,32 @@ Realizo un movimiento automatico
 Buscando movimiento... ->
 Movimiento elegido: Verde 0 3
 301 MOVED sent
-Move: 100 Verde 0 3
+Move: 103 Verde 0 3
 ----------------
-Turno: 100
+Turno: 103
 Jugador actual: 0 (Ninja 1: asequible?)
 Color actual: Amarillo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 100 Verde 0 3
+Move: 103 Verde 0 3
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 101 Amarillo 1 2
+Move: 104 Amarillo 2 1
 Current move received. Moving...
 301 MOVED sent
-Move: 101 Amarillo 1 2
+Move: 104 Amarillo 2 1
 ----------------
-Turno: 101
+Turno: 104
 Jugador actual: 1 (Master)
 Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Azul 0 2
+Movimiento elegido: Azul 0 6
 301 MOVED sent
-Move: 102 Azul 0 2
-----------------
-Turno: 102
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 102 Azul 0 2
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 103 Rojo 0 2
-Current move received. Moving...
-301 MOVED sent
-Move: 103 Rojo 0 2
-----------------
-Turno: 103
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde 0 2
-301 MOVED sent
-Move: 104 Verde 0 2
-----------------
-Turno: 104
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 104 Verde 0 2
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 105 Amarillo 0 1
-Current move received. Moving...
-301 MOVED sent
-Move: 105 Amarillo 0 1
+Move: 105 Azul 0 6
 ----------------
 Turno: 105
 Jugador actual: 1 (Master)
@@ -1321,6 +1344,10 @@ Turno: 106
 Jugador actual: 0 (Ninja 1: asequible?)
 Color actual: Rojo
 ----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 105 Azul 0 6
+Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
 Move: 106 Azul 0 1
@@ -1352,10 +1379,10 @@ Move: 108 Verde 0 1
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 109 Amarillo 0 6
+Move: 109 Amarillo 3 6
 Current move received. Moving...
 301 MOVED sent
-Move: 109 Amarillo 0 6
+Move: 109 Amarillo 3 6
 ----------------
 Turno: 109
 Jugador actual: 0 (Ninja 1: asequible?)
@@ -1363,10 +1390,10 @@ Color actual: Amarillo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 110 Amarillo 3 3
+Move: 110 Amarillo 1 20
 Current move received. Moving...
 301 MOVED sent
-Move: 110 Amarillo 3 3
+Move: 110 Amarillo 1 20
 ----------------
 Turno: 110
 Jugador actual: 0 (Ninja 1: asequible?)
@@ -1374,20 +1401,21 @@ Color actual: Amarillo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 111 Amarillo 0 20
+Move: 111 Amarillo 1 20
 Current move received. Moving...
 301 MOVED sent
-Move: 111 Amarillo 0 20
+Move: 111 Amarillo 1 20
 ----------------
 Turno: 111
-Jugador actual: 1 (Master)
-Color actual: Azul
+Jugador actual: 0 (Ninja 1: asequible?)
+Color actual: Amarillo
 ----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 0 6
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 112 Amarillo 0 5
+Current move received. Moving...
 301 MOVED sent
-Move: 112 Azul 0 6
+Move: 112 Amarillo 0 5
 ----------------
 Turno: 112
 Jugador actual: 1 (Master)
@@ -1395,9 +1423,9 @@ Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Azul 0 4
+Movimiento elegido: Azul 0 6
 301 MOVED sent
-Move: 113 Azul 0 4
+Move: 113 Azul 0 6
 ----------------
 Turno: 113
 Jugador actual: 1 (Master)
@@ -1405,9 +1433,9 @@ Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Azul 3 10
+Movimiento elegido: Azul 0 5
 301 MOVED sent
-Move: 114 Azul 3 10
+Move: 114 Azul 0 5
 ----------------
 Turno: 114
 Jugador actual: 0 (Ninja 1: asequible?)
@@ -1415,22 +1443,18 @@ Color actual: Rojo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 112 Azul 0 6
+Move: 113 Azul 0 6
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 113 Azul 0 4
+Move: 114 Azul 0 5
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 114 Azul 3 10
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 115 Rojo 0 6
+Move: 115 Rojo 1 6
 Current move received. Moving...
 301 MOVED sent
-Move: 115 Rojo 0 6
+Move: 115 Rojo 1 6
 ----------------
 Turno: 115
 Jugador actual: 0 (Ninja 1: asequible?)
@@ -1438,10 +1462,10 @@ Color actual: Rojo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 116 Rojo 1 5
+Move: 116 Rojo 3 3
 Current move received. Moving...
 301 MOVED sent
-Move: 116 Rojo 1 5
+Move: 116 Rojo 3 3
 ----------------
 Turno: 116
 Jugador actual: 1 (Master)
@@ -1468,9 +1492,6 @@ Jugador actual: 0 (Ninja 1: asequible?)
 Color actual: Amarillo
 ----------------
 Esperando movimiento del oponente...
-102 TEST_ALIVE received
-102 TEST_ALIVE received. Still alive.
-Esperando movimiento del oponente...
 301 MOVED received
 Move: 117 Verde 0 6
 Old move received. Already up to date.
@@ -1480,10 +1501,10 @@ Move: 118 Verde 1 5
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 119 Amarillo 1 5
+Move: 119 Amarillo 0 4
 Current move received. Moving...
 301 MOVED sent
-Move: 119 Amarillo 1 5
+Move: 119 Amarillo 0 4
 ----------------
 Turno: 119
 Jugador actual: 1 (Master)
@@ -1491,9 +1512,9 @@ Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Azul 1 5
+Movimiento elegido: Azul 0 4
 301 MOVED sent
-Move: 120 Azul 1 5
+Move: 120 Azul 0 4
 ----------------
 Turno: 120
 Jugador actual: 0 (Ninja 1: asequible?)
@@ -1501,14 +1522,14 @@ Color actual: Rojo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 120 Azul 1 5
+Move: 120 Azul 0 4
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 121 Rojo 0 4
+Move: 121 Rojo 0 5
 Current move received. Moving...
 301 MOVED sent
-Move: 121 Rojo 0 4
+Move: 121 Rojo 0 5
 ----------------
 Turno: 121
 Jugador actual: 1 (Master)
@@ -1530,10 +1551,10 @@ Move: 122 Verde 0 4
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 123 Amarillo 3 4
+Move: 123 Amarillo 0 3
 Current move received. Moving...
 301 MOVED sent
-Move: 123 Amarillo 3 4
+Move: 123 Amarillo 0 3
 ----------------
 Turno: 123
 Jugador actual: 1 (Master)
@@ -1541,9 +1562,9 @@ Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Azul 1 3
+Movimiento elegido: Azul 0 3
 301 MOVED sent
-Move: 124 Azul 1 3
+Move: 124 Azul 0 3
 ----------------
 Turno: 124
 Jugador actual: 0 (Ninja 1: asequible?)
@@ -1551,170 +1572,175 @@ Color actual: Rojo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 124 Azul 1 3
+Move: 124 Azul 0 3
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 125 Rojo 0 3
+Move: 125 Rojo 3 1
 Current move received. Moving...
 301 MOVED sent
-Move: 125 Rojo 0 3
+Move: 125 Rojo 3 1
 ----------------
 Turno: 125
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde 0 3
-301 MOVED sent
-Move: 126 Verde 0 3
-----------------
-Turno: 126
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 126 Verde 0 3
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 127 Amarillo 0 2
-Current move received. Moving...
-301 MOVED sent
-Move: 127 Amarillo 0 2
-----------------
-Turno: 127
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 1 2
-301 MOVED sent
-Move: 128 Azul 1 2
-----------------
-Turno: 128
 Jugador actual: 0 (Ninja 1: asequible?)
 Color actual: Rojo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 128 Azul 1 2
+Move: 126 Rojo 3 20
+Current move received. Moving...
+301 MOVED sent
+Move: 126 Rojo 3 20
+----------------
+Turno: 126
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Verde 1 3
+301 MOVED sent
+Move: 127 Verde 1 3
+----------------
+Turno: 127
+Jugador actual: 0 (Ninja 1: asequible?)
+Color actual: Amarillo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 127 Verde 1 3
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 129 Rojo 0 2
+Move: 128 Amarillo 0 2
 Current move received. Moving...
 301 MOVED sent
-Move: 129 Rojo 0 2
+Move: 128 Amarillo 0 2
+----------------
+Turno: 128
+Jugador actual: 1 (Master)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Azul 0 2
+301 MOVED sent
+Move: 129 Azul 0 2
 ----------------
 Turno: 129
 Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde 0 2
-301 MOVED sent
-Move: 130 Verde 0 2
-----------------
-Turno: 130
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 130 Verde 0 2
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 131 Amarillo 3 1
-Current move received. Moving...
-301 MOVED sent
-Move: 131 Amarillo 3 1
-----------------
-Turno: 131
-Jugador actual: 1 (Master)
 Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Azul 1 1
+Movimiento elegido: Azul 0 20
 301 MOVED sent
-Move: 132 Azul 1 1
+Move: 130 Azul 0 20
 ----------------
-Turno: 132
+Turno: 130
 Jugador actual: 0 (Ninja 1: asequible?)
 Color actual: Rojo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 132 Azul 1 1
+Move: 129 Azul 0 2
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 133 Rojo 0 1
+Move: 130 Azul 0 20
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 131 Rojo 0 4
 Current move received. Moving...
 301 MOVED sent
-Move: 133 Rojo 0 1
+Move: 131 Rojo 0 4
 ----------------
-Turno: 133
+Turno: 131
 Jugador actual: 1 (Master)
 Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Verde 0 1
+Movimiento elegido: Verde -9999 2
 301 MOVED sent
-Move: 134 Verde 0 1
+Move: 132 Verde -9999 2
 ----------------
-Turno: 134
+Turno: 132
 Jugador actual: 0 (Ninja 1: asequible?)
 Color actual: Amarillo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 134 Verde 0 1
+Move: 132 Verde -9999 2
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 135 Amarillo 3 6
+Move: 133 Amarillo 0 1
 Current move received. Moving...
 301 MOVED sent
-Move: 135 Amarillo 3 6
+Move: 133 Amarillo 0 1
+----------------
+Turno: 133
+Jugador actual: 1 (Master)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Azul 0 1
+301 MOVED sent
+Move: 134 Azul 0 1
+----------------
+Turno: 134
+Jugador actual: 0 (Ninja 1: asequible?)
+Color actual: Rojo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 134 Azul 0 1
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 135 Rojo 0 2
+Current move received. Moving...
+301 MOVED sent
+Move: 135 Rojo 0 2
 ----------------
 Turno: 135
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Verde -9999 1
+301 MOVED sent
+Move: 136 Verde -9999 1
+----------------
+Turno: 136
 Jugador actual: 0 (Ninja 1: asequible?)
 Color actual: Amarillo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 136 Amarillo 0 5
+Move: 136 Verde -9999 1
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 137 Amarillo 0 6
 Current move received. Moving...
 301 MOVED sent
-Move: 136 Amarillo 0 5
-----------------
-Turno: 136
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 1 6
-301 MOVED sent
-Move: 137 Azul 1 6
+Move: 137 Amarillo 0 6
 ----------------
 Turno: 137
-Jugador actual: 1 (Master)
-Color actual: Azul
+Jugador actual: 0 (Ninja 1: asequible?)
+Color actual: Amarillo
 ----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 1 2
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 138 Amarillo 2 5
+Current move received. Moving...
 301 MOVED sent
-Move: 138 Azul 1 2
+Move: 138 Amarillo 2 5
 ----------------
 Turno: 138
 Jugador actual: 1 (Master)
@@ -1722,32 +1748,19 @@ Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Azul 1 20
+Movimiento elegido: Azul 0 6
 301 MOVED sent
-Move: 139 Azul 1 20
+Move: 139 Azul 0 6
 ----------------
 Turno: 139
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Rojo
+Jugador actual: 1 (Master)
+Color actual: Azul
 ----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 137 Azul 1 6
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 138 Azul 1 2
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 139 Azul 1 20
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 140 Rojo 1 6
-Current move received. Moving...
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Azul 0 5
 301 MOVED sent
-Move: 140 Rojo 1 6
+Move: 140 Azul 0 5
 ----------------
 Turno: 140
 Jugador actual: 0 (Ninja 1: asequible?)
@@ -1755,10 +1768,18 @@ Color actual: Rojo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 141 Rojo 1 4
+Move: 139 Azul 0 6
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 140 Azul 0 5
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 141 Rojo 3 6
 Current move received. Moving...
 301 MOVED sent
-Move: 141 Rojo 1 4
+Move: 141 Rojo 3 6
 ----------------
 Turno: 141
 Jugador actual: 0 (Ninja 1: asequible?)
@@ -1766,10 +1787,10 @@ Color actual: Rojo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 142 Rojo 0 20
+Move: 142 Rojo 0 1
 Current move received. Moving...
 301 MOVED sent
-Move: 142 Rojo 0 20
+Move: 142 Rojo 0 1
 ----------------
 Turno: 142
 Jugador actual: 0 (Ninja 1: asequible?)
@@ -1783,14 +1804,15 @@ Current move received. Moving...
 Move: 143 Rojo 3 10
 ----------------
 Turno: 143
-Jugador actual: 1 (Master)
-Color actual: Verde
+Jugador actual: 0 (Ninja 1: asequible?)
+Color actual: Rojo
 ----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde 0 6
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 144 Rojo 2 10
+Current move received. Moving...
 301 MOVED sent
-Move: 144 Verde 0 6
+Move: 144 Rojo 2 10
 ----------------
 Turno: 144
 Jugador actual: 1 (Master)
@@ -1798,38 +1820,38 @@ Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Verde 1 5
+Movimiento elegido: Verde -9999 6
 301 MOVED sent
-Move: 145 Verde 1 5
+Move: 145 Verde -9999 6
 ----------------
 Turno: 145
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Buscando movimiento... ->
+Movimiento elegido: Verde 0 5
+301 MOVED sent
+Move: 146 Verde 0 5
+----------------
+Turno: 146
 Jugador actual: 0 (Ninja 1: asequible?)
 Color actual: Amarillo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 144 Verde 0 6
+Move: 145 Verde -9999 6
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 145 Verde 1 5
+Move: 146 Verde 0 5
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 146 Amarillo 0 4
+Move: 147 Amarillo 0 4
 Current move received. Moving...
 301 MOVED sent
-Move: 146 Amarillo 0 4
-----------------
-Turno: 146
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 1 5
-301 MOVED sent
-Move: 147 Azul 1 5
+Move: 147 Amarillo 0 4
 ----------------
 Turno: 147
 Jugador actual: 1 (Master)
@@ -1837,9 +1859,9 @@ Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Azul -9999 20
+Movimiento elegido: Azul 0 4
 301 MOVED sent
-Move: 148 Azul -9999 20
+Move: 148 Azul 0 4
 ----------------
 Turno: 148
 Jugador actual: 0 (Ninja 1: asequible?)
@@ -1847,331 +1869,27 @@ Color actual: Rojo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 147 Azul 1 5
+Move: 148 Azul 0 4
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 148 Azul -9999 20
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 149 Rojo 1 5
+Move: 149 Rojo 2 5
 Current move received. Moving...
 301 MOVED sent
-Move: 149 Rojo 1 5
+Move: 149 Rojo 2 5
 ----------------
 Turno: 149
-Jugador actual: 1 (Master)
-Color actual: Verde
+Jugador actual: 0 (Ninja 1: asequible?)
+Color actual: Rojo
 ----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde 0 4
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 150 Rojo 1 10
+Current move received. Moving...
 301 MOVED sent
-Move: 150 Verde 0 4
+Move: 150 Rojo 1 10
 ----------------
 Turno: 150
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 150 Verde 0 4
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 151 Amarillo 0 3
-Current move received. Moving...
-301 MOVED sent
-Move: 151 Amarillo 0 3
-----------------
-Turno: 151
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 1 4
-301 MOVED sent
-Move: 152 Azul 1 4
-----------------
-Turno: 152
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 152 Azul 1 4
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 153 Rojo 1 3
-Current move received. Moving...
-301 MOVED sent
-Move: 153 Rojo 1 3
-----------------
-Turno: 153
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde 0 3
-301 MOVED sent
-Move: 154 Verde 0 3
-----------------
-Turno: 154
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 154 Verde 0 3
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 155 Amarillo 0 1
-Current move received. Moving...
-301 MOVED sent
-Move: 155 Amarillo 0 1
-----------------
-Turno: 155
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 156 Amarillo 2 10
-Current move received. Moving...
-301 MOVED sent
-Move: 156 Amarillo 2 10
-----------------
-Turno: 156
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 1 3
-301 MOVED sent
-Move: 157 Azul 1 3
-----------------
-Turno: 157
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 157 Azul 1 3
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 158 Rojo 1 2
-Current move received. Moving...
-301 MOVED sent
-Move: 158 Rojo 1 2
-----------------
-Turno: 158
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde 0 2
-301 MOVED sent
-Move: 159 Verde 0 2
-----------------
-Turno: 159
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 159 Verde 0 2
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 160 Amarillo 2 2
-Current move received. Moving...
-301 MOVED sent
-Move: 160 Amarillo 2 2
-----------------
-Turno: 160
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 1 1
-301 MOVED sent
-Move: 161 Azul 1 1
-----------------
-Turno: 161
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 161 Azul 1 1
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 162 Rojo 1 1
-Current move received. Moving...
-301 MOVED sent
-Move: 162 Rojo 1 1
-----------------
-Turno: 162
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde 0 1
-301 MOVED sent
-Move: 163 Verde 0 1
-----------------
-Turno: 163
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 163 Verde 0 1
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 164 Amarillo 1 5
-Current move received. Moving...
-301 MOVED sent
-Move: 164 Amarillo 1 5
-----------------
-Turno: 164
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 3 6
-301 MOVED sent
-Move: 165 Azul 3 6
-----------------
-Turno: 165
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 2 5
-301 MOVED sent
-Move: 166 Azul 2 5
-----------------
-Turno: 166
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 165 Azul 3 6
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 166 Azul 2 5
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 167 Rojo 1 6
-Current move received. Moving...
-301 MOVED sent
-Move: 167 Rojo 1 6
-----------------
-Turno: 167
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 168 Rojo 3 5
-Current move received. Moving...
-301 MOVED sent
-Move: 168 Rojo 3 5
-----------------
-Turno: 168
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde 0 6
-301 MOVED sent
-Move: 169 Verde 0 6
-----------------
-Turno: 169
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde 0 5
-301 MOVED sent
-Move: 170 Verde 0 5
-----------------
-Turno: 170
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 169 Verde 0 6
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 170 Verde 0 5
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 171 Amarillo 1 6
-Current move received. Moving...
-301 MOVED sent
-Move: 171 Amarillo 1 6
-----------------
-Turno: 171
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 172 Amarillo 1 4
-Current move received. Moving...
-301 MOVED sent
-Move: 172 Amarillo 1 4
-----------------
-Turno: 172
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 1 4
-301 MOVED sent
-Move: 173 Azul 1 4
-----------------
-Turno: 173
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 173 Azul 1 4
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 174 Rojo 1 4
-Current move received. Moving...
-301 MOVED sent
-Move: 174 Rojo 1 4
-----------------
-Turno: 174
 Jugador actual: 1 (Master)
 Color actual: Verde
 ----------------
@@ -2179,722 +1897,47 @@ Realizo un movimiento automatico
 Buscando movimiento... ->
 Movimiento elegido: Verde 0 4
 301 MOVED sent
-Move: 175 Verde 0 4
+Move: 151 Verde 0 4
 ----------------
-Turno: 175
+Turno: 151
 Jugador actual: 0 (Ninja 1: asequible?)
 Color actual: Amarillo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 175 Verde 0 4
+Move: 151 Verde 0 4
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 176 Amarillo 1 3
+Move: 152 Amarillo 0 3
 Current move received. Moving...
 301 MOVED sent
-Move: 176 Amarillo 1 3
+Move: 152 Amarillo 0 3
 ----------------
-Turno: 176
+Turno: 152
 Jugador actual: 1 (Master)
 Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 Buscando movimiento... ->
-Movimiento elegido: Azul 1 3
+Movimiento elegido: Azul 0 3
 301 MOVED sent
-Move: 177 Azul 1 3
+Move: 153 Azul 0 3
 ----------------
-Turno: 177
+Turno: 153
 Jugador actual: 0 (Ninja 1: asequible?)
 Color actual: Rojo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 177 Azul 1 3
+Move: 153 Azul 0 3
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 178 Rojo 1 3
+Move: 154 Rojo 1 2
 Current move received. Moving...
 301 MOVED sent
-Move: 178 Rojo 1 3
-----------------
-Turno: 178
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde 0 3
-301 MOVED sent
-Move: 179 Verde 0 3
-----------------
-Turno: 179
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 179 Verde 0 3
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 180 Amarillo 1 2
-Current move received. Moving...
-301 MOVED sent
-Move: 180 Amarillo 1 2
-----------------
-Turno: 180
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 1 2
-301 MOVED sent
-Move: 181 Azul 1 2
-----------------
-Turno: 181
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 181 Azul 1 2
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 182 Rojo 1 2
-Current move received. Moving...
-301 MOVED sent
-Move: 182 Rojo 1 2
-----------------
-Turno: 182
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde 0 2
-301 MOVED sent
-Move: 183 Verde 0 2
-----------------
-Turno: 183
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 183 Verde 0 2
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 184 Amarillo 2 1
-Current move received. Moving...
-301 MOVED sent
-Move: 184 Amarillo 2 1
-----------------
-Turno: 184
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 1 1
-301 MOVED sent
-Move: 185 Azul 1 1
-----------------
-Turno: 185
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 185 Azul 1 1
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 186 Rojo 1 1
-Current move received. Moving...
-301 MOVED sent
-Move: 186 Rojo 1 1
-----------------
-Turno: 186
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde 0 1
-301 MOVED sent
-Move: 187 Verde 0 1
-----------------
-Turno: 187
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde 0 20
-301 MOVED sent
-Move: 188 Verde 0 20
-----------------
-Turno: 188
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 187 Verde 0 1
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 188 Verde 0 20
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 189 Amarillo 3 5
-Current move received. Moving...
-301 MOVED sent
-Move: 189 Amarillo 3 5
-----------------
-Turno: 189
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 1 6
-301 MOVED sent
-Move: 190 Azul 1 6
-----------------
-Turno: 190
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 1 5
-301 MOVED sent
-Move: 191 Azul 1 5
-----------------
-Turno: 191
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 190 Azul 1 6
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 191 Azul 1 5
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 192 Rojo 1 6
-Current move received. Moving...
-301 MOVED sent
-Move: 192 Rojo 1 6
-----------------
-Turno: 192
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 193 Rojo 1 5
-Current move received. Moving...
-301 MOVED sent
-Move: 193 Rojo 1 5
-----------------
-Turno: 193
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde 0 6
-301 MOVED sent
-Move: 194 Verde 0 6
-----------------
-Turno: 194
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde 0 5
-301 MOVED sent
-Move: 195 Verde 0 5
-----------------
-Turno: 195
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde -9999 10
-301 MOVED sent
-Move: 196 Verde -9999 10
-----------------
-Turno: 196
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 194 Verde 0 6
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 195 Verde 0 5
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 196 Verde -9999 10
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 197 Amarillo 1 6
-Current move received. Moving...
-301 MOVED sent
-Move: 197 Amarillo 1 6
-----------------
-Turno: 197
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 198 Amarillo 1 4
-Current move received. Moving...
-301 MOVED sent
-Move: 198 Amarillo 1 4
-----------------
-Turno: 198
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 1 3
-301 MOVED sent
-Move: 199 Azul 1 3
-----------------
-Turno: 199
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 199 Azul 1 3
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 200 Rojo 1 4
-Current move received. Moving...
-301 MOVED sent
-Move: 200 Rojo 1 4
-----------------
-Turno: 200
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde -9999 4
-301 MOVED sent
-Move: 201 Verde -9999 4
-----------------
-Turno: 201
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 201 Verde -9999 4
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 202 Amarillo 1 3
-Current move received. Moving...
-301 MOVED sent
-Move: 202 Amarillo 1 3
-----------------
-Turno: 202
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 2 4
-301 MOVED sent
-Move: 203 Azul 2 4
-----------------
-Turno: 203
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 203 Azul 2 4
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 204 Rojo 1 3
-Current move received. Moving...
-301 MOVED sent
-Move: 204 Rojo 1 3
-----------------
-Turno: 204
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde -9999 3
-301 MOVED sent
-Move: 205 Verde -9999 3
-----------------
-Turno: 205
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 205 Verde -9999 3
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 206 Amarillo 2 2
-Current move received. Moving...
-301 MOVED sent
-Move: 206 Amarillo 2 2
-----------------
-Turno: 206
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 1 2
-301 MOVED sent
-Move: 207 Azul 1 2
-----------------
-Turno: 207
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 207 Azul 1 2
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 208 Rojo 1 2
-Current move received. Moving...
-301 MOVED sent
-Move: 208 Rojo 1 2
-----------------
-Turno: 208
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 209 Rojo 3 10
-Current move received. Moving...
-301 MOVED sent
-Move: 209 Rojo 3 10
-----------------
-Turno: 209
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde -9999 2
-301 MOVED sent
-Move: 210 Verde -9999 2
-----------------
-Turno: 210
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 210 Verde -9999 2
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 211 Amarillo 1 1
-Current move received. Moving...
-301 MOVED sent
-Move: 211 Amarillo 1 1
-----------------
-Turno: 211
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 1 1
-301 MOVED sent
-Move: 212 Azul 1 1
-----------------
-Turno: 212
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 2 10
-301 MOVED sent
-Move: 213 Azul 2 10
-----------------
-Turno: 213
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 212 Azul 1 1
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 213 Azul 2 10
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 214 Rojo 3 1
-Current move received. Moving...
-301 MOVED sent
-Move: 214 Rojo 3 1
-----------------
-Turno: 214
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde -9999 1
-301 MOVED sent
-Move: 215 Verde -9999 1
-----------------
-Turno: 215
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 215 Verde -9999 1
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 216 Amarillo 2 6
-Current move received. Moving...
-301 MOVED sent
-Move: 216 Amarillo 2 6
-----------------
-Turno: 216
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 217 Amarillo 1 1
-Current move received. Moving...
-301 MOVED sent
-Move: 217 Amarillo 1 1
-----------------
-Turno: 217
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 218 Amarillo 1 20
-Current move received. Moving...
-301 MOVED sent
-Move: 218 Amarillo 1 20
-----------------
-Turno: 218
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul -9999 6
-301 MOVED sent
-Move: 219 Azul -9999 6
-----------------
-Turno: 219
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 2 5
-301 MOVED sent
-Move: 220 Azul 2 5
-----------------
-Turno: 220
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 219 Azul -9999 6
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 220 Azul 2 5
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 221 Rojo 3 6
-Current move received. Moving...
-301 MOVED sent
-Move: 221 Rojo 3 6
-----------------
-Turno: 221
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 222 Rojo 3 5
-Current move received. Moving...
-301 MOVED sent
-Move: 222 Rojo 3 5
-----------------
-Turno: 222
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde -9999 6
-301 MOVED sent
-Move: 223 Verde -9999 6
-----------------
-Turno: 223
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde 1 5
-301 MOVED sent
-Move: 224 Verde 1 5
-----------------
-Turno: 224
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 223 Verde -9999 6
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 224 Verde 1 5
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 225 Amarillo 1 5
-Current move received. Moving...
-301 MOVED sent
-Move: 225 Amarillo 1 5
-----------------
-Turno: 225
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul 2 4
-301 MOVED sent
-Move: 226 Azul 2 4
-----------------
-Turno: 226
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 226 Azul 2 4
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 227 Rojo 3 4
-Current move received. Moving...
-301 MOVED sent
-Move: 227 Rojo 3 4
-----------------
-Turno: 227
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 228 Rojo 3 20
-Current move received. Moving...
-301 MOVED sent
-Move: 228 Rojo 3 20
-----------------
-Turno: 228
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Verde 1 4
-301 MOVED sent
-Move: 229 Verde 1 4
-----------------
-Turno: 229
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 229 Verde 1 4
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 230 Amarillo 1 4
-Current move received. Moving...
-301 MOVED sent
-Move: 230 Amarillo 1 4
-----------------
-Turno: 230
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Buscando movimiento... ->
-Movimiento elegido: Azul -9999 3
-301 MOVED sent
-Move: 231 Azul -9999 3
-----------------
-Turno: 231
-Jugador actual: 0 (Ninja 1: asequible?)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 231 Azul -9999 3
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 232 Rojo 3 3
-Current move received. Moving...
-301 MOVED sent
-Move: 232 Rojo 3 3
+Move: 154 Rojo 1 2
 ++++++++++++++++++++++++
 La partida ha terminado
 Ha ganado el jugador 0 (Rojo)

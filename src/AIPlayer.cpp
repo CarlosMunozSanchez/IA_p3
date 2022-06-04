@@ -293,19 +293,36 @@ double HeuristicaGrandMaster(const Parchis &estado, int jugador){
 		
 		Board tablero = estado.getBoard();
 
+		int ptos_fichas_home = 20;
+		int penalizacion_home = -10;
+
 		int ptos_meta = 35;
 		
-		int ptos_distancia = 20; 
+		int ptos_distancia = 15; 
 		int cerca_de_meta = 8;
 		
 		int ptos_amenazas = 25;
-		const int penalizacion_amenaza = -10;
+		const int penalizacion_amenaza = -20;
 		
-		int ptos_bloqueo = 20;
-		int factor_bloqueo = 7;
+		int ptos_bloqueo = 5;
+		int factor_bloqueo = 3;
 
 		double puntuacion_jugador = 0;
 
+		//-------------piezas en home-------------------
+		int puntuacion_home = ptos_fichas_home;
+		//Miro cuántas pieza tengo en casa
+		for(int i = 0; i < my_colors.size(); i++){
+			puntuacion_home += penalizacion_home * estado.piecesAtHome(my_colors[i]);
+		}
+		
+		//evitar tomar valores no pensados
+		if(puntuacion_home < 0){
+			puntuacion_home = 0;
+		}
+		
+		puntuacion_jugador += puntuacion_home;
+		
 		//-------------piezas en meta-------------------
 		//Miro cuántas pieza tengo en la meta
 		for(int i = 0; i < my_colors.size(); i++){
@@ -415,10 +432,16 @@ double HeuristicaGrandMaster(const Parchis &estado, int jugador){
 			
 					for(int k = 0; k < op_colors.size() and !amenaza; k++){ //para cada color de mi rival
 						for(int l = 0; l < num_pieces and !amenaza; l++){	//para cada pieza
+							//casilla de mi oponente
+							Box op_box = tablero.getPiece(op_colors[k], l);
 							//Si no existe amenaza
-							if(estado.distanceBoxtoBox(op_colors[k], l, my_colors[i], j) > 0){
-								amenaza = true;
-								puntuacion_amenazas += penalizacion_amenaza;
+							int distancia = estado.distanceBoxtoBox(op_colors[k], l, my_colors[i], j);
+							//TODO: que se comprueben los movimientos disponibles del rival para ver si realmente tiene un movimiento que me coma
+							if( distancia > 0 and distancia < 7){
+								if(estado.isLegalMove(op_colors[k], op_box, distancia)){
+									amenaza = true;
+									puntuacion_amenazas += penalizacion_amenaza;
+								}
 							}
 						
 						}
