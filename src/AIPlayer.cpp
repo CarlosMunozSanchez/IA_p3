@@ -256,23 +256,8 @@ double AIPlayer::busqueda(const Parchis &actual, int jugador, int profundidad, i
 	return v;
 }
 
-double HeuristicaGrandMaster(const Parchis &estado, int jugador){
-	/*
-	* Heurística para el jugador inteligente
-	* 
-	* Evaluación de un tablero:
-	* 
-	* Puntuación máxima real: 100
-	* Jugador gana: gana (masinf)
-	* Jugador pierde: pierde (menosinf)
-	*
-	* 40% -> tener pocas amenazas directas (máximo 40 pts)
-	* 25% -> piezas en meta (máximo 25 pts)
-	* 25% -> bloquear a piezas rivales (máximo 25 pts)
-	* 10% -> tener las piezas adelantadas (máximo 10 pts)
-	*
-	*/
-	
+
+double HeuristicaGrandMaster2(const Parchis &estado, int jugador){
 	int ganador = estado.getWinner();
 	int oponente = (jugador + 1) % 2;
 
@@ -292,47 +277,15 @@ double HeuristicaGrandMaster(const Parchis &estado, int jugador){
 		vector<color> op_colors = estado.getPlayerColors(oponente);
 		
 		Board tablero = estado.getBoard();
-
-		int ptos_fichas_home = 20;
-		int penalizacion_home = -10;
-
-		int ptos_meta = 35;
+	
+		double max_distancia = 50;
+		double max_seguridad = 50;
+		double premio_seguridad = max_seguridad / (num_pieces * my_colors.size());
 		
-		int ptos_distancia = 15; 
-		int cerca_de_meta = 8;
-		
-		int ptos_amenazas = 25;
-		const int penalizacion_amenaza = -20;
-		
-		int ptos_bloqueo = 5;
-		int factor_bloqueo = 3;
-
 		double puntuacion_jugador = 0;
-
-		//-------------piezas en home-------------------
-		int puntuacion_home = ptos_fichas_home;
-		//Miro cuántas pieza tengo en casa
-		for(int i = 0; i < my_colors.size(); i++){
-			puntuacion_home += penalizacion_home * estado.piecesAtHome(my_colors[i]);
-		}
 		
-		//evitar tomar valores no pensados
-		if(puntuacion_home < 0){
-			puntuacion_home = 0;
-		}
-		
-		puntuacion_jugador += puntuacion_home;
-		
-		//-------------piezas en meta-------------------
-		//Miro cuántas pieza tengo en la meta
-		for(int i = 0; i < my_colors.size(); i++){
-			puntuacion_jugador += (ptos_meta/ (num_pieces-1)) * estado.piecesAtGoal(my_colors[i]);
-		}
-
-
-		//-----------distancia a meta-----------------------
-		//calculo la distancia media de mis piezas a la meta
-		int distancia_media = 0;
+		//-----------DISTANCIA------------------
+		double distancia_media = 0;
 		for(int i = 0; i < my_colors.size(); i++){ //para cada color
 			for(int j = 0; j < num_pieces; j++){	//para cada ficha
 				distancia_media += estado.distanceToGoal(my_colors[i], j);
@@ -342,130 +295,81 @@ double HeuristicaGrandMaster(const Parchis &estado, int jugador){
 		distancia_media = distancia_media / (num_pieces*my_colors.size());
 		
 		//cálculo del valor correspondiente por relación inversamente propocional entre distancia a meta y puntos
-		// cerca_meta ---------> ptos_distancia (estar cerca de la meta te da el máximo puntuaje)
+		// cerca_meta ---------> max_distancia (estar cerca de la meta te da el máximo puntuaje)
 		// distancia_media ----> x (si estoy a distancia_media de la meta, qué puntuación corresponde?)
 		
 		//evitamos excepciones de punto flotante
 		if(distancia_media == 0){
 			distancia_media = 1;
 		}
-		puntuacion_jugador += (cerca_de_meta * ptos_distancia) / distancia_media;
 		
-		//evitamos que la puntuación supere valores inesperados 
-		if(puntuacion_jugador > (ptos_distancia + ptos_meta)){
-			puntuacion_jugador = ptos_distancia + ptos_meta;
-		}
-		
-		//--------------Barreras---------------------------
-		//si bloqueo a muchos enemigos con mis barreras, mejor
-		double puntuacion_bloquear = 0;
-		
-		//TODO: optimizable: que el bucle pare cuando se sature la puntuación max.
-		for(int i = 0; i < op_colors.size(); i++){ //para cada color de mi rival
-			for(int j = 0; j < num_pieces; j++){	//para cada ficha
-			
-				int casilla_final;
-				vector<color> barreras;
-				
-				switch(i){
-					case yellow:
-						casilla_final = final_yellow_box;
-						break;
-					case red:
-						casilla_final = final_red_box;
-						break;
-					case green:
-						casilla_final = final_green_box;
-						break;
-					case blue:
-						casilla_final = final_blue_box;
-						break;					
-				}
-				
-				//para la ficha en casilla <casilla_inicial>, veo si le estoy bloqueando el paso a la meta
-				
-				//Obtengo la casilla
-				Box casilla_inicial = tablero.getPiece(op_colors[i], j);
-				//Si es una casilla normal, compruebo el bloqueo
-				if(casilla_inicial.type == normal){
-				
-					Box casilla_aux = casilla_inicial;
-					casilla_aux.num++;
-					
-					bool bloqueo = false;
-					
-					while(!bloqueo and casilla_aux.num < casilla_final and puntuacion_bloquear < ptos_bloqueo){
-						color aux = estado.isWall(casilla_aux);
-						//si estoy bloqueando a una ficha del color rival, lo apuntamos
-						if(aux == my_colors[0] or aux == my_colors[1]){
-							//doy más puntos si el bloqueo es cercano a la pieza
-							//doy más puntos si la pieza bloqueada está cerca de la meta
-							puntuacion_bloquear += (factor_bloqueo / (abs(casilla_aux.num - casilla_inicial.num) % num_casillas)); 
-							puntuacion_bloquear += (factor_bloqueo / (abs(casilla_final - casilla_inicial.num) % num_casillas));
-							bloqueo = true;
-						}
-						
-						casilla_aux.num++;
-					} 
-				}
-				
-			}
-		}
-		
-		//evitamos que la puntuación supere valores inesperados
-		if(puntuacion_bloquear > ptos_bloqueo){
-			puntuacion_bloquear = ptos_bloqueo;
-		}
-		
-		puntuacion_jugador += puntuacion_bloquear;
+		puntuacion_jugador += max_distancia / distancia_media;
 		
 		//--------------Amenazas---------------------------
+		//Empiezo con la máxima puntuación y penalizo lo que no es bueno
+		double puntuacion_seguridad = 0;
 		bool amenaza;
-		int puntuacion_amenazas = ptos_amenazas;
 		for(int i = 0; i < my_colors.size(); i++){ //para cada uno de mis colores
 			for(int j = 0; j < num_pieces; j++){	//para cada pieza
+			
 				//mi casilla
 				Box my_box = tablero.getPiece(my_colors[i], j);
 				amenaza = false;
-				//Si no estoy en una casilla segura o barrera
-				if(!estado.isSafeBox(my_box) and !estado.isWall(my_box)){
-			
+				
+				//premio si estoy en una casilla segura, barrera o meta
+				if(estado.isSafeBox(my_box) or my_box.type == goal){
+					puntuacion_seguridad += (my_box.type == goal ? 2*premio_seguridad : premio_seguridad);		
+				}
+				//si estoy formando una barrera doy algo de recompensa
+				else if(estado.isWall(my_box) == my_colors[i]){
+					puntuacion_seguridad += 2;
+				}
+				//para las piezas que no estén en casa, compruebo amenazas
+				else if(my_box.type != home){
 					for(int k = 0; k < op_colors.size() and !amenaza; k++){ //para cada color de mi rival
 						for(int l = 0; l < num_pieces and !amenaza; l++){	//para cada pieza
+						
 							//casilla de mi oponente
 							Box op_box = tablero.getPiece(op_colors[k], l);
-							//Si no existe amenaza
-							int distancia = estado.distanceBoxtoBox(op_colors[k], l, my_colors[i], j);
-							//TODO: que se comprueben los movimientos disponibles del rival para ver si realmente tiene un movimiento que me coma
-							if( distancia > 0 and distancia < 7){
-								if(estado.isLegalMove(op_colors[k], op_box, distancia)){
-									amenaza = true;
-									puntuacion_amenazas += penalizacion_amenaza;
+							
+							//Veo si soy alcanzable por mi rival
+							int distancia = estado.distanceBoxtoBox(op_colors[k], op_box, my_box);
+							if(distancia > 0){
+								vector<int> dados = estado.getAvailableDices(op_colors[k]);
+								
+								bool posible = false;
+								for(int a = 0; a < dados.size() and !posible; a++){
+									if(dados[a] == distancia)
+										posible = true;
 								}
-							}
-						
+								
+								if(estado.isLegalMove(op_colors[k], op_box, distancia) or posible){
+									amenaza = true;								 
+								}
+							}						
 						}
 					}
-				}
+					//Si no tengo amenazas pero no estoy en casilla segura, no doy tanta puntuación
+					if(!amenaza){
+						puntuacion_seguridad++;
+					}					
+				} 
 			}
 		}
 		
-		//evitamos que la puntuación supere valores inesperados
-		if(puntuacion_amenazas < 0){
-			puntuacion_amenazas = 0;
-		}
-		
-		puntuacion_jugador += puntuacion_amenazas;
-		
-		return puntuacion_jugador;		
+		puntuacion_jugador += puntuacion_seguridad;
+	
+		return puntuacion_jugador;
 	}
+
 }
 
-double AIPlayer::GrandMaster(const Parchis &estado, int jugador){
+
+double AIPlayer::GrandMaster2(const Parchis &estado, int jugador){
 	double puntuacion_jugador, puntuacion_oponente;
 	
-	puntuacion_jugador = HeuristicaGrandMaster(estado, jugador);
-	puntuacion_oponente = HeuristicaGrandMaster(estado, ((jugador+1) % 2));
+	puntuacion_jugador = HeuristicaGrandMaster2(estado, jugador);
+	puntuacion_oponente = HeuristicaGrandMaster2(estado, ((jugador+1) % 2));
 	
 	if(puntuacion_jugador == gana or puntuacion_jugador == pierde)
 		return puntuacion_jugador;
@@ -548,11 +452,11 @@ void AIPlayer::think(color & c_piece, int & id_piece, int & dice) const{
     
     switch(id){
     	  case 0: //Heurística definitiva con búsqueda
-    	  		cout << "Buscando movimiento... ->" << endl;
-    	  		busqueda(*actual, jugador, 0, PROFUNDIDAD_ALFABETA, c_piece, id_piece, dice, menosinf, masinf, GrandMaster);
-    	  break;
+    	  		cout << "GrandMaster v2 pensando la mejor jugada..." << endl;
+    	  		busqueda(*actual, jugador, 0, PROFUNDIDAD_ALFABETA, c_piece, id_piece, dice, menosinf, masinf, GrandMaster2);
+    	  		break;
     	  case 1: //Heurística ValoraciónTest con búsqueda
-    	  		cout << "Buscando movimiento... ->" << endl;
+    	  		cout << "Valoracion Test" << endl;
     	  		busqueda(*actual, jugador, 0, PROFUNDIDAD_ALFABETA, c_piece, id_piece, dice, menosinf, masinf, ValoracionTest);
        	   break;
         case 2:

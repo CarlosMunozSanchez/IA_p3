@@ -78,7 +78,7 @@ class AIPlayer: public Player{
          * @param jugador Id del jugador actual (0 o 1)
          * @return double 
          */
-        static double GrandMaster(const Parchis &estado, int jugador);
+        static double GrandMaster2(const Parchis &estado, int jugador);
         
         void thinkAleatorio(color & c_piece, int & id_piece, int & dice) const;
         

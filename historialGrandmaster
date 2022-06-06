@@ -1,48 +1,51 @@
 Historial de versiones de la IA Grand Master:
 
-	ptos_home	ptos_meta	ptos_distancia		ptos_amenazas	ptos_bloqueo	
-v1:	x			25				10						40					25
-v2:	x			35				10						30					25
-v3:	x			35				20						25					20			
-v4:	x			35				20 					25					20 	--> todo igual pero penalizo más una amenaza: -20
-v5:	x			35				20						35					10		--> penalización por amenaza: -25
-v6:	x			35				20						35					10		--> cambio en la forma de interpretar las amenazas
-v7:	x			35				20						35					10		--> cambio en la forma de interpretar las amenazas (otra vez)
-v8:	x			40				35						15					10
-v9:	x			40				20						30					10		--> penalización por amenaza: -20
-v10:	20			35				15						25					5		--> se introduce la nueva variable ptos_home
-v11:
-v12:
-v13:
-v14:
-v15:
-v16:
-v17:
-v18:
+		ptos_home	ptos_meta	ptos_distancia		ptos_amenazas	ptos_bloqueo	
+v1.1:			x			25				10						40					25
+v1.2:			x			35				10						30					25
+v1.3:			x			35				20						25					20			
+v1.4:			x			35				20 					25					20 	--> todo igual pero penalizo más una amenaza: -20
+v1.5:			x			35				20						35					10		--> penalización por amenaza: -25
+v1.6:			x			35				20						35					10		--> cambio en la forma de interpretar las amenazas
+v1.7:			x			35				20						35					10		--> cambio en la forma de interpretar las amenazas (otra vez)
+v1.8:			x			40				35						15					10
+v1.9:			x			40				20						30					10		--> penalización por amenaza: -20
+v1.10:		20			35				15						25					5		--> se introduce la nueva variable ptos_home
+
+						Grand Master v2				
+	 	distancia			seguridad	
+v2.1:		50						50
+v2.2:		80						20
+v2.3:    60						40			--> cambio en la interpretación de seguridad
+v2.4:		40						60	
+v2.5:		50						50			--> cambio en la interpretación de seguridad
+v2.6:		50						50      	--> cambio en la interpretación de seguridad (esta parece que es la buena :'))
+v2.7:
+v2.8:
 
 historial de partidos:
 
-		ValoracionTest		Ninja 1		Ninja 2		Ninja 3
+		ValoracionTest			Ninja 1			Ninja 2			Ninja 3
 v1:   	pierde												
 v2:	j1: p  j2: g			
-v3:		gana				pierde		pierde		pierde
-v4:		gana				pierde		pierde 		pierde
-v5:	j1: p  j2: g		pierde 		pierde 		pierde
-v6:	j1: p  j2: g		pierde 		pierde 		pierde
-v7:	j1: p  j2: g		pierde 		pierde 		pierde
-v8:	j1: g  j2: p		pierde 		pierde 		pierde
-v9:	j1: g  j2: p		pierde 		pierde 		pierde
-v10:		gana				pierde		pierde		pierde
-v11:
-v12:
-v13:
-v14:
-v15:
-v16:
-v17:
-v18:
+v3:		gana					pierde			pierde			pierde
+v4:		gana					pierde			pierde 			pierde
+v5:	j1: p  j2: g			pierde 			pierde 			pierde
+v6:	j1: p  j2: g			pierde 			pierde 			pierde
+v7:	j1: p  j2: g			pierde 			pierde 			pierde
+v8:	j1: g  j2: p			pierde 			pierde 			pierde
+v9:	j1: g  j2: p			pierde 			pierde 			pierde
+v10:		gana					pierde			pierde			pierde
 
+v2.1:		pierde			
+v2.2:		pierde
+v2.3:		pierde
+v2.4:		pierde
+v2.5:		pierde
+v2.6:		gana				gana				j1:p j2:g		j1:g j2:p
+v2.7:
+v2.8:
 
 ranking de versiones:
-
-v3, v4, v10 > v2, v5, v6, v7, v8, v9 > v1
+v1.3, v1.4, v1.10 > v1.2, v1.5, v1.6, v1.7, v1.8, v1.9
+v2.6 > v2.1, v2.2, v2.3, v2.4, v2.5
