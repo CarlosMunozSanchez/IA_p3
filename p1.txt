@@ -234,7 +234,7 @@ Color actual: Rojo
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 2 3
+Movimiento elegido: Rojo 1 6
 ----------------
 Turno: 30
 Jugador actual: 0 (Master)
@@ -242,15 +242,15 @@ Color actual: Rojo
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 2 20
+Movimiento elegido: Rojo 1 5
 ----------------
 Turno: 31
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
+Jugador actual: 0 (Master)
+Color actual: Rojo
 ----------------
 Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Verde 0 6
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Rojo 1 20
 ----------------
 Turno: 32
 Jugador actual: 1 (ValoracionTest)
@@ -258,41 +258,49 @@ Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 Valoracion Test
-Movimiento elegido: Verde 0 2
+Movimiento elegido: Verde 0 6
 ----------------
 Turno: 33
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Amarillo 3 3
-----------------
-Turno: 34
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Azul 2 3
-----------------
-Turno: 35
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 2 5
-----------------
-Turno: 36
 Jugador actual: 1 (ValoracionTest)
 Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 Valoracion Test
-Movimiento elegido: Verde 0 5
+Movimiento elegido: Verde 3 4
+----------------
+Turno: 34
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Amarillo 1 1
+----------------
+Turno: 35
+Jugador actual: 1 (ValoracionTest)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Valoracion Test
+Movimiento elegido: Azul 3 3
+----------------
+Turno: 36
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Rojo 2 4
 ----------------
 Turno: 37
+Jugador actual: 1 (ValoracionTest)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Valoracion Test
+Movimiento elegido: Verde 1 5
+----------------
+Turno: 38
 Jugador actual: 0 (Master)
 Color actual: Amarillo
 ----------------
@@ -300,21 +308,13 @@ Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
 Movimiento elegido: Amarillo 0 4
 ----------------
-Turno: 38
+Turno: 39
 Jugador actual: 1 (ValoracionTest)
 Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 Valoracion Test
-Movimiento elegido: Azul 2 4
-----------------
-Turno: 39
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 2 6
+Movimiento elegido: Azul 3 1
 ----------------
 Turno: 40
 Jugador actual: 0 (Master)
@@ -322,7 +322,7 @@ Color actual: Rojo
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 2 4
+Movimiento elegido: Rojo 1 3
 ----------------
 Turno: 41
 Jugador actual: 0 (Master)
@@ -338,7 +338,7 @@ Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 Valoracion Test
-Movimiento elegido: Verde 2 3
+Movimiento elegido: Verde 1 3
 ----------------
 Turno: 43
 Jugador actual: 0 (Master)
@@ -346,7 +346,7 @@ Color actual: Amarillo
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Amarillo 1 5
+Movimiento elegido: Amarillo 2 5
 ----------------
 Turno: 44
 Jugador actual: 1 (ValoracionTest)
@@ -354,7 +354,7 @@ Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 Valoracion Test
-Movimiento elegido: Azul 1 2
+Movimiento elegido: Azul 1 4
 ----------------
 Turno: 45
 Jugador actual: 0 (Master)
@@ -362,7 +362,7 @@ Color actual: Rojo
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 2 2
+Movimiento elegido: Rojo 1 2
 ----------------
 Turno: 46
 Jugador actual: 1 (ValoracionTest)
@@ -370,7 +370,7 @@ Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 Valoracion Test
-Movimiento elegido: Verde 2 4
+Movimiento elegido: Verde 0 2
 ----------------
 Turno: 47
 Jugador actual: 0 (Master)
@@ -378,7 +378,7 @@ Color actual: Amarillo
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Amarillo 3 1
+Movimiento elegido: Amarillo 2 3
 ----------------
 Turno: 48
 Jugador actual: 1 (ValoracionTest)
@@ -386,7 +386,7 @@ Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 Valoracion Test
-Movimiento elegido: Azul 1 1
+Movimiento elegido: Azul 1 2
 ----------------
 Turno: 49
 Jugador actual: 0 (Master)
@@ -394,7 +394,7 @@ Color actual: Rojo
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 2 1
+Movimiento elegido: Rojo 1 1
 ----------------
 Turno: 50
 Jugador actual: 1 (ValoracionTest)
@@ -402,7 +402,7 @@ Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 Valoracion Test
-Movimiento elegido: Verde 2 1
+Movimiento elegido: Verde 1 1
 ----------------
 Turno: 51
 Jugador actual: 0 (Master)
@@ -410,17 +410,25 @@ Color actual: Amarillo
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Amarillo 1 4
+Movimiento elegido: Amarillo 2 6
 ----------------
 Turno: 52
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
+Jugador actual: 0 (Master)
+Color actual: Amarillo
 ----------------
 Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Azul 1 6
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Amarillo 2 20
 ----------------
 Turno: 53
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Amarillo 1 5
+----------------
+Turno: 54
 Jugador actual: 1 (ValoracionTest)
 Color actual: Azul
 ----------------
@@ -428,21 +436,13 @@ Realizo un movimiento automatico
 Valoracion Test
 Movimiento elegido: Azul 0 5
 ----------------
-Turno: 54
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 3 6
-----------------
 Turno: 55
 Jugador actual: 0 (Master)
 Color actual: Rojo
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 2 1
+Movimiento elegido: Rojo 2 6
 ----------------
 Turno: 56
 Jugador actual: 0 (Master)
@@ -450,7 +450,7 @@ Color actual: Rojo
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 3 10
+Movimiento elegido: Rojo 1 5
 ----------------
 Turno: 57
 Jugador actual: 1 (ValoracionTest)
@@ -458,23 +458,23 @@ Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 Valoracion Test
-Movimiento elegido: Verde 1 6
+Movimiento elegido: Verde 1 3
 ----------------
 Turno: 58
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Verde 0 5
-----------------
-Turno: 59
 Jugador actual: 0 (Master)
 Color actual: Amarillo
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Amarillo 1 3
+Movimiento elegido: Amarillo 2 3
+----------------
+Turno: 59
+Jugador actual: 1 (ValoracionTest)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Valoracion Test
+Movimiento elegido: Azul 0 6
 ----------------
 Turno: 60
 Jugador actual: 1 (ValoracionTest)
@@ -490,7 +490,7 @@ Color actual: Rojo
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 0 5
+Movimiento elegido: Rojo 2 2
 ----------------
 Turno: 62
 Jugador actual: 1 (ValoracionTest)
@@ -498,7 +498,7 @@ Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 Valoracion Test
-Movimiento elegido: Verde 1 3
+Movimiento elegido: Verde 2 4
 ----------------
 Turno: 63
 Jugador actual: 0 (Master)
@@ -506,31 +506,31 @@ Color actual: Amarillo
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Amarillo 3 6
+Movimiento elegido: Amarillo 2 1
 ----------------
 Turno: 64
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Amarillo 3 2
-----------------
-Turno: 65
 Jugador actual: 1 (ValoracionTest)
 Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 Valoracion Test
-Movimiento elegido: Azul 0 3
+Movimiento elegido: Azul 0 2
 ----------------
-Turno: 66
+Turno: 65
 Jugador actual: 0 (Master)
 Color actual: Rojo
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 0 4
+Movimiento elegido: Rojo 2 4
+----------------
+Turno: 66
+Jugador actual: 1 (ValoracionTest)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Valoracion Test
+Movimiento elegido: Verde 3 6
 ----------------
 Turno: 67
 Jugador actual: 1 (ValoracionTest)
@@ -538,81 +538,17 @@ Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 Valoracion Test
-Movimiento elegido: Verde 0 4
+Movimiento elegido: Verde 3 5
 ----------------
 Turno: 68
-Jugador actual: 0 (Master)
-Color actual: Amarillo
+Jugador actual: 1 (ValoracionTest)
+Color actual: Verde
 ----------------
 Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Amarillo 1 5
+Valoracion Test
+Movimiento elegido: Verde 1 20
 ----------------
 Turno: 69
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Azul 1 2
-----------------
-Turno: 70
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 0 3
-----------------
-Turno: 71
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Verde 0 2
-----------------
-Turno: 72
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Amarillo 2 1
-----------------
-Turno: 73
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Azul 2 1
-----------------
-Turno: 74
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 0 2
-----------------
-Turno: 75
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Verde 0 1
-----------------
-Turno: 76
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Amarillo 2 6
-----------------
-Turno: 77
 Jugador actual: 0 (Master)
 Color actual: Amarillo
 ----------------
@@ -620,7 +556,7 @@ Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
 Movimiento elegido: Amarillo 3 2
 ----------------
-Turno: 78
+Turno: 70
 Jugador actual: 0 (Master)
 Color actual: Amarillo
 ----------------
@@ -628,15 +564,7 @@ Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
 Movimiento elegido: Amarillo 3 20
 ----------------
-Turno: 79
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Azul 2 6
-----------------
-Turno: 80
+Turno: 71
 Jugador actual: 1 (ValoracionTest)
 Color actual: Azul
 ----------------
@@ -644,95 +572,23 @@ Realizo un movimiento automatico
 Valoracion Test
 Movimiento elegido: Azul 2 3
 ----------------
-Turno: 81
+Turno: 72
 Jugador actual: 0 (Master)
 Color actual: Rojo
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 0 3
+Movimiento elegido: Rojo 1 3
 ----------------
-Turno: 82
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Verde 0 6
-----------------
-Turno: 83
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Verde 0 5
-----------------
-Turno: 84
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Amarillo 0 4
-----------------
-Turno: 85
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Azul 0 5
-----------------
-Turno: 86
+Turno: 73
 Jugador actual: 0 (Master)
 Color actual: Rojo
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 0 6
+Movimiento elegido: Rojo 0 20
 ----------------
-Turno: 87
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 0 5
-----------------
-Turno: 88
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Verde 0 4
-----------------
-Turno: 89
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Amarillo 0 5
-----------------
-Turno: 90
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Azul 0 4
-----------------
-Turno: 91
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 3 4
-----------------
-Turno: 92
+Turno: 74
 Jugador actual: 1 (ValoracionTest)
 Color actual: Verde
 ----------------
@@ -740,13 +596,157 @@ Realizo un movimiento automatico
 Valoracion Test
 Movimiento elegido: Verde 0 2
 ----------------
-Turno: 93
+Turno: 75
 Jugador actual: 0 (Master)
 Color actual: Amarillo
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Amarillo 0 3
+Movimiento elegido: Amarillo 2 4
+----------------
+Turno: 76
+Jugador actual: 1 (ValoracionTest)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Valoracion Test
+Movimiento elegido: Azul 0 1
+----------------
+Turno: 77
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Rojo 1 1
+----------------
+Turno: 78
+Jugador actual: 1 (ValoracionTest)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Valoracion Test
+Movimiento elegido: Verde 0 1
+----------------
+Turno: 79
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Amarillo 3 6
+----------------
+Turno: 80
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Amarillo 3 1
+----------------
+Turno: 81
+Jugador actual: 1 (ValoracionTest)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Valoracion Test
+Movimiento elegido: Azul 0 4
+----------------
+Turno: 82
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Rojo 0 6
+----------------
+Turno: 83
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Rojo 0 3
+----------------
+Turno: 84
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Rojo 1 20
+----------------
+Turno: 85
+Jugador actual: 1 (ValoracionTest)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Valoracion Test
+Movimiento elegido: Verde 0 5
+----------------
+Turno: 86
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Amarillo 3 4
+----------------
+Turno: 87
+Jugador actual: 1 (ValoracionTest)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Valoracion Test
+Movimiento elegido: Azul 1 5
+----------------
+Turno: 88
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Rojo 1 5
+----------------
+Turno: 89
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Rojo 0 10
+----------------
+Turno: 90
+Jugador actual: 1 (ValoracionTest)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Valoracion Test
+Movimiento elegido: Verde 0 6
+----------------
+Turno: 91
+Jugador actual: 1 (ValoracionTest)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Valoracion Test
+Movimiento elegido: Verde 0 4
+----------------
+Turno: 92
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Amarillo 1 5
+----------------
+Turno: 93
+Jugador actual: 1 (ValoracionTest)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Valoracion Test
+Movimiento elegido: Azul 0 6
 ----------------
 Turno: 94
 Jugador actual: 1 (ValoracionTest)
@@ -762,7 +762,7 @@ Color actual: Rojo
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 0 2
+Movimiento elegido: Rojo 0 4
 ----------------
 Turno: 96
 Jugador actual: 1 (ValoracionTest)
@@ -770,7 +770,7 @@ Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 Valoracion Test
-Movimiento elegido: Verde 0 3
+Movimiento elegido: Verde 0 2
 ----------------
 Turno: 97
 Jugador actual: 0 (Master)
@@ -778,7 +778,7 @@ Color actual: Amarillo
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Amarillo 0 1
+Movimiento elegido: Amarillo 1 3
 ----------------
 Turno: 98
 Jugador actual: 1 (ValoracionTest)
@@ -786,7 +786,7 @@ Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 Valoracion Test
-Movimiento elegido: Azul 0 1
+Movimiento elegido: Azul 0 3
 ----------------
 Turno: 99
 Jugador actual: 0 (Master)
@@ -794,7 +794,7 @@ Color actual: Rojo
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 0 1
+Movimiento elegido: Rojo 0 2
 ----------------
 Turno: 100
 Jugador actual: 1 (ValoracionTest)
@@ -802,7 +802,7 @@ Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 Valoracion Test
-Movimiento elegido: Verde 0 1
+Movimiento elegido: Verde 0 3
 ----------------
 Turno: 101
 Jugador actual: 0 (Master)
@@ -810,7 +810,7 @@ Color actual: Amarillo
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Amarillo 1 5
+Movimiento elegido: Amarillo 2 2
 ----------------
 Turno: 102
 Jugador actual: 1 (ValoracionTest)
@@ -818,7 +818,7 @@ Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 Valoracion Test
-Movimiento elegido: Azul 1 5
+Movimiento elegido: Azul 2 1
 ----------------
 Turno: 103
 Jugador actual: 0 (Master)
@@ -826,65 +826,33 @@ Color actual: Rojo
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 0 6
+Movimiento elegido: Rojo 0 1
 ----------------
 Turno: 104
-Jugador actual: 0 (Master)
-Color actual: Rojo
+Jugador actual: 1 (ValoracionTest)
+Color actual: Verde
 ----------------
 Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 0 20
+Valoracion Test
+Movimiento elegido: Verde 0 1
 ----------------
 Turno: 105
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 0 4
-----------------
-Turno: 106
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 3 10
-----------------
-Turno: 107
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Verde 2 6
-----------------
-Turno: 108
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Verde 2 3
-----------------
-Turno: 109
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Verde 2 20
-----------------
-Turno: 110
 Jugador actual: 0 (Master)
 Color actual: Amarillo
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Amarillo 3 3
+Movimiento elegido: Amarillo 2 6
 ----------------
-Turno: 111
+Turno: 106
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Amarillo 1 5
+----------------
+Turno: 107
 Jugador actual: 1 (ValoracionTest)
 Color actual: Azul
 ----------------
@@ -892,615 +860,7 @@ Realizo un movimiento automatico
 Valoracion Test
 Movimiento elegido: Azul 1 6
 ----------------
-Turno: 112
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Azul 3 4
-----------------
-Turno: 113
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 1 2
-----------------
-Turno: 114
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 1 20
-----------------
-Turno: 115
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Verde 0 5
-----------------
-Turno: 116
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Amarillo 2 6
-----------------
-Turno: 117
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Amarillo 2 1
-----------------
-Turno: 118
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Amarillo 0 20
-----------------
-Turno: 119
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Azul 2 3
-----------------
-Turno: 120
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 3 5
-----------------
-Turno: 121
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Verde 0 4
-----------------
-Turno: 122
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Amarillo 0 4
-----------------
-Turno: 123
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Azul 2 2
-----------------
-Turno: 124
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 1 3
-----------------
-Turno: 125
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Verde 0 2
-----------------
-Turno: 126
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Amarillo 2 2
-----------------
-Turno: 127
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Azul 2 1
-----------------
-Turno: 128
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 1 1
-----------------
-Turno: 129
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Verde 0 1
-----------------
-Turno: 130
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Amarillo 2 6
-----------------
-Turno: 131
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Amarillo 0 5
-----------------
-Turno: 132
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Amarillo 2 10
-----------------
-Turno: 133
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Azul 0 5
-----------------
-Turno: 134
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 3 6
-----------------
-Turno: 135
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 3 2
-----------------
-Turno: 136
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Verde 3 5
-----------------
-Turno: 137
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Amarillo 2 1
-----------------
-Turno: 138
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Azul 0 6
-----------------
-Turno: 139
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Azul 0 1
-----------------
-Turno: 140
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Azul 2 20
-----------------
-Turno: 141
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Azul 2 20
-----------------
-Turno: 142
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Azul 0 10
-----------------
-Turno: 143
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 1 5
-----------------
-Turno: 144
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Verde 1 3
-----------------
-Turno: 145
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Amarillo 2 4
-----------------
-Turno: 146
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Azul 0 2
-----------------
-Turno: 147
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 1 3
-----------------
-Turno: 148
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Verde 2 6
-----------------
-Turno: 149
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Verde 2 20
-----------------
-Turno: 150
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Verde 1 4
-----------------
-Turno: 151
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Amarillo 3 3
-----------------
-Turno: 152
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Azul 3 4
-----------------
-Turno: 153
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 1 4
-----------------
-Turno: 154
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Verde 2 2
-----------------
-Turno: 155
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Amarillo 3 2
-----------------
-Turno: 156
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Azul 3 3
-----------------
-Turno: 157
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 1 1
-----------------
-Turno: 158
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Verde 2 1
-----------------
-Turno: 159
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Verde 1 10
-----------------
-Turno: 160
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Amarillo 3 6
-----------------
-Turno: 161
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Amarillo 1 5
-----------------
-Turno: 162
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Azul 3 6
-----------------
-Turno: 163
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Azul 0 5
-----------------
-Turno: 164
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 3 6
-----------------
-Turno: 165
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 3 1
-----------------
-Turno: 166
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Verde 0 5
-----------------
-Turno: 167
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Amarillo 3 4
-----------------
-Turno: 168
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Azul 0 4
-----------------
-Turno: 169
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 1 3
-----------------
-Turno: 170
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Verde 0 6
-----------------
-Turno: 171
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Verde 0 4
-----------------
-Turno: 172
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Amarillo 3 3
-----------------
-Turno: 173
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Azul 0 3
-----------------
-Turno: 174
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 1 5
-----------------
-Turno: 175
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Verde 0 2
-----------------
-Turno: 176
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Amarillo 3 2
-----------------
-Turno: 177
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Azul 0 2
-----------------
-Turno: 178
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 3 4
-----------------
-Turno: 179
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Verde 0 1
-----------------
-Turno: 180
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Amarillo 3 1
-----------------
-Turno: 181
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Amarillo 2 10
-----------------
-Turno: 182
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Azul 0 1
-----------------
-Turno: 183
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 3 2
-----------------
-Turno: 184
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 3 20
-----------------
-Turno: 185
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Verde 0 3
-----------------
-Turno: 186
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Amarillo 2 5
-----------------
-Turno: 187
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Azul 0 6
-----------------
-Turno: 188
+Turno: 108
 Jugador actual: 1 (ValoracionTest)
 Color actual: Azul
 ----------------
@@ -1508,87 +868,39 @@ Realizo un movimiento automatico
 Valoracion Test
 Movimiento elegido: Azul 1 5
 ----------------
-Turno: 189
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 3 6
-----------------
-Turno: 190
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 3 5
-----------------
-Turno: 191
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Verde 3 5
-----------------
-Turno: 192
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Amarillo 1 6
-----------------
-Turno: 193
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Amarillo 1 2
-----------------
-Turno: 194
+Turno: 109
 Jugador actual: 1 (ValoracionTest)
 Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 Valoracion Test
-Movimiento elegido: Azul 3 4
+Movimiento elegido: Azul 0 20
 ----------------
-Turno: 195
+Turno: 110
 Jugador actual: 0 (Master)
 Color actual: Rojo
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 3 4
+Movimiento elegido: Rojo 0 5
 ----------------
-Turno: 196
+Turno: 111
 Jugador actual: 1 (ValoracionTest)
 Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 Valoracion Test
-Movimiento elegido: Verde 0 6
+Movimiento elegido: Verde 0 2
 ----------------
-Turno: 197
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Verde 1 4
-----------------
-Turno: 198
+Turno: 112
 Jugador actual: 0 (Master)
 Color actual: Amarillo
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Amarillo 2 4
+Movimiento elegido: Amarillo 3 4
 ----------------
-Turno: 199
+Turno: 113
 Jugador actual: 1 (ValoracionTest)
 Color actual: Azul
 ----------------
@@ -1596,95 +908,79 @@ Realizo un movimiento automatico
 Valoracion Test
 Movimiento elegido: Azul 0 3
 ----------------
-Turno: 200
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 3 3
-----------------
-Turno: 201
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Verde 0 2
-----------------
-Turno: 202
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Amarillo 2 3
-----------------
-Turno: 203
+Turno: 114
 Jugador actual: 1 (ValoracionTest)
 Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 Valoracion Test
-Movimiento elegido: Azul 0 2
+Movimiento elegido: Azul 0 20
 ----------------
-Turno: 204
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 3 2
-----------------
-Turno: 205
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Verde 1 3
-----------------
-Turno: 206
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Amarillo 2 1
-----------------
-Turno: 207
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Amarillo 2 20
-----------------
-Turno: 208
+Turno: 115
 Jugador actual: 1 (ValoracionTest)
 Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 Valoracion Test
-Movimiento elegido: Azul 0 1
+Movimiento elegido: Azul 1 10
 ----------------
-Turno: 209
+Turno: 116
 Jugador actual: 0 (Master)
 Color actual: Rojo
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 1 1
+Movimiento elegido: Rojo 3 4
 ----------------
-Turno: 210
+Turno: 117
 Jugador actual: 1 (ValoracionTest)
 Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 Valoracion Test
-Movimiento elegido: Verde 1 1
+Movimiento elegido: Verde 2 4
 ----------------
-Turno: 211
+Turno: 118
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Amarillo 0 3
+----------------
+Turno: 119
+Jugador actual: 1 (ValoracionTest)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Valoracion Test
+Movimiento elegido: Azul 1 4
+----------------
+Turno: 120
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Rojo 0 6
+----------------
+Turno: 121
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Rojo 0 2
+----------------
+Turno: 122
+Jugador actual: 1 (ValoracionTest)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Valoracion Test
+Movimiento elegido: Verde 2 5
+----------------
+Turno: 123
 Jugador actual: 0 (Master)
 Color actual: Amarillo
 ----------------
@@ -1692,39 +988,143 @@ Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
 Movimiento elegido: Amarillo 2 2
 ----------------
-Turno: 212
+Turno: 124
 Jugador actual: 1 (ValoracionTest)
 Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 Valoracion Test
-Movimiento elegido: Azul 3 6
+Movimiento elegido: Azul 1 2
 ----------------
-Turno: 213
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Azul 0 4
-----------------
-Turno: 214
+Turno: 125
 Jugador actual: 0 (Master)
 Color actual: Rojo
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 3 5
+Movimiento elegido: Rojo 0 3
 ----------------
-Turno: 215
+Turno: 126
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Rojo 0 20
+----------------
+Turno: 127
 Jugador actual: 1 (ValoracionTest)
 Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 Valoracion Test
-Movimiento elegido: Verde 1 6
+Movimiento elegido: Verde 2 6
 ----------------
-Turno: 216
+Turno: 128
+Jugador actual: 1 (ValoracionTest)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Valoracion Test
+Movimiento elegido: Verde 2 3
+----------------
+Turno: 129
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Amarillo 0 1
+----------------
+Turno: 130
+Jugador actual: 1 (ValoracionTest)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Valoracion Test
+Movimiento elegido: Azul 2 1
+----------------
+Turno: 131
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Rojo 3 1
+----------------
+Turno: 132
+Jugador actual: 1 (ValoracionTest)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Valoracion Test
+Movimiento elegido: Verde 2 1
+----------------
+Turno: 133
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Amarillo 0 6
+----------------
+Turno: 134
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Amarillo 3 1
+----------------
+Turno: 135
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Amarillo 3 20
+----------------
+Turno: 136
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Amarillo 2 10
+----------------
+Turno: 137
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Amarillo 0 10
+----------------
+Turno: 138
+Jugador actual: 1 (ValoracionTest)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Valoracion Test
+Movimiento elegido: Azul 2 3
+----------------
+Turno: 139
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Rojo 0 1
+----------------
+Turno: 140
+Jugador actual: 1 (ValoracionTest)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Valoracion Test
+Movimiento elegido: Verde 2 6
+----------------
+Turno: 141
 Jugador actual: 1 (ValoracionTest)
 Color actual: Verde
 ----------------
@@ -1732,7 +1132,159 @@ Realizo un movimiento automatico
 Valoracion Test
 Movimiento elegido: Verde 0 5
 ----------------
-Turno: 217
+Turno: 142
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Amarillo 0 5
+----------------
+Turno: 143
+Jugador actual: 1 (ValoracionTest)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Valoracion Test
+Movimiento elegido: Azul 2 6
+----------------
+Turno: 144
+Jugador actual: 1 (ValoracionTest)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Valoracion Test
+Movimiento elegido: Azul 1 5
+----------------
+Turno: 145
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Rojo 2 5
+----------------
+Turno: 146
+Jugador actual: 1 (ValoracionTest)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Valoracion Test
+Movimiento elegido: Verde 2 4
+----------------
+Turno: 147
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Amarillo 0 4
+----------------
+Turno: 148
+Jugador actual: 1 (ValoracionTest)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Valoracion Test
+Movimiento elegido: Azul 2 2
+----------------
+Turno: 149
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Rojo 2 6
+----------------
+Turno: 150
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Rojo 2 2
+----------------
+Turno: 151
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Rojo 2 20
+----------------
+Turno: 152
+Jugador actual: 1 (ValoracionTest)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Valoracion Test
+Movimiento elegido: Verde 2 3
+----------------
+Turno: 153
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Amarillo 0 3
+----------------
+Turno: 154
+Jugador actual: 1 (ValoracionTest)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Valoracion Test
+Movimiento elegido: Azul 1 4
+----------------
+Turno: 155
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Rojo 0 4
+----------------
+Turno: 156
+Jugador actual: 1 (ValoracionTest)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Valoracion Test
+Movimiento elegido: Verde 2 2
+----------------
+Turno: 157
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Amarillo 1 2
+----------------
+Turno: 158
+Jugador actual: 1 (ValoracionTest)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Valoracion Test
+Movimiento elegido: Azul 1 1
+----------------
+Turno: 159
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Rojo 0 3
+----------------
+Turno: 160
+Jugador actual: 1 (ValoracionTest)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Valoracion Test
+Movimiento elegido: Verde 0 1
+----------------
+Turno: 161
 Jugador actual: 0 (Master)
 Color actual: Amarillo
 ----------------
@@ -1740,39 +1292,15 @@ Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
 Movimiento elegido: Amarillo 1 6
 ----------------
-Turno: 218
+Turno: 162
 Jugador actual: 0 (Master)
 Color actual: Amarillo
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Amarillo 1 1
+Movimiento elegido: Amarillo 1 20
 ----------------
-Turno: 219
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Azul 3 5
-----------------
-Turno: 220
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 1 2
-----------------
-Turno: 221
-Jugador actual: 1 (ValoracionTest)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Verde 1 3
-----------------
-Turno: 222
+Turno: 163
 Jugador actual: 0 (Master)
 Color actual: Amarillo
 ----------------
@@ -1780,79 +1308,63 @@ Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
 Movimiento elegido: Amarillo 1 5
 ----------------
-Turno: 223
+Turno: 164
 Jugador actual: 1 (ValoracionTest)
 Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 Valoracion Test
-Movimiento elegido: Azul 3 3
+Movimiento elegido: Azul 3 1
 ----------------
-Turno: 224
+Turno: 165
 Jugador actual: 0 (Master)
 Color actual: Rojo
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 3 3
+Movimiento elegido: Rojo 2 6
 ----------------
-Turno: 225
+Turno: 166
 Jugador actual: 0 (Master)
 Color actual: Rojo
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 1 10
+Movimiento elegido: Rojo 3 5
 ----------------
-Turno: 226
+Turno: 167
 Jugador actual: 1 (ValoracionTest)
 Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 Valoracion Test
-Movimiento elegido: Verde 0 4
+Movimiento elegido: Verde 0 6
 ----------------
-Turno: 227
-Jugador actual: 0 (Master)
-Color actual: Amarillo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Amarillo 1 3
-----------------
-Turno: 228
-Jugador actual: 1 (ValoracionTest)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-Valoracion Test
-Movimiento elegido: Azul 3 2
-----------------
-Turno: 229
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 1 6
-----------------
-Turno: 230
-Jugador actual: 0 (Master)
-Color actual: Rojo
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 1 4
-----------------
-Turno: 231
+Turno: 168
 Jugador actual: 1 (ValoracionTest)
 Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 Valoracion Test
-Movimiento elegido: Verde 0 2
+Movimiento elegido: Verde 2 5
 ----------------
-Turno: 232
+Turno: 169
+Jugador actual: 1 (ValoracionTest)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Valoracion Test
+Movimiento elegido: Verde 2 20
+----------------
+Turno: 170
+Jugador actual: 1 (ValoracionTest)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Valoracion Test
+Movimiento elegido: Verde 0 10
+----------------
+Turno: 171
 Jugador actual: 0 (Master)
 Color actual: Amarillo
 ----------------
@@ -1860,22 +1372,326 @@ Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
 Movimiento elegido: Amarillo 1 4
 ----------------
-Turno: 233
+Turno: 172
 Jugador actual: 1 (ValoracionTest)
 Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 Valoracion Test
-Movimiento elegido: Azul 0 1
+Movimiento elegido: Azul -9999 4
 ----------------
-Turno: 234
+Turno: 173
 Jugador actual: 0 (Master)
 Color actual: Rojo
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Rojo 1 1
+Movimiento elegido: Rojo 0 3
+----------------
+Turno: 174
+Jugador actual: 1 (ValoracionTest)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Valoracion Test
+Movimiento elegido: Verde 0 4
+----------------
+Turno: 175
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Amarillo 0 1
+----------------
+Turno: 176
+Jugador actual: 1 (ValoracionTest)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Valoracion Test
+Movimiento elegido: Azul -9999 6
+----------------
+Turno: 177
+Jugador actual: 1 (ValoracionTest)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Valoracion Test
+Movimiento elegido: Azul -9999 3
+----------------
+Turno: 178
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Rojo 2 4
+----------------
+Turno: 179
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Rojo 0 20
+----------------
+Turno: 180
+Jugador actual: 1 (ValoracionTest)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Valoracion Test
+Movimiento elegido: Verde -9999 3
+----------------
+Turno: 181
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Amarillo 0 3
+----------------
+Turno: 182
+Jugador actual: 1 (ValoracionTest)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Valoracion Test
+Movimiento elegido: Azul -9999 2
+----------------
+Turno: 183
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Rojo 0 2
+----------------
+Turno: 184
+Jugador actual: 1 (ValoracionTest)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Valoracion Test
+Movimiento elegido: Verde -9999 2
+----------------
+Turno: 185
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Amarillo 1 2
+----------------
+Turno: 186
+Jugador actual: 1 (ValoracionTest)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Valoracion Test
+Movimiento elegido: Azul 1 5
+----------------
+Turno: 187
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Rojo 2 1
+----------------
+Turno: 188
+Jugador actual: 1 (ValoracionTest)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Valoracion Test
+Movimiento elegido: Verde -9999 1
+----------------
+Turno: 189
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Amarillo 0 5
+----------------
+Turno: 190
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Amarillo 1 10
+----------------
+Turno: 191
+Jugador actual: 1 (ValoracionTest)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Valoracion Test
+Movimiento elegido: Azul 1 6
+----------------
+Turno: 192
+Jugador actual: 1 (ValoracionTest)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Valoracion Test
+Movimiento elegido: Azul 1 5
+----------------
+Turno: 193
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Rojo 0 6
+----------------
+Turno: 194
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Rojo 0 5
+----------------
+Turno: 195
+Jugador actual: 1 (ValoracionTest)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Valoracion Test
+Movimiento elegido: Verde -9999 6
+----------------
+Turno: 196
+Jugador actual: 1 (ValoracionTest)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Valoracion Test
+Movimiento elegido: Verde 0 5
+----------------
+Turno: 197
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Amarillo 1 6
+----------------
+Turno: 198
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Amarillo 1 4
+----------------
+Turno: 199
+Jugador actual: 1 (ValoracionTest)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Valoracion Test
+Movimiento elegido: Azul 1 4
+----------------
+Turno: 200
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Rojo 0 4
+----------------
+Turno: 201
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Rojo 2 10
+----------------
+Turno: 202
+Jugador actual: 1 (ValoracionTest)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Valoracion Test
+Movimiento elegido: Verde 0 4
+----------------
+Turno: 203
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Amarillo 1 3
+----------------
+Turno: 204
+Jugador actual: 1 (ValoracionTest)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Valoracion Test
+Movimiento elegido: Azul 1 3
+----------------
+Turno: 205
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Rojo 2 3
+----------------
+Turno: 206
+Jugador actual: 1 (ValoracionTest)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Valoracion Test
+Movimiento elegido: Verde 0 3
+----------------
+Turno: 207
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Amarillo 1 2
+----------------
+Turno: 208
+Jugador actual: 1 (ValoracionTest)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+Valoracion Test
+Movimiento elegido: Azul 1 2
+----------------
+Turno: 209
+Jugador actual: 0 (Master)
+Color actual: Rojo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Rojo 2 2
+----------------
+Turno: 210
+Jugador actual: 1 (ValoracionTest)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+Valoracion Test
+Movimiento elegido: Verde 0 2
+----------------
+Turno: 211
+Jugador actual: 0 (Master)
+Color actual: Amarillo
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Amarillo 1 1
 ++++++++++++++++++++++++
 La partida ha terminado
-Ha ganado el jugador 0 (Rojo)
+Ha ganado el jugador 0 (Amarillo)
 ++++++++++++++++++++++++

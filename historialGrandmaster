@@ -20,8 +20,8 @@ v2.3:    60						40			--> cambio en la interpretación de seguridad
 v2.4:		40						60	
 v2.5:		50						50			--> cambio en la interpretación de seguridad
 v2.6:		50						50      	--> cambio en la interpretación de seguridad (esta parece que es la buena :'))
-v2.7:
-v2.8:
+v2.7:		50						50			--> cambio en la forma de dar los pesos en distancia
+v2.8:		60						40
 
 historial de partidos:
 
@@ -43,9 +43,9 @@ v2.3:		pierde
 v2.4:		pierde
 v2.5:		pierde
 v2.6:		gana				gana				j1:p j2:g		j1:g j2:p
-v2.7:
-v2.8:
+v2.7:		gana				gana				pierde			gana
+v2.8:		gana				j1:g j2:			pierde			pierde
 
 ranking de versiones:
 v1.3, v1.4, v1.10 > v1.2, v1.5, v1.6, v1.7, v1.8, v1.9
-v2.6 > v2.1, v2.2, v2.3, v2.4, v2.5
+v2.6, v.7 > v.8 > v2.1, v2.2, v2.3, v2.4, v2.5

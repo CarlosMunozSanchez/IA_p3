@@ -256,6 +256,15 @@ double AIPlayer::busqueda(const Parchis &actual, int jugador, int profundidad, i
 	return v;
 }
 
+/*
+* Función que determina los puntos correspondientes en función de la distancia hasta la meta
+* Se considera que: si x = 0 (estoy ya en la meta) doy max_ptos.
+* Si estoy lo más alejado posible (max_dist) doy 0 puntos
+*/
+double d(double x, double max_ptos, double max_dist){
+	return ( max_ptos*(max_dist - x)) / (max_dist);
+
+}
 
 double HeuristicaGrandMaster2(const Parchis &estado, int jugador){
 	int ganador = estado.getWinner();
@@ -279,6 +288,8 @@ double HeuristicaGrandMaster2(const Parchis &estado, int jugador){
 		Board tablero = estado.getBoard();
 	
 		double max_distancia = 50;
+		int distancia_desde_home = 74;
+		
 		double max_seguridad = 50;
 		double premio_seguridad = max_seguridad / (num_pieces * my_colors.size());
 		
@@ -297,13 +308,8 @@ double HeuristicaGrandMaster2(const Parchis &estado, int jugador){
 		//cálculo del valor correspondiente por relación inversamente propocional entre distancia a meta y puntos
 		// cerca_meta ---------> max_distancia (estar cerca de la meta te da el máximo puntuaje)
 		// distancia_media ----> x (si estoy a distancia_media de la meta, qué puntuación corresponde?)
-		
-		//evitamos excepciones de punto flotante
-		if(distancia_media == 0){
-			distancia_media = 1;
-		}
-		
-		puntuacion_jugador += max_distancia / distancia_media;
+
+		puntuacion_jugador += d(distancia_media, max_distancia, distancia_desde_home);
 		
 		//--------------Amenazas---------------------------
 		//Empiezo con la máxima puntuación y penalizo lo que no es bueno
