@@ -322,13 +322,14 @@ double HeuristicaGrandMaster2(const Parchis &estado, int jugador){
 				Box my_box = tablero.getPiece(my_colors[i], j);
 				amenaza = false;
 				
-				//premio si estoy en una casilla segura, barrera o meta
-				if(estado.isSafeBox(my_box) or my_box.type == goal){
-					puntuacion_seguridad += (my_box.type == goal ? 2*premio_seguridad : premio_seguridad);		
+				//premio si estoy en una casilla segura, pasillo final o meta
+				if(estado.isSafeBox(my_box) or my_box.type == final_queue or my_box.type == goal){
+					//puntuacion_seguridad += (my_box.type == goal ? 2*premio_seguridad : premio_seguridad);		
+					puntuacion_seguridad += premio_seguridad;
 				}
 				//si estoy formando una barrera doy algo de recompensa
 				else if(estado.isWall(my_box) == my_colors[i]){
-					puntuacion_seguridad += 2;
+					puntuacion_seguridad += premio_seguridad/2;
 				}
 				//para las piezas que no estén en casa, compruebo amenazas
 				else if(my_box.type != home){
@@ -357,7 +358,7 @@ double HeuristicaGrandMaster2(const Parchis &estado, int jugador){
 					}
 					//Si no tengo amenazas pero no estoy en casilla segura, no doy tanta puntuación
 					if(!amenaza){
-						puntuacion_seguridad++;
+						puntuacion_seguridad += premio_seguridad/4;
 					}					
 				} 
 			}

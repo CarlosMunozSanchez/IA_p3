@@ -4,8 +4,8 @@ HELLO sent.
 version: 6
 args: ninjagame 
 204 ACCEPTED received
-ip_addr: 172.25.8.57 port: 6789
-Connected to server 172.25.8.57:6789
+ip_addr: 172.25.8.57 port: 7892
+Connected to server 172.25.8.57:7892
 GAME_PARAMETERS sent
 player: 1 name: Master init_board: 1 ai_id: 2
 206 OK_START_GAME received
@@ -108,6 +108,9 @@ Turno: 9
 Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
 Color actual: Amarillo
 ----------------
+Esperando movimiento del oponente...
+102 TEST_ALIVE received
+102 TEST_ALIVE received. Still alive.
 Esperando movimiento del oponente...
 301 MOVED received
 Move: 7 Verde 3 6
@@ -282,9 +285,9 @@ Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde 0 20
+Movimiento elegido: Verde 3 20
 301 MOVED sent
-Move: 23 Verde 0 20
+Move: 23 Verde 3 20
 ----------------
 Turno: 23
 Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
@@ -296,14 +299,14 @@ Move: 22 Verde 3 2
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 23 Verde 0 20
+Move: 23 Verde 3 20
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 24 Amarillo 2 1
+Move: 24 Amarillo 0 1
 Current move received. Moving...
 301 MOVED sent
-Move: 24 Amarillo 2 1
+Move: 24 Amarillo 0 1
 ----------------
 Turno: 24
 Jugador actual: 1 (Master)
@@ -323,9 +326,6 @@ Esperando movimiento del oponente...
 301 MOVED received
 Move: 25 Azul 1 2
 Old move received. Already up to date.
-Esperando movimiento del oponente...
-102 TEST_ALIVE received
-102 TEST_ALIVE received. Still alive.
 Esperando movimiento del oponente...
 301 MOVED received
 Move: 26 Rojo 1 1
@@ -353,10 +353,10 @@ Move: 27 Verde 3 3
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 28 Amarillo 2 6
+Move: 28 Amarillo 0 6
 Current move received. Moving...
 301 MOVED sent
-Move: 28 Amarillo 2 6
+Move: 28 Amarillo 0 6
 ----------------
 Turno: 28
 Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
@@ -364,10 +364,10 @@ Color actual: Amarillo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 29 Amarillo 0 4
+Move: 29 Amarillo 1 5
 Current move received. Moving...
 301 MOVED sent
-Move: 29 Amarillo 0 4
+Move: 29 Amarillo 1 5
 ----------------
 Turno: 29
 Jugador actual: 1 (Master)
@@ -375,86 +375,11 @@ Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul 3 1
-301 MOVED sent
-Move: 30 Azul 3 1
-----------------
-Turno: 30
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 30 Azul 3 1
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 31 Rojo 0 1
-Current move received. Moving...
-301 MOVED sent
-Move: 31 Rojo 0 1
-----------------
-Turno: 31
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 32 Rojo 0 20
-Current move received. Moving...
-301 MOVED sent
-Move: 32 Rojo 0 20
-----------------
-Turno: 32
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde 0 6
-301 MOVED sent
-Move: 33 Verde 0 6
-----------------
-Turno: 33
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde 0 3
-301 MOVED sent
-Move: 34 Verde 0 3
-----------------
-Turno: 34
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 33 Verde 0 6
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 34 Verde 0 3
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 35 Amarillo 1 5
-Current move received. Moving...
-301 MOVED sent
-Move: 35 Amarillo 1 5
-----------------
-Turno: 35
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
 Movimiento elegido: Azul 0 6
 301 MOVED sent
-Move: 36 Azul 0 6
+Move: 30 Azul 0 6
 ----------------
-Turno: 36
+Turno: 30
 Jugador actual: 1 (Master)
 Color actual: Azul
 ----------------
@@ -462,42 +387,49 @@ Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
 Movimiento elegido: Azul 2 5
 301 MOVED sent
-Move: 37 Azul 2 5
+Move: 31 Azul 2 5
 ----------------
-Turno: 37
+Turno: 31
 Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
 Color actual: Rojo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 36 Azul 0 6
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-102 TEST_ALIVE received
-102 TEST_ALIVE received. Still alive.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 37 Azul 2 5
+Move: 30 Azul 0 6
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 38 Rojo 0 6
+Move: 31 Azul 2 5
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 32 Rojo 0 6
 Current move received. Moving...
 301 MOVED sent
-Move: 38 Rojo 0 6
+Move: 32 Rojo 0 6
 ----------------
-Turno: 38
+Turno: 32
 Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
 Color actual: Rojo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 39 Rojo 0 5
+Move: 33 Rojo 0 5
 Current move received. Moving...
 301 MOVED sent
-Move: 39 Rojo 0 5
+Move: 33 Rojo 0 5
 ----------------
-Turno: 39
+Turno: 33
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Verde 0 6
+301 MOVED sent
+Move: 34 Verde 0 6
+----------------
+Turno: 34
 Jugador actual: 1 (Master)
 Color actual: Verde
 ----------------
@@ -505,24 +437,34 @@ Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
 Movimiento elegido: Verde 2 4
 301 MOVED sent
-Move: 40 Verde 2 4
+Move: 35 Verde 2 4
 ----------------
-Turno: 40
+Turno: 35
 Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
 Color actual: Amarillo
 ----------------
 Esperando movimiento del oponente...
+102 TEST_ALIVE received
+102 TEST_ALIVE received. Still alive.
+Esperando movimiento del oponente...
 301 MOVED received
-Move: 40 Verde 2 4
+Move: 34 Verde 0 6
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+102 TEST_ALIVE received
+102 TEST_ALIVE received. Still alive.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 35 Verde 2 4
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 41 Amarillo 0 3
+Move: 36 Amarillo 0 4
 Current move received. Moving...
 301 MOVED sent
-Move: 41 Amarillo 0 3
+Move: 36 Amarillo 0 4
 ----------------
-Turno: 41
+Turno: 36
 Jugador actual: 1 (Master)
 Color actual: Azul
 ----------------
@@ -530,49 +472,99 @@ Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
 Movimiento elegido: Azul 0 4
 301 MOVED sent
-Move: 42 Azul 0 4
+Move: 37 Azul 0 4
 ----------------
-Turno: 42
+Turno: 37
 Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
 Color actual: Rojo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 42 Azul 0 4
+Move: 37 Azul 0 4
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 43 Rojo 0 4
+Move: 38 Rojo 0 4
 Current move received. Moving...
 301 MOVED sent
-Move: 43 Rojo 0 4
+Move: 38 Rojo 0 4
 ----------------
-Turno: 43
+Turno: 38
 Jugador actual: 1 (Master)
 Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde 1 5
+Movimiento elegido: Verde 3 5
 301 MOVED sent
-Move: 44 Verde 1 5
+Move: 39 Verde 3 5
 ----------------
-Turno: 44
+Turno: 39
 Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
 Color actual: Amarillo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 44 Verde 1 5
+Move: 39 Verde 3 5
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 45 Amarillo 1 2
+Move: 40 Amarillo 1 3
 Current move received. Moving...
 301 MOVED sent
-Move: 45 Amarillo 1 2
+Move: 40 Amarillo 1 3
 ----------------
-Turno: 45
+Turno: 40
+Jugador actual: 1 (Master)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Azul 0 2
+301 MOVED sent
+Move: 41 Azul 0 2
+----------------
+Turno: 41
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Rojo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 41 Azul 0 2
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 42 Rojo 2 3
+Current move received. Moving...
+301 MOVED sent
+Move: 42 Rojo 2 3
+----------------
+Turno: 42
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Verde 3 3
+301 MOVED sent
+Move: 43 Verde 3 3
+----------------
+Turno: 43
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Amarillo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 43 Verde 3 3
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 44 Amarillo 1 2
+Current move received. Moving...
+301 MOVED sent
+Move: 44 Amarillo 1 2
+----------------
+Turno: 44
 Jugador actual: 1 (Master)
 Color actual: Azul
 ----------------
@@ -580,24 +572,24 @@ Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
 Movimiento elegido: Azul 0 3
 301 MOVED sent
-Move: 46 Azul 0 3
+Move: 45 Azul 0 3
 ----------------
-Turno: 46
+Turno: 45
 Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
 Color actual: Rojo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 46 Azul 0 3
+Move: 45 Azul 0 3
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 47 Rojo 1 3
+Move: 46 Rojo 2 2
 Current move received. Moving...
 301 MOVED sent
-Move: 47 Rojo 1 3
+Move: 46 Rojo 2 2
 ----------------
-Turno: 47
+Turno: 46
 Jugador actual: 1 (Master)
 Color actual: Verde
 ----------------
@@ -605,47 +597,57 @@ Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
 Movimiento elegido: Verde 3 2
 301 MOVED sent
-Move: 48 Verde 3 2
+Move: 47 Verde 3 2
 ----------------
-Turno: 48
+Turno: 47
 Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
 Color actual: Amarillo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 48 Verde 3 2
+Move: 47 Verde 3 2
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 49 Amarillo 0 1
+Move: 48 Amarillo 2 1
 Current move received. Moving...
 301 MOVED sent
-Move: 49 Amarillo 0 1
+Move: 48 Amarillo 2 1
 ----------------
-Turno: 49
+Turno: 48
 Jugador actual: 1 (Master)
 Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul 0 2
+Movimiento elegido: Azul 0 1
 301 MOVED sent
-Move: 50 Azul 0 2
+Move: 49 Azul 0 1
 ----------------
-Turno: 50
+Turno: 49
 Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
 Color actual: Rojo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 50 Azul 0 2
+Move: 49 Azul 0 1
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 51 Rojo 3 2
+Move: 50 Rojo 0 1
 Current move received. Moving...
 301 MOVED sent
-Move: 51 Rojo 3 2
+Move: 50 Rojo 0 1
+----------------
+Turno: 50
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Verde 3 1
+301 MOVED sent
+Move: 51 Verde 3 1
 ----------------
 Turno: 51
 Jugador actual: 1 (Master)
@@ -653,9 +655,9 @@ Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde 1 1
+Movimiento elegido: Verde 0 10
 301 MOVED sent
-Move: 52 Verde 1 1
+Move: 52 Verde 0 10
 ----------------
 Turno: 52
 Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
@@ -663,14 +665,18 @@ Color actual: Amarillo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 52 Verde 1 1
+Move: 51 Verde 3 1
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 53 Amarillo 1 6
+Move: 52 Verde 0 10
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 53 Amarillo 0 6
 Current move received. Moving...
 301 MOVED sent
-Move: 53 Amarillo 1 6
+Move: 53 Amarillo 0 6
 ----------------
 Turno: 53
 Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
@@ -678,10 +684,10 @@ Color actual: Amarillo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 54 Amarillo 1 1
+Move: 54 Amarillo 1 5
 Current move received. Moving...
 301 MOVED sent
-Move: 54 Amarillo 1 1
+Move: 54 Amarillo 1 5
 ----------------
 Turno: 54
 Jugador actual: 1 (Master)
@@ -689,24 +695,19 @@ Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul 0 2
+Movimiento elegido: Azul 0 6
 301 MOVED sent
-Move: 55 Azul 0 2
+Move: 55 Azul 0 6
 ----------------
 Turno: 55
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Rojo
+Jugador actual: 1 (Master)
+Color actual: Azul
 ----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 55 Azul 0 2
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 56 Rojo 2 6
-Current move received. Moving...
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Azul 0 5
 301 MOVED sent
-Move: 56 Rojo 2 6
+Move: 56 Azul 0 5
 ----------------
 Turno: 56
 Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
@@ -714,24 +715,32 @@ Color actual: Rojo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 57 Rojo 1 4
+Move: 55 Azul 0 6
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+102 TEST_ALIVE received
+102 TEST_ALIVE received. Still alive.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 56 Azul 0 5
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 57 Rojo 2 6
 Current move received. Moving...
 301 MOVED sent
-Move: 57 Rojo 1 4
+Move: 57 Rojo 2 6
 ----------------
 Turno: 57
 Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
 Color actual: Rojo
 ----------------
 Esperando movimiento del oponente...
-102 TEST_ALIVE received
-102 TEST_ALIVE received. Still alive.
-Esperando movimiento del oponente...
 301 MOVED received
-Move: 58 Rojo 1 20
+Move: 58 Rojo 2 5
 Current move received. Moving...
 301 MOVED sent
-Move: 58 Rojo 1 20
+Move: 58 Rojo 2 5
 ----------------
 Turno: 58
 Jugador actual: 1 (Master)
@@ -739,9 +748,9 @@ Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde 1 5
+Movimiento elegido: Verde 0 5
 301 MOVED sent
-Move: 59 Verde 1 5
+Move: 59 Verde 0 5
 ----------------
 Turno: 59
 Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
@@ -749,14 +758,14 @@ Color actual: Amarillo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 59 Verde 1 5
+Move: 59 Verde 0 5
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 60 Amarillo 2 3
+Move: 60 Amarillo 0 3
 Current move received. Moving...
 301 MOVED sent
-Move: 60 Amarillo 2 3
+Move: 60 Amarillo 0 3
 ----------------
 Turno: 60
 Jugador actual: 1 (Master)
@@ -778,10 +787,10 @@ Move: 61 Azul 1 4
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 62 Rojo 0 5
+Move: 62 Rojo 2 4
 Current move received. Moving...
 301 MOVED sent
-Move: 62 Rojo 0 5
+Move: 62 Rojo 2 4
 ----------------
 Turno: 62
 Jugador actual: 1 (Master)
@@ -789,1144 +798,26 @@ Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde 1 6
+Movimiento elegido: Verde 0 3
 301 MOVED sent
-Move: 63 Verde 1 6
+Move: 63 Verde 0 3
 ----------------
 Turno: 63
-Jugador actual: 1 (Master)
-Color actual: Verde
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Amarillo
 ----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde 1 2
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 63 Verde 0 3
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 64 Amarillo 0 4
+Current move received. Moving...
 301 MOVED sent
-Move: 64 Verde 1 2
+Move: 64 Amarillo 0 4
 ----------------
 Turno: 64
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-102 TEST_ALIVE received
-102 TEST_ALIVE received. Still alive.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 63 Verde 1 6
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 64 Verde 1 2
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 65 Amarillo 1 5
-Current move received. Moving...
-301 MOVED sent
-Move: 65 Amarillo 1 5
-----------------
-Turno: 65
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul 0 6
-301 MOVED sent
-Move: 66 Azul 0 6
-----------------
-Turno: 66
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul 1 5
-301 MOVED sent
-Move: 67 Azul 1 5
-----------------
-Turno: 67
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 66 Azul 0 6
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 67 Azul 1 5
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 68 Rojo 0 3
-Current move received. Moving...
-301 MOVED sent
-Move: 68 Rojo 0 3
-----------------
-Turno: 68
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde 1 4
-301 MOVED sent
-Move: 69 Verde 1 4
-----------------
-Turno: 69
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 69 Verde 1 4
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 70 Amarillo 1 4
-Current move received. Moving...
-301 MOVED sent
-Move: 70 Amarillo 1 4
-----------------
-Turno: 70
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul 0 3
-301 MOVED sent
-Move: 71 Azul 0 3
-----------------
-Turno: 71
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 71 Azul 0 3
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 72 Rojo 1 2
-Current move received. Moving...
-301 MOVED sent
-Move: 72 Rojo 1 2
-----------------
-Turno: 72
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde 3 1
-301 MOVED sent
-Move: 73 Verde 3 1
-----------------
-Turno: 73
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde 3 20
-301 MOVED sent
-Move: 74 Verde 3 20
-----------------
-Turno: 74
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde 1 10
-301 MOVED sent
-Move: 75 Verde 1 10
-----------------
-Turno: 75
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 73 Verde 3 1
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 74 Verde 3 20
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 75 Verde 1 10
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 76 Amarillo 0 2
-Current move received. Moving...
-301 MOVED sent
-Move: 76 Amarillo 0 2
-----------------
-Turno: 76
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul 0 1
-301 MOVED sent
-Move: 77 Azul 0 1
-----------------
-Turno: 77
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 77 Azul 0 1
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 78 Rojo 3 1
-Current move received. Moving...
-301 MOVED sent
-Move: 78 Rojo 3 1
-----------------
-Turno: 78
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde 1 3
-301 MOVED sent
-Move: 79 Verde 1 3
-----------------
-Turno: 79
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 79 Verde 1 3
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 80 Amarillo 1 6
-Current move received. Moving...
-301 MOVED sent
-Move: 80 Amarillo 1 6
-----------------
-Turno: 80
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 81 Amarillo 0 4
-Current move received. Moving...
-301 MOVED sent
-Move: 81 Amarillo 0 4
-----------------
-Turno: 81
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul 0 2
-301 MOVED sent
-Move: 82 Azul 0 2
-----------------
-Turno: 82
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 82 Azul 0 2
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 83 Rojo 0 6
-Current move received. Moving...
-301 MOVED sent
-Move: 83 Rojo 0 6
-----------------
-Turno: 83
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 84 Rojo 1 2
-Current move received. Moving...
-301 MOVED sent
-Move: 84 Rojo 1 2
-----------------
-Turno: 84
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde 2 4
-301 MOVED sent
-Move: 85 Verde 2 4
-----------------
-Turno: 85
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-102 TEST_ALIVE received
-102 TEST_ALIVE received. Still alive.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 85 Verde 2 4
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 86 Amarillo 3 1
-Current move received. Moving...
-301 MOVED sent
-Move: 86 Amarillo 3 1
-----------------
-Turno: 86
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 87 Amarillo 1 20
-Current move received. Moving...
-301 MOVED sent
-Move: 87 Amarillo 1 20
-----------------
-Turno: 87
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 88 Amarillo 3 20
-Current move received. Moving...
-301 MOVED sent
-Move: 88 Amarillo 3 20
-----------------
-Turno: 88
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul -9999 6
-301 MOVED sent
-Move: 89 Azul -9999 6
-----------------
-Turno: 89
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul 0 5
-301 MOVED sent
-Move: 90 Azul 0 5
-----------------
-Turno: 90
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 89 Azul -9999 6
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 90 Azul 0 5
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 91 Rojo 2 4
-Current move received. Moving...
-301 MOVED sent
-Move: 91 Rojo 2 4
-----------------
-Turno: 91
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde 2 6
-301 MOVED sent
-Move: 92 Verde 2 6
-----------------
-Turno: 92
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde 2 5
-301 MOVED sent
-Move: 93 Verde 2 5
-----------------
-Turno: 93
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 92 Verde 2 6
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 93 Verde 2 5
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 94 Amarillo 1 5
-Current move received. Moving...
-301 MOVED sent
-Move: 94 Amarillo 1 5
-----------------
-Turno: 94
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul -9999 4
-301 MOVED sent
-Move: 95 Azul -9999 4
-----------------
-Turno: 95
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 95 Azul -9999 4
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 96 Rojo 2 3
-Current move received. Moving...
-301 MOVED sent
-Move: 96 Rojo 2 3
-----------------
-Turno: 96
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde 0 3
-301 MOVED sent
-Move: 97 Verde 0 3
-----------------
-Turno: 97
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 97 Verde 0 3
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 98 Amarillo 1 3
-Current move received. Moving...
-301 MOVED sent
-Move: 98 Amarillo 1 3
-----------------
-Turno: 98
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul 0 1
-301 MOVED sent
-Move: 99 Azul 0 1
-----------------
-Turno: 99
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 99 Azul 0 1
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 100 Rojo 2 1
-Current move received. Moving...
-301 MOVED sent
-Move: 100 Rojo 2 1
-----------------
-Turno: 100
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde 2 1
-301 MOVED sent
-Move: 101 Verde 2 1
-----------------
-Turno: 101
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 101 Verde 2 1
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 102 Amarillo 1 2
-Current move received. Moving...
-301 MOVED sent
-Move: 102 Amarillo 1 2
-----------------
-Turno: 102
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul -9999 3
-301 MOVED sent
-Move: 103 Azul -9999 3
-----------------
-Turno: 103
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 103 Azul -9999 3
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 104 Rojo 0 5
-Current move received. Moving...
-301 MOVED sent
-Move: 104 Rojo 0 5
-----------------
-Turno: 104
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde 0 2
-301 MOVED sent
-Move: 105 Verde 0 2
-----------------
-Turno: 105
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde -9999 20
-301 MOVED sent
-Move: 106 Verde -9999 20
-----------------
-Turno: 106
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 105 Verde 0 2
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 106 Verde -9999 20
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 107 Amarillo 1 5
-Current move received. Moving...
-301 MOVED sent
-Move: 107 Amarillo 1 5
-----------------
-Turno: 107
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul -9999 6
-301 MOVED sent
-Move: 108 Azul -9999 6
-----------------
-Turno: 108
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul 0 5
-301 MOVED sent
-Move: 109 Azul 0 5
-----------------
-Turno: 109
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 108 Azul -9999 6
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 109 Azul 0 5
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 110 Rojo 0 6
-Current move received. Moving...
-301 MOVED sent
-Move: 110 Rojo 0 6
-----------------
-Turno: 110
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 111 Rojo 0 5
-Current move received. Moving...
-301 MOVED sent
-Move: 111 Rojo 0 5
-----------------
-Turno: 111
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde 1 5
-301 MOVED sent
-Move: 112 Verde 1 5
-----------------
-Turno: 112
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 112 Verde 1 5
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 113 Amarillo 0 6
-Current move received. Moving...
-301 MOVED sent
-Move: 113 Amarillo 0 6
-----------------
-Turno: 113
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 114 Amarillo 3 4
-Current move received. Moving...
-301 MOVED sent
-Move: 114 Amarillo 3 4
-----------------
-Turno: 114
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul 0 2
-301 MOVED sent
-Move: 115 Azul 0 2
-----------------
-Turno: 115
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul 0 20
-301 MOVED sent
-Move: 116 Azul 0 20
-----------------
-Turno: 116
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-102 TEST_ALIVE received
-102 TEST_ALIVE received. Still alive.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 115 Azul 0 2
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 116 Azul 0 20
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 117 Rojo 1 1
-Current move received. Moving...
-301 MOVED sent
-Move: 117 Rojo 1 1
-----------------
-Turno: 117
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 118 Rojo 1 20
-Current move received. Moving...
-301 MOVED sent
-Move: 118 Rojo 1 20
-----------------
-Turno: 118
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde 0 6
-301 MOVED sent
-Move: 119 Verde 0 6
-----------------
-Turno: 119
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde 0 2
-301 MOVED sent
-Move: 120 Verde 0 2
-----------------
-Turno: 120
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 119 Verde 0 6
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 120 Verde 0 2
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 121 Amarillo 3 3
-Current move received. Moving...
-301 MOVED sent
-Move: 121 Amarillo 3 3
-----------------
-Turno: 121
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul 0 3
-301 MOVED sent
-Move: 122 Azul 0 3
-----------------
-Turno: 122
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 122 Azul 0 3
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 123 Rojo 1 4
-Current move received. Moving...
-301 MOVED sent
-Move: 123 Rojo 1 4
-----------------
-Turno: 123
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 124 Rojo 0 10
-Current move received. Moving...
-301 MOVED sent
-Move: 124 Rojo 0 10
-----------------
-Turno: 124
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde 0 3
-301 MOVED sent
-Move: 125 Verde 0 3
-----------------
-Turno: 125
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 125 Verde 0 3
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 126 Amarillo 0 2
-Current move received. Moving...
-301 MOVED sent
-Move: 126 Amarillo 0 2
-----------------
-Turno: 126
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul 0 1
-301 MOVED sent
-Move: 127 Azul 0 1
-----------------
-Turno: 127
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 127 Azul 0 1
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 128 Rojo 0 3
-Current move received. Moving...
-301 MOVED sent
-Move: 128 Rojo 0 3
-----------------
-Turno: 128
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde 0 4
-301 MOVED sent
-Move: 129 Verde 0 4
-----------------
-Turno: 129
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 129 Verde 0 4
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 130 Amarillo 0 1
-Current move received. Moving...
-301 MOVED sent
-Move: 130 Amarillo 0 1
-----------------
-Turno: 130
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul 0 4
-301 MOVED sent
-Move: 131 Azul 0 4
-----------------
-Turno: 131
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 131 Azul 0 4
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 132 Rojo 2 2
-Current move received. Moving...
-301 MOVED sent
-Move: 132 Rojo 2 2
-----------------
-Turno: 132
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde 0 1
-301 MOVED sent
-Move: 133 Verde 0 1
-----------------
-Turno: 133
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 133 Verde 0 1
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 134 Amarillo 3 6
-Current move received. Moving...
-301 MOVED sent
-Move: 134 Amarillo 3 6
-----------------
-Turno: 134
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 135 Amarillo 2 5
-Current move received. Moving...
-301 MOVED sent
-Move: 135 Amarillo 2 5
-----------------
-Turno: 135
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul 2 6
-301 MOVED sent
-Move: 136 Azul 2 6
-----------------
-Turno: 136
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul 1 5
-301 MOVED sent
-Move: 137 Azul 1 5
-----------------
-Turno: 137
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 136 Azul 2 6
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 137 Azul 1 5
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 138 Rojo 0 6
-Current move received. Moving...
-301 MOVED sent
-Move: 138 Rojo 0 6
-----------------
-Turno: 138
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 139 Rojo 3 1
-Current move received. Moving...
-301 MOVED sent
-Move: 139 Rojo 3 1
-----------------
-Turno: 139
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde 2 6
-301 MOVED sent
-Move: 140 Verde 2 6
-----------------
-Turno: 140
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde 0 1
-301 MOVED sent
-Move: 141 Verde 0 1
-----------------
-Turno: 141
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 140 Verde 2 6
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 141 Verde 0 1
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 142 Amarillo 1 4
-Current move received. Moving...
-301 MOVED sent
-Move: 142 Amarillo 1 4
-----------------
-Turno: 142
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul 2 1
-301 MOVED sent
-Move: 143 Azul 2 1
-----------------
-Turno: 143
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 143 Azul 2 1
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 144 Rojo 0 5
-Current move received. Moving...
-301 MOVED sent
-Move: 144 Rojo 0 5
-----------------
-Turno: 144
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde 2 5
-301 MOVED sent
-Move: 145 Verde 2 5
-----------------
-Turno: 145
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde 0 20
-301 MOVED sent
-Move: 146 Verde 0 20
-----------------
-Turno: 146
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde 2 10
-301 MOVED sent
-Move: 147 Verde 2 10
-----------------
-Turno: 147
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-102 TEST_ALIVE received
-102 TEST_ALIVE received. Still alive.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 145 Verde 2 5
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 146 Verde 0 20
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 147 Verde 2 10
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 148 Amarillo 0 3
-Current move received. Moving...
-301 MOVED sent
-Move: 148 Amarillo 0 3
-----------------
-Turno: 148
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul 1 4
-301 MOVED sent
-Move: 149 Azul 1 4
-----------------
-Turno: 149
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 149 Azul 1 4
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 150 Rojo 0 4
-Current move received. Moving...
-301 MOVED sent
-Move: 150 Rojo 0 4
-----------------
-Turno: 150
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde 2 4
-301 MOVED sent
-Move: 151 Verde 2 4
-----------------
-Turno: 151
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 151 Verde 2 4
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 152 Amarillo 0 2
-Current move received. Moving...
-301 MOVED sent
-Move: 152 Amarillo 0 2
-----------------
-Turno: 152
 Jugador actual: 1 (Master)
 Color actual: Azul
 ----------------
@@ -1934,49 +825,187 @@ Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
 Movimiento elegido: Azul 1 3
 301 MOVED sent
-Move: 153 Azul 1 3
+Move: 65 Azul 1 3
 ----------------
-Turno: 153
+Turno: 65
 Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
 Color actual: Rojo
 ----------------
 Esperando movimiento del oponente...
+102 TEST_ALIVE received
+102 TEST_ALIVE received. Still alive.
+Esperando movimiento del oponente...
 301 MOVED received
-Move: 153 Azul 1 3
+Move: 65 Azul 1 3
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 154 Rojo 0 3
+Move: 66 Rojo 0 3
 Current move received. Moving...
 301 MOVED sent
-Move: 154 Rojo 0 3
+Move: 66 Rojo 0 3
 ----------------
-Turno: 154
+Turno: 66
 Jugador actual: 1 (Master)
 Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde 2 3
+Movimiento elegido: Verde 2 4
 301 MOVED sent
-Move: 155 Verde 2 3
+Move: 67 Verde 2 4
 ----------------
-Turno: 155
+Turno: 67
 Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
 Color actual: Amarillo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 155 Verde 2 3
+Move: 67 Verde 2 4
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 156 Amarillo 0 1
+Move: 68 Amarillo 0 2
 Current move received. Moving...
 301 MOVED sent
-Move: 156 Amarillo 0 1
+Move: 68 Amarillo 0 2
 ----------------
-Turno: 156
+Turno: 68
+Jugador actual: 1 (Master)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Azul 1 1
+301 MOVED sent
+Move: 69 Azul 1 1
+----------------
+Turno: 69
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Rojo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 69 Azul 1 1
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 70 Rojo 0 2
+Current move received. Moving...
+301 MOVED sent
+Move: 70 Rojo 0 2
+----------------
+Turno: 70
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Verde 1 6
+301 MOVED sent
+Move: 71 Verde 1 6
+----------------
+Turno: 71
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Verde 1 2
+301 MOVED sent
+Move: 72 Verde 1 2
+----------------
+Turno: 72
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Amarillo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 71 Verde 1 6
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 72 Verde 1 2
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 73 Amarillo 1 1
+Current move received. Moving...
+301 MOVED sent
+Move: 73 Amarillo 1 1
+----------------
+Turno: 73
+Jugador actual: 1 (Master)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Azul 0 2
+301 MOVED sent
+Move: 74 Azul 0 2
+----------------
+Turno: 74
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Rojo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 74 Azul 0 2
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 75 Rojo 1 1
+Current move received. Moving...
+301 MOVED sent
+Move: 75 Rojo 1 1
+----------------
+Turno: 75
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Verde 0 1
+301 MOVED sent
+Move: 76 Verde 0 1
+----------------
+Turno: 76
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Amarillo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 76 Verde 0 1
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 77 Amarillo 3 6
+Current move received. Moving...
+301 MOVED sent
+Move: 77 Amarillo 3 6
+----------------
+Turno: 77
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Amarillo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 78 Amarillo 2 1
+Current move received. Moving...
+301 MOVED sent
+Move: 78 Amarillo 2 1
+----------------
+Turno: 78
+Jugador actual: 1 (Master)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Azul 1 6
+301 MOVED sent
+Move: 79 Azul 1 6
+----------------
+Turno: 79
 Jugador actual: 1 (Master)
 Color actual: Azul
 ----------------
@@ -1984,71 +1013,64 @@ Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
 Movimiento elegido: Azul 1 2
 301 MOVED sent
-Move: 157 Azul 1 2
+Move: 80 Azul 1 2
 ----------------
-Turno: 157
+Turno: 80
 Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
 Color actual: Rojo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 157 Azul 1 2
+Move: 79 Azul 1 6
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 158 Rojo 0 2
+Move: 80 Azul 1 2
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 81 Rojo 0 6
 Current move received. Moving...
 301 MOVED sent
-Move: 158 Rojo 0 2
+Move: 81 Rojo 0 6
 ----------------
-Turno: 158
+Turno: 81
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Rojo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 82 Rojo 0 5
+Current move received. Moving...
+301 MOVED sent
+Move: 82 Rojo 0 5
+----------------
+Turno: 82
 Jugador actual: 1 (Master)
 Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde 2 2
+Movimiento elegido: Verde 1 4
 301 MOVED sent
-Move: 159 Verde 2 2
+Move: 83 Verde 1 4
 ----------------
-Turno: 159
+Turno: 83
 Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
 Color actual: Amarillo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 159 Verde 2 2
+Move: 83 Verde 1 4
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 160 Amarillo 1 6
+Move: 84 Amarillo 3 5
 Current move received. Moving...
 301 MOVED sent
-Move: 160 Amarillo 1 6
+Move: 84 Amarillo 3 5
 ----------------
-Turno: 160
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 161 Amarillo 2 10
-Current move received. Moving...
-301 MOVED sent
-Move: 161 Amarillo 2 10
-----------------
-Turno: 161
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 162 Amarillo 0 5
-Current move received. Moving...
-301 MOVED sent
-Move: 162 Amarillo 0 5
-----------------
-Turno: 162
+Turno: 84
 Jugador actual: 1 (Master)
 Color actual: Azul
 ----------------
@@ -2056,835 +1078,34 @@ Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
 Movimiento elegido: Azul 2 5
 301 MOVED sent
-Move: 163 Azul 2 5
+Move: 85 Azul 2 5
 ----------------
-Turno: 163
+Turno: 85
 Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
 Color actual: Rojo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 163 Azul 2 5
+Move: 85 Azul 2 5
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 164 Rojo 2 6
+Move: 86 Rojo 1 4
 Current move received. Moving...
 301 MOVED sent
-Move: 164 Rojo 2 6
+Move: 86 Rojo 1 4
 ----------------
-Turno: 164
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 165 Rojo 0 5
-Current move received. Moving...
-301 MOVED sent
-Move: 165 Rojo 0 5
-----------------
-Turno: 165
+Turno: 86
 Jugador actual: 1 (Master)
 Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde 2 6
+Movimiento elegido: Verde 1 6
 301 MOVED sent
-Move: 166 Verde 2 6
+Move: 87 Verde 1 6
 ----------------
-Turno: 166
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde 2 5
-301 MOVED sent
-Move: 167 Verde 2 5
-----------------
-Turno: 167
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 166 Verde 2 6
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 167 Verde 2 5
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 168 Amarillo 0 4
-Current move received. Moving...
-301 MOVED sent
-Move: 168 Amarillo 0 4
-----------------
-Turno: 168
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul 2 6
-301 MOVED sent
-Move: 169 Azul 2 6
-----------------
-Turno: 169
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul 1 4
-301 MOVED sent
-Move: 170 Azul 1 4
-----------------
-Turno: 170
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 169 Azul 2 6
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 170 Azul 1 4
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 171 Rojo 0 4
-Current move received. Moving...
-301 MOVED sent
-Move: 171 Rojo 0 4
-----------------
-Turno: 171
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde 2 4
-301 MOVED sent
-Move: 172 Verde 2 4
-----------------
-Turno: 172
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 172 Verde 2 4
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 173 Amarillo 0 3
-Current move received. Moving...
-301 MOVED sent
-Move: 173 Amarillo 0 3
-----------------
-Turno: 173
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul 2 2
-301 MOVED sent
-Move: 174 Azul 2 2
-----------------
-Turno: 174
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 174 Azul 2 2
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 175 Rojo 0 3
-Current move received. Moving...
-301 MOVED sent
-Move: 175 Rojo 0 3
-----------------
-Turno: 175
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde 2 3
-301 MOVED sent
-Move: 176 Verde 2 3
-----------------
-Turno: 176
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde -9999 10
-301 MOVED sent
-Move: 177 Verde -9999 10
-----------------
-Turno: 177
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 176 Verde 2 3
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 177 Verde -9999 10
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 178 Amarillo 0 2
-Current move received. Moving...
-301 MOVED sent
-Move: 178 Amarillo 0 2
-----------------
-Turno: 178
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul 1 3
-301 MOVED sent
-Move: 179 Azul 1 3
-----------------
-Turno: 179
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 179 Azul 1 3
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 180 Rojo 0 1
-Current move received. Moving...
-301 MOVED sent
-Move: 180 Rojo 0 1
-----------------
-Turno: 180
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 181 Rojo 2 20
-Current move received. Moving...
-301 MOVED sent
-Move: 181 Rojo 2 20
-----------------
-Turno: 181
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde -9999 2
-301 MOVED sent
-Move: 182 Verde -9999 2
-----------------
-Turno: 182
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 182 Verde -9999 2
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 183 Amarillo 0 1
-Current move received. Moving...
-301 MOVED sent
-Move: 183 Amarillo 0 1
-----------------
-Turno: 183
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul 1 1
-301 MOVED sent
-Move: 184 Azul 1 1
-----------------
-Turno: 184
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 184 Azul 1 1
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 185 Rojo 0 2
-Current move received. Moving...
-301 MOVED sent
-Move: 185 Rojo 0 2
-----------------
-Turno: 185
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde -9999 1
-301 MOVED sent
-Move: 186 Verde -9999 1
-----------------
-Turno: 186
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 186 Verde -9999 1
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 187 Amarillo 0 6
-Current move received. Moving...
-301 MOVED sent
-Move: 187 Amarillo 0 6
-----------------
-Turno: 187
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 188 Amarillo 0 5
-Current move received. Moving...
-301 MOVED sent
-Move: 188 Amarillo 0 5
-----------------
-Turno: 188
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul 2 5
-301 MOVED sent
-Move: 189 Azul 2 5
-----------------
-Turno: 189
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 189 Azul 2 5
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 190 Rojo 0 6
-Current move received. Moving...
-301 MOVED sent
-Move: 190 Rojo 0 6
-----------------
-Turno: 190
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 191 Rojo 0 4
-Current move received. Moving...
-301 MOVED sent
-Move: 191 Rojo 0 4
-----------------
-Turno: 191
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 192 Rojo 2 10
-Current move received. Moving...
-301 MOVED sent
-Move: 192 Rojo 2 10
-----------------
-Turno: 192
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde -9999 6
-301 MOVED sent
-Move: 193 Verde -9999 6
-----------------
-Turno: 193
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde -9999 5
-301 MOVED sent
-Move: 194 Verde -9999 5
-----------------
-Turno: 194
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 193 Verde -9999 6
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 194 Verde -9999 5
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 195 Amarillo 0 4
-Current move received. Moving...
-301 MOVED sent
-Move: 195 Amarillo 0 4
-----------------
-Turno: 195
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul 0 6
-301 MOVED sent
-Move: 196 Azul 0 6
-----------------
-Turno: 196
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul 0 4
-301 MOVED sent
-Move: 197 Azul 0 4
-----------------
-Turno: 197
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 196 Azul 0 6
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 197 Azul 0 4
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 198 Rojo 2 5
-Current move received. Moving...
-301 MOVED sent
-Move: 198 Rojo 2 5
-----------------
-Turno: 198
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde -9999 4
-301 MOVED sent
-Move: 199 Verde -9999 4
-----------------
-Turno: 199
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 199 Verde -9999 4
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 200 Amarillo 0 3
-Current move received. Moving...
-301 MOVED sent
-Move: 200 Amarillo 0 3
-----------------
-Turno: 200
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul 0 2
-301 MOVED sent
-Move: 201 Azul 0 2
-----------------
-Turno: 201
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 201 Azul 0 2
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 202 Rojo 2 3
-Current move received. Moving...
-301 MOVED sent
-Move: 202 Rojo 2 3
-----------------
-Turno: 202
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde -9999 3
-301 MOVED sent
-Move: 203 Verde -9999 3
-----------------
-Turno: 203
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 203 Verde -9999 3
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 204 Amarillo 0 2
-Current move received. Moving...
-301 MOVED sent
-Move: 204 Amarillo 0 2
-----------------
-Turno: 204
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul 0 1
-301 MOVED sent
-Move: 205 Azul 0 1
-----------------
-Turno: 205
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 205 Azul 0 1
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 206 Rojo 3 2
-Current move received. Moving...
-301 MOVED sent
-Move: 206 Rojo 3 2
-----------------
-Turno: 206
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde -9999 2
-301 MOVED sent
-Move: 207 Verde -9999 2
-----------------
-Turno: 207
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 207 Verde -9999 2
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 208 Amarillo 0 1
-Current move received. Moving...
-301 MOVED sent
-Move: 208 Amarillo 0 1
-----------------
-Turno: 208
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 209 Amarillo 3 10
-Current move received. Moving...
-301 MOVED sent
-Move: 209 Amarillo 3 10
-----------------
-Turno: 209
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul 1 3
-301 MOVED sent
-Move: 210 Azul 1 3
-----------------
-Turno: 210
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 210 Azul 1 3
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 211 Rojo 2 1
-Current move received. Moving...
-301 MOVED sent
-Move: 211 Rojo 2 1
-----------------
-Turno: 211
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 212 Rojo 3 10
-Current move received. Moving...
-301 MOVED sent
-Move: 212 Rojo 3 10
-----------------
-Turno: 212
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde -9999 1
-301 MOVED sent
-Move: 213 Verde -9999 1
-----------------
-Turno: 213
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 213 Verde -9999 1
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 214 Amarillo 2 6
-Current move received. Moving...
-301 MOVED sent
-Move: 214 Amarillo 2 6
-----------------
-Turno: 214
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 215 Amarillo 3 5
-Current move received. Moving...
-301 MOVED sent
-Move: 215 Amarillo 3 5
-----------------
-Turno: 215
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul 1 6
-301 MOVED sent
-Move: 216 Azul 1 6
-----------------
-Turno: 216
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul 0 3
-301 MOVED sent
-Move: 217 Azul 0 3
-----------------
-Turno: 217
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul 0 20
-301 MOVED sent
-Move: 218 Azul 0 20
-----------------
-Turno: 218
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 216 Azul 1 6
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 217 Azul 0 3
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 218 Azul 0 20
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 219 Rojo 3 5
-Current move received. Moving...
-301 MOVED sent
-Move: 219 Rojo 3 5
-----------------
-Turno: 219
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde -9999 6
-301 MOVED sent
-Move: 220 Verde -9999 6
-----------------
-Turno: 220
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde -9999 4
-301 MOVED sent
-Move: 221 Verde -9999 4
-----------------
-Turno: 221
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 220 Verde -9999 6
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 221 Verde -9999 4
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 222 Amarillo 3 4
-Current move received. Moving...
-301 MOVED sent
-Move: 222 Amarillo 3 4
-----------------
-Turno: 222
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul 0 5
-301 MOVED sent
-Move: 223 Azul 0 5
-----------------
-Turno: 223
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 223 Azul 0 5
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 224 Rojo 3 6
-Current move received. Moving...
-301 MOVED sent
-Move: 224 Rojo 3 6
-----------------
-Turno: 224
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 225 Rojo 3 2
-Current move received. Moving...
-301 MOVED sent
-Move: 225 Rojo 3 2
-----------------
-Turno: 225
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde -9999 3
-301 MOVED sent
-Move: 226 Verde -9999 3
-----------------
-Turno: 226
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 226 Verde -9999 3
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 227 Amarillo 2 3
-Current move received. Moving...
-301 MOVED sent
-Move: 227 Amarillo 2 3
-----------------
-Turno: 227
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul 1 4
-301 MOVED sent
-Move: 228 Azul 1 4
-----------------
-Turno: 228
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 228 Azul 1 4
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 229 Rojo 3 4
-Current move received. Moving...
-301 MOVED sent
-Move: 229 Rojo 3 4
-----------------
-Turno: 229
+Turno: 87
 Jugador actual: 1 (Master)
 Color actual: Verde
 ----------------
@@ -2892,230 +1113,113 @@ Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
 Movimiento elegido: Verde 1 5
 301 MOVED sent
-Move: 230 Verde 1 5
+Move: 88 Verde 1 5
 ----------------
-Turno: 230
+Turno: 88
 Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
 Color actual: Amarillo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 230 Verde 1 5
+Move: 87 Verde 1 6
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 231 Amarillo 3 2
-Current move received. Moving...
-301 MOVED sent
-Move: 231 Amarillo 3 2
-----------------
-Turno: 231
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Amarillo
-----------------
+Move: 88 Verde 1 5
+Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 232 Amarillo 2 10
+Move: 89 Amarillo 0 4
 Current move received. Moving...
 301 MOVED sent
-Move: 232 Amarillo 2 10
+Move: 89 Amarillo 0 4
 ----------------
-Turno: 232
+Turno: 89
 Jugador actual: 1 (Master)
 Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul 2 2
+Movimiento elegido: Azul 2 3
 301 MOVED sent
-Move: 233 Azul 2 2
+Move: 90 Azul 2 3
 ----------------
-Turno: 233
+Turno: 90
 Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
 Color actual: Rojo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 233 Azul 2 2
+Move: 90 Azul 2 3
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 234 Rojo 3 3
+Move: 91 Rojo 1 3
 Current move received. Moving...
 301 MOVED sent
-Move: 234 Rojo 3 3
+Move: 91 Rojo 1 3
 ----------------
-Turno: 234
+Turno: 91
 Jugador actual: 1 (Master)
 Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde 1 2
+Movimiento elegido: Verde 2 3
 301 MOVED sent
-Move: 235 Verde 1 2
+Move: 92 Verde 2 3
 ----------------
-Turno: 235
+Turno: 92
 Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
 Color actual: Amarillo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 235 Verde 1 2
+Move: 92 Verde 2 3
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 236 Amarillo 2 1
+Move: 93 Amarillo 3 3
 Current move received. Moving...
 301 MOVED sent
-Move: 236 Amarillo 2 1
+Move: 93 Amarillo 3 3
 ----------------
-Turno: 236
+Turno: 93
 Jugador actual: 1 (Master)
 Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul 0 1
+Movimiento elegido: Azul 0 4
 301 MOVED sent
-Move: 237 Azul 0 1
+Move: 94 Azul 0 4
 ----------------
-Turno: 237
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul 2 10
-301 MOVED sent
-Move: 238 Azul 2 10
-----------------
-Turno: 238
+Turno: 94
 Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
 Color actual: Rojo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 237 Azul 0 1
+Move: 94 Azul 0 4
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 238 Azul 2 10
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 239 Rojo 3 1
+Move: 95 Rojo 0 2
 Current move received. Moving...
 301 MOVED sent
-Move: 239 Rojo 3 1
+Move: 95 Rojo 0 2
 ----------------
-Turno: 239
+Turno: 95
 Jugador actual: 1 (Master)
 Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde 1 1
+Movimiento elegido: Verde 2 2
 301 MOVED sent
-Move: 240 Verde 1 1
+Move: 96 Verde 2 2
 ----------------
-Turno: 240
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 240 Verde 1 1
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 241 Amarillo 2 6
-Current move received. Moving...
-301 MOVED sent
-Move: 241 Amarillo 2 6
-----------------
-Turno: 241
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 242 Amarillo 2 5
-Current move received. Moving...
-301 MOVED sent
-Move: 242 Amarillo 2 5
-----------------
-Turno: 242
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul 2 6
-301 MOVED sent
-Move: 243 Azul 2 6
-----------------
-Turno: 243
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul 3 5
-301 MOVED sent
-Move: 244 Azul 3 5
-----------------
-Turno: 244
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 243 Azul 2 6
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 244 Azul 3 5
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 245 Rojo 3 3
-Current move received. Moving...
-301 MOVED sent
-Move: 245 Rojo 3 3
-----------------
-Turno: 245
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 246 Rojo 3 20
-Current move received. Moving...
-301 MOVED sent
-Move: 246 Rojo 3 20
-----------------
-Turno: 246
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde -9999 6
-301 MOVED sent
-Move: 247 Verde -9999 6
-----------------
-Turno: 247
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde -9999 4
-301 MOVED sent
-Move: 248 Verde -9999 4
-----------------
-Turno: 248
+Turno: 96
 Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
 Color actual: Amarillo
 ----------------
@@ -3124,327 +1228,152 @@ Esperando movimiento del oponente...
 102 TEST_ALIVE received. Still alive.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 247 Verde -9999 6
+Move: 96 Verde 2 2
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 248 Verde -9999 4
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 249 Amarillo 2 4
+Move: 97 Amarillo 0 2
 Current move received. Moving...
 301 MOVED sent
-Move: 249 Amarillo 2 4
+Move: 97 Amarillo 0 2
 ----------------
-Turno: 249
+Turno: 97
 Jugador actual: 1 (Master)
 Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul 2 4
+Movimiento elegido: Azul 2 1
 301 MOVED sent
-Move: 250 Azul 2 4
+Move: 98 Azul 2 1
 ----------------
-Turno: 250
+Turno: 98
 Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
 Color actual: Rojo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 250 Azul 2 4
+Move: 98 Azul 2 1
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 251 Rojo 3 5
+Move: 99 Rojo 1 1
 Current move received. Moving...
 301 MOVED sent
-Move: 251 Rojo 3 5
+Move: 99 Rojo 1 1
 ----------------
-Turno: 251
+Turno: 99
 Jugador actual: 1 (Master)
 Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde -9999 3
+Movimiento elegido: Verde 1 1
 301 MOVED sent
-Move: 252 Verde -9999 3
+Move: 100 Verde 1 1
 ----------------
-Turno: 252
+Turno: 100
 Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
 Color actual: Amarillo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 252 Verde -9999 3
+Move: 100 Verde 1 1
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 253 Amarillo 2 1
+Move: 101 Amarillo 0 5
 Current move received. Moving...
 301 MOVED sent
-Move: 253 Amarillo 2 1
+Move: 101 Amarillo 0 5
 ----------------
-Turno: 253
+Turno: 101
 Jugador actual: 1 (Master)
 Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul 1 1
+Movimiento elegido: Azul 2 6
 301 MOVED sent
-Move: 254 Azul 1 1
+Move: 102 Azul 2 6
 ----------------
-Turno: 254
+Turno: 102
 Jugador actual: 1 (Master)
 Color actual: Azul
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul 1 20
+Movimiento elegido: Azul 2 1
 301 MOVED sent
-Move: 255 Azul 1 20
+Move: 103 Azul 2 1
 ----------------
-Turno: 255
+Turno: 103
 Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
 Color actual: Rojo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 254 Azul 1 1
+Move: 102 Azul 2 6
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 255 Azul 1 20
+Move: 103 Azul 2 1
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 256 Rojo 3 6
+Move: 104 Rojo 1 6
 Current move received. Moving...
 301 MOVED sent
-Move: 256 Rojo 3 6
+Move: 104 Rojo 1 6
 ----------------
-Turno: 256
+Turno: 104
 Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
 Color actual: Rojo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 257 Rojo 3 4
+Move: 105 Rojo 0 3
 Current move received. Moving...
 301 MOVED sent
-Move: 257 Rojo 3 4
+Move: 105 Rojo 0 3
 ----------------
-Turno: 257
+Turno: 105
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Rojo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 106 Rojo 3 20
+Current move received. Moving...
+301 MOVED sent
+Move: 106 Rojo 3 20
+----------------
+Turno: 106
 Jugador actual: 1 (Master)
 Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde -9999 2
+Movimiento elegido: Verde -9999 4
 301 MOVED sent
-Move: 258 Verde -9999 2
+Move: 107 Verde -9999 4
 ----------------
-Turno: 258
+Turno: 107
 Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
 Color actual: Amarillo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 258 Verde -9999 2
+Move: 107 Verde -9999 4
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 259 Amarillo -9999 3
+Move: 108 Amarillo 0 4
 Current move received. Moving...
 301 MOVED sent
-Move: 259 Amarillo -9999 3
+Move: 108 Amarillo 0 4
 ----------------
-Turno: 259
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul 2 3
-301 MOVED sent
-Move: 260 Azul 2 3
-----------------
-Turno: 260
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 260 Azul 2 3
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 261 Rojo 3 2
-Current move received. Moving...
-301 MOVED sent
-Move: 261 Rojo 3 2
-----------------
-Turno: 261
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde -9999 1
-301 MOVED sent
-Move: 262 Verde -9999 1
-----------------
-Turno: 262
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 262 Verde -9999 1
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 263 Amarillo -9999 2
-Current move received. Moving...
-301 MOVED sent
-Move: 263 Amarillo -9999 2
-----------------
-Turno: 263
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul 2 2
-301 MOVED sent
-Move: 264 Azul 2 2
-----------------
-Turno: 264
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 264 Azul 2 2
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 265 Rojo 3 1
-Current move received. Moving...
-301 MOVED sent
-Move: 265 Rojo 3 1
-----------------
-Turno: 265
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde 1 5
-301 MOVED sent
-Move: 266 Verde 1 5
-----------------
-Turno: 266
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 266 Verde 1 5
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 267 Amarillo -9999 6
-Current move received. Moving...
-301 MOVED sent
-Move: 267 Amarillo -9999 6
-----------------
-Turno: 267
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 268 Amarillo 2 5
-Current move received. Moving...
-301 MOVED sent
-Move: 268 Amarillo 2 5
-----------------
-Turno: 268
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul 2 5
-301 MOVED sent
-Move: 269 Azul 2 5
-----------------
-Turno: 269
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 269 Azul 2 5
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 270 Rojo 3 6
-Current move received. Moving...
-301 MOVED sent
-Move: 270 Rojo 3 6
-----------------
-Turno: 270
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Rojo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 271 Rojo 3 5
-Current move received. Moving...
-301 MOVED sent
-Move: 271 Rojo 3 5
-----------------
-Turno: 271
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde 1 5
-301 MOVED sent
-Move: 272 Verde 1 5
-----------------
-Turno: 272
-Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
-Color actual: Amarillo
-----------------
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 272 Verde 1 5
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 273 Amarillo 2 4
-Current move received. Moving...
-301 MOVED sent
-Move: 273 Amarillo 2 4
-----------------
-Turno: 273
-Jugador actual: 1 (Master)
-Color actual: Azul
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Azul 1 6
-301 MOVED sent
-Move: 274 Azul 1 6
-----------------
-Turno: 274
+Turno: 108
 Jugador actual: 1 (Master)
 Color actual: Azul
 ----------------
@@ -3452,67 +1381,113 @@ Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
 Movimiento elegido: Azul 1 4
 301 MOVED sent
-Move: 275 Azul 1 4
+Move: 109 Azul 1 4
 ----------------
-Turno: 275
+Turno: 109
 Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
 Color actual: Rojo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 274 Azul 1 6
+Move: 109 Azul 1 4
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 275 Azul 1 4
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 276 Rojo 3 4
+Move: 110 Rojo 1 5
 Current move received. Moving...
 301 MOVED sent
-Move: 276 Rojo 3 4
+Move: 110 Rojo 1 5
 ----------------
-Turno: 276
+Turno: 110
 Jugador actual: 1 (Master)
 Color actual: Verde
 ----------------
 Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde 1 6
+Movimiento elegido: Verde -9999 3
 301 MOVED sent
-Move: 277 Verde 1 6
+Move: 111 Verde -9999 3
 ----------------
-Turno: 277
-Jugador actual: 1 (Master)
-Color actual: Verde
-----------------
-Realizo un movimiento automatico
-GrandMaster v2 pensando la mejor jugada...
-Movimiento elegido: Verde 1 4
-301 MOVED sent
-Move: 278 Verde 1 4
-----------------
-Turno: 278
+Turno: 111
 Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
 Color actual: Amarillo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 277 Verde 1 6
+Move: 111 Verde -9999 3
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 278 Verde 1 4
-Old move received. Already up to date.
-Esperando movimiento del oponente...
-301 MOVED received
-Move: 279 Amarillo 2 3
+Move: 112 Amarillo 0 1
 Current move received. Moving...
 301 MOVED sent
-Move: 279 Amarillo 2 3
+Move: 112 Amarillo 0 1
 ----------------
-Turno: 279
+Turno: 112
+Jugador actual: 1 (Master)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Azul 1 5
+301 MOVED sent
+Move: 113 Azul 1 5
+----------------
+Turno: 113
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Rojo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 113 Azul 1 5
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 114 Rojo 1 4
+Current move received. Moving...
+301 MOVED sent
+Move: 114 Rojo 1 4
+----------------
+Turno: 114
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Verde -9999 6
+301 MOVED sent
+Move: 115 Verde -9999 6
+----------------
+Turno: 115
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Verde 2 5
+301 MOVED sent
+Move: 116 Verde 2 5
+----------------
+Turno: 116
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Amarillo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 115 Verde -9999 6
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 116 Verde 2 5
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 117 Amarillo 0 2
+Current move received. Moving...
+301 MOVED sent
+Move: 117 Amarillo 0 2
+----------------
+Turno: 117
 Jugador actual: 1 (Master)
 Color actual: Azul
 ----------------
@@ -3520,23 +1495,1901 @@ Realizo un movimiento automatico
 GrandMaster v2 pensando la mejor jugada...
 Movimiento elegido: Azul 1 3
 301 MOVED sent
-Move: 280 Azul 1 3
+Move: 118 Azul 1 3
 ----------------
-Turno: 280
+Turno: 118
 Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
 Color actual: Rojo
 ----------------
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 280 Azul 1 3
+Move: 118 Azul 1 3
 Old move received. Already up to date.
 Esperando movimiento del oponente...
 301 MOVED received
-Move: 281 Rojo 3 3
+Move: 119 Rojo 0 2
 Current move received. Moving...
 301 MOVED sent
-Move: 281 Rojo 3 3
+Move: 119 Rojo 0 2
+----------------
+Turno: 119
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Verde 2 1
+301 MOVED sent
+Move: 120 Verde 2 1
+----------------
+Turno: 120
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Amarillo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 120 Verde 2 1
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 121 Amarillo 1 6
+Current move received. Moving...
+301 MOVED sent
+Move: 121 Amarillo 1 6
+----------------
+Turno: 121
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Amarillo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 122 Amarillo 2 3
+Current move received. Moving...
+301 MOVED sent
+Move: 122 Amarillo 2 3
+----------------
+Turno: 122
+Jugador actual: 1 (Master)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Azul 1 2
+301 MOVED sent
+Move: 123 Azul 1 2
+----------------
+Turno: 123
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Rojo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 123 Azul 1 2
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 124 Rojo 0 1
+Current move received. Moving...
+301 MOVED sent
+Move: 124 Rojo 0 1
+----------------
+Turno: 124
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Verde 2 2
+301 MOVED sent
+Move: 125 Verde 2 2
+----------------
+Turno: 125
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Amarillo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 125 Verde 2 2
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 126 Amarillo 1 6
+Current move received. Moving...
+301 MOVED sent
+Move: 126 Amarillo 1 6
+----------------
+Turno: 126
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Amarillo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 127 Amarillo 0 4
+Current move received. Moving...
+301 MOVED sent
+Move: 127 Amarillo 0 4
+----------------
+Turno: 127
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Amarillo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 128 Amarillo 0 20
+Current move received. Moving...
+301 MOVED sent
+Move: 128 Amarillo 0 20
+----------------
+Turno: 128
+Jugador actual: 1 (Master)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Azul 1 3
+301 MOVED sent
+Move: 129 Azul 1 3
+----------------
+Turno: 129
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Rojo
+----------------
+Esperando movimiento del oponente...
+102 TEST_ALIVE received
+102 TEST_ALIVE received. Still alive.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 129 Azul 1 3
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 130 Rojo 2 6
+Current move received. Moving...
+301 MOVED sent
+Move: 130 Rojo 2 6
+----------------
+Turno: 130
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Rojo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 131 Rojo 2 5
+Current move received. Moving...
+301 MOVED sent
+Move: 131 Rojo 2 5
+----------------
+Turno: 131
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Verde 2 5
+301 MOVED sent
+Move: 132 Verde 2 5
+----------------
+Turno: 132
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Amarillo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 132 Verde 2 5
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 133 Amarillo 0 2
+Current move received. Moving...
+301 MOVED sent
+Move: 133 Amarillo 0 2
+----------------
+Turno: 133
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Amarillo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 134 Amarillo 2 10
+Current move received. Moving...
+301 MOVED sent
+Move: 134 Amarillo 2 10
+----------------
+Turno: 134
+Jugador actual: 1 (Master)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Azul 2 6
+301 MOVED sent
+Move: 135 Azul 2 6
+----------------
+Turno: 135
+Jugador actual: 1 (Master)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Azul 2 5
+301 MOVED sent
+Move: 136 Azul 2 5
+----------------
+Turno: 136
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Rojo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 135 Azul 2 6
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 136 Azul 2 5
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 137 Rojo 3 4
+Current move received. Moving...
+301 MOVED sent
+Move: 137 Rojo 3 4
+----------------
+Turno: 137
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Verde 0 4
+301 MOVED sent
+Move: 138 Verde 0 4
+----------------
+Turno: 138
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Amarillo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 138 Verde 0 4
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 139 Amarillo 1 5
+Current move received. Moving...
+301 MOVED sent
+Move: 139 Amarillo 1 5
+----------------
+Turno: 139
+Jugador actual: 1 (Master)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Azul 1 4
+301 MOVED sent
+Move: 140 Azul 1 4
+----------------
+Turno: 140
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Rojo
+----------------
+Esperando movimiento del oponente...
+102 TEST_ALIVE received
+102 TEST_ALIVE received. Still alive.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 140 Azul 1 4
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 141 Rojo 3 3
+Current move received. Moving...
+301 MOVED sent
+Move: 141 Rojo 3 3
+----------------
+Turno: 141
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Verde 0 3
+301 MOVED sent
+Move: 142 Verde 0 3
+----------------
+Turno: 142
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Amarillo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 142 Verde 0 3
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 143 Amarillo 2 3
+Current move received. Moving...
+301 MOVED sent
+Move: 143 Amarillo 2 3
+----------------
+Turno: 143
+Jugador actual: 1 (Master)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Azul 0 2
+301 MOVED sent
+Move: 144 Azul 0 2
+----------------
+Turno: 144
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Rojo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 144 Azul 0 2
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 145 Rojo 1 2
+Current move received. Moving...
+301 MOVED sent
+Move: 145 Rojo 1 2
+----------------
+Turno: 145
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Verde 0 6
+301 MOVED sent
+Move: 146 Verde 0 6
+----------------
+Turno: 146
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Verde 0 2
+301 MOVED sent
+Move: 147 Verde 0 2
+----------------
+Turno: 147
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Amarillo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 146 Verde 0 6
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 147 Verde 0 2
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 148 Amarillo 1 1
+Current move received. Moving...
+301 MOVED sent
+Move: 148 Amarillo 1 1
+----------------
+Turno: 148
+Jugador actual: 1 (Master)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Azul 2 1
+301 MOVED sent
+Move: 149 Azul 2 1
+----------------
+Turno: 149
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Rojo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 149 Azul 2 1
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 150 Rojo 3 1
+Current move received. Moving...
+301 MOVED sent
+Move: 150 Rojo 3 1
+----------------
+Turno: 150
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Verde 0 1
+301 MOVED sent
+Move: 151 Verde 0 1
+----------------
+Turno: 151
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Amarillo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 151 Verde 0 1
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 152 Amarillo 1 6
+Current move received. Moving...
+301 MOVED sent
+Move: 152 Amarillo 1 6
+----------------
+Turno: 152
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Amarillo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 153 Amarillo 1 5
+Current move received. Moving...
+301 MOVED sent
+Move: 153 Amarillo 1 5
+----------------
+Turno: 153
+Jugador actual: 1 (Master)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Azul 0 6
+301 MOVED sent
+Move: 154 Azul 0 6
+----------------
+Turno: 154
+Jugador actual: 1 (Master)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Azul 1 4
+301 MOVED sent
+Move: 155 Azul 1 4
+----------------
+Turno: 155
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Rojo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 154 Azul 0 6
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 155 Azul 1 4
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 156 Rojo 0 6
+Current move received. Moving...
+301 MOVED sent
+Move: 156 Rojo 0 6
+----------------
+Turno: 156
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Rojo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 157 Rojo 2 5
+Current move received. Moving...
+301 MOVED sent
+Move: 157 Rojo 2 5
+----------------
+Turno: 157
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Verde 0 1
+301 MOVED sent
+Move: 158 Verde 0 1
+----------------
+Turno: 158
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Verde 0 20
+301 MOVED sent
+Move: 159 Verde 0 20
+----------------
+Turno: 159
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Amarillo
+----------------
+Esperando movimiento del oponente...
+102 TEST_ALIVE received
+102 TEST_ALIVE received. Still alive.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 158 Verde 0 1
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 159 Verde 0 20
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 160 Amarillo 1 3
+Current move received. Moving...
+301 MOVED sent
+Move: 160 Amarillo 1 3
+----------------
+Turno: 160
+Jugador actual: 1 (Master)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Azul 1 2
+301 MOVED sent
+Move: 161 Azul 1 2
+----------------
+Turno: 161
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Rojo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 161 Azul 1 2
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 162 Rojo 3 3
+Current move received. Moving...
+301 MOVED sent
+Move: 162 Rojo 3 3
+----------------
+Turno: 162
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Verde 2 5
+301 MOVED sent
+Move: 163 Verde 2 5
+----------------
+Turno: 163
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Amarillo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 163 Verde 2 5
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 164 Amarillo 3 4
+Current move received. Moving...
+301 MOVED sent
+Move: 164 Amarillo 3 4
+----------------
+Turno: 164
+Jugador actual: 1 (Master)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Azul 1 5
+301 MOVED sent
+Move: 165 Azul 1 5
+----------------
+Turno: 165
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Rojo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 165 Azul 1 5
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 166 Rojo 3 4
+Current move received. Moving...
+301 MOVED sent
+Move: 166 Rojo 3 4
+----------------
+Turno: 166
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Verde 2 6
+301 MOVED sent
+Move: 167 Verde 2 6
+----------------
+Turno: 167
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Verde 2 3
+301 MOVED sent
+Move: 168 Verde 2 3
+----------------
+Turno: 168
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Amarillo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 167 Verde 2 6
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 168 Verde 2 3
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 169 Amarillo 3 2
+Current move received. Moving...
+301 MOVED sent
+Move: 169 Amarillo 3 2
+----------------
+Turno: 169
+Jugador actual: 1 (Master)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Azul 0 3
+301 MOVED sent
+Move: 170 Azul 0 3
+----------------
+Turno: 170
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Rojo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 170 Azul 0 3
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 171 Rojo 0 2
+Current move received. Moving...
+301 MOVED sent
+Move: 171 Rojo 0 2
+----------------
+Turno: 171
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Verde 1 4
+301 MOVED sent
+Move: 172 Verde 1 4
+----------------
+Turno: 172
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Amarillo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 172 Verde 1 4
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 173 Amarillo 3 1
+Current move received. Moving...
+301 MOVED sent
+Move: 173 Amarillo 3 1
+----------------
+Turno: 173
+Jugador actual: 1 (Master)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Azul 0 1
+301 MOVED sent
+Move: 174 Azul 0 1
+----------------
+Turno: 174
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Rojo
+----------------
+Esperando movimiento del oponente...
+102 TEST_ALIVE received
+102 TEST_ALIVE received. Still alive.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 174 Azul 0 1
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 175 Rojo 0 1
+Current move received. Moving...
+301 MOVED sent
+Move: 175 Rojo 0 1
+----------------
+Turno: 175
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Verde 2 2
+301 MOVED sent
+Move: 176 Verde 2 2
+----------------
+Turno: 176
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Amarillo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 176 Verde 2 2
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 177 Amarillo 3 6
+Current move received. Moving...
+301 MOVED sent
+Move: 177 Amarillo 3 6
+----------------
+Turno: 177
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Amarillo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 178 Amarillo 3 1
+Current move received. Moving...
+301 MOVED sent
+Move: 178 Amarillo 3 1
+----------------
+Turno: 178
+Jugador actual: 1 (Master)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Azul 1 6
+301 MOVED sent
+Move: 179 Azul 1 6
+----------------
+Turno: 179
+Jugador actual: 1 (Master)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Azul 0 4
+301 MOVED sent
+Move: 180 Azul 0 4
+----------------
+Turno: 180
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Rojo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 179 Azul 1 6
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 180 Azul 0 4
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 181 Rojo 0 6
+Current move received. Moving...
+301 MOVED sent
+Move: 181 Rojo 0 6
+----------------
+Turno: 181
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Rojo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 182 Rojo 1 5
+Current move received. Moving...
+301 MOVED sent
+Move: 182 Rojo 1 5
+----------------
+Turno: 182
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Verde 0 5
+301 MOVED sent
+Move: 183 Verde 0 5
+----------------
+Turno: 183
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Amarillo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 183 Verde 0 5
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 184 Amarillo 1 5
+Current move received. Moving...
+301 MOVED sent
+Move: 184 Amarillo 1 5
+----------------
+Turno: 184
+Jugador actual: 1 (Master)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Azul 1 5
+301 MOVED sent
+Move: 185 Azul 1 5
+----------------
+Turno: 185
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Rojo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 185 Azul 1 5
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 186 Rojo 0 4
+Current move received. Moving...
+301 MOVED sent
+Move: 186 Rojo 0 4
+----------------
+Turno: 186
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Verde 2 6
+301 MOVED sent
+Move: 187 Verde 2 6
+----------------
+Turno: 187
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Verde 2 2
+301 MOVED sent
+Move: 188 Verde 2 2
+----------------
+Turno: 188
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Amarillo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 187 Verde 2 6
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 188 Verde 2 2
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 189 Amarillo 1 4
+Current move received. Moving...
+301 MOVED sent
+Move: 189 Amarillo 1 4
+----------------
+Turno: 189
+Jugador actual: 1 (Master)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Azul 2 3
+301 MOVED sent
+Move: 190 Azul 2 3
+----------------
+Turno: 190
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Rojo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 190 Azul 2 3
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 191 Rojo 0 3
+Current move received. Moving...
+301 MOVED sent
+Move: 191 Rojo 0 3
+----------------
+Turno: 191
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Verde 0 4
+301 MOVED sent
+Move: 192 Verde 0 4
+----------------
+Turno: 192
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Amarillo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 192 Verde 0 4
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 193 Amarillo 1 3
+Current move received. Moving...
+301 MOVED sent
+Move: 193 Amarillo 1 3
+----------------
+Turno: 193
+Jugador actual: 1 (Master)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Azul 1 2
+301 MOVED sent
+Move: 194 Azul 1 2
+----------------
+Turno: 194
+Jugador actual: 1 (Master)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Azul 3 10
+301 MOVED sent
+Move: 195 Azul 3 10
+----------------
+Turno: 195
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Rojo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 194 Azul 1 2
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 195 Azul 3 10
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 196 Rojo 0 2
+Current move received. Moving...
+301 MOVED sent
+Move: 196 Rojo 0 2
+----------------
+Turno: 196
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Verde 2 3
+301 MOVED sent
+Move: 197 Verde 2 3
+----------------
+Turno: 197
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Amarillo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 197 Verde 2 3
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 198 Amarillo 1 2
+Current move received. Moving...
+301 MOVED sent
+Move: 198 Amarillo 1 2
+----------------
+Turno: 198
+Jugador actual: 1 (Master)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Azul 2 1
+301 MOVED sent
+Move: 199 Azul 2 1
+----------------
+Turno: 199
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Rojo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 199 Azul 2 1
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 200 Rojo 0 1
+Current move received. Moving...
+301 MOVED sent
+Move: 200 Rojo 0 1
+----------------
+Turno: 200
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Verde 0 1
+301 MOVED sent
+Move: 201 Verde 0 1
+----------------
+Turno: 201
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Verde -9999 10
+301 MOVED sent
+Move: 202 Verde -9999 10
+----------------
+Turno: 202
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Amarillo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 201 Verde 0 1
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 202 Verde -9999 10
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 203 Amarillo 3 5
+Current move received. Moving...
+301 MOVED sent
+Move: 203 Amarillo 3 5
+----------------
+Turno: 203
+Jugador actual: 1 (Master)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Azul 3 2
+301 MOVED sent
+Move: 204 Azul 3 2
+----------------
+Turno: 204
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Rojo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 204 Azul 3 2
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 205 Rojo 0 3
+Current move received. Moving...
+301 MOVED sent
+Move: 205 Rojo 0 3
+----------------
+Turno: 205
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Rojo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 206 Rojo 2 10
+Current move received. Moving...
+301 MOVED sent
+Move: 206 Rojo 2 10
+----------------
+Turno: 206
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Verde -9999 6
+301 MOVED sent
+Move: 207 Verde -9999 6
+----------------
+Turno: 207
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Verde 2 1
+301 MOVED sent
+Move: 208 Verde 2 1
+----------------
+Turno: 208
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Amarillo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 207 Verde -9999 6
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 208 Verde 2 1
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 209 Amarillo 1 6
+Current move received. Moving...
+301 MOVED sent
+Move: 209 Amarillo 1 6
+----------------
+Turno: 209
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Amarillo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 210 Amarillo 1 4
+Current move received. Moving...
+301 MOVED sent
+Move: 210 Amarillo 1 4
+----------------
+Turno: 210
+Jugador actual: 1 (Master)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Azul 2 6
+301 MOVED sent
+Move: 211 Azul 2 6
+----------------
+Turno: 211
+Jugador actual: 1 (Master)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Azul 3 5
+301 MOVED sent
+Move: 212 Azul 3 5
+----------------
+Turno: 212
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Rojo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 211 Azul 2 6
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 212 Azul 3 5
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 213 Rojo 2 5
+Current move received. Moving...
+301 MOVED sent
+Move: 213 Rojo 2 5
+----------------
+Turno: 213
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Verde -9999 5
+301 MOVED sent
+Move: 214 Verde -9999 5
+----------------
+Turno: 214
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Amarillo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 214 Verde -9999 5
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 215 Amarillo 1 3
+Current move received. Moving...
+301 MOVED sent
+Move: 215 Amarillo 1 3
+----------------
+Turno: 215
+Jugador actual: 1 (Master)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Azul 2 4
+301 MOVED sent
+Move: 216 Azul 2 4
+----------------
+Turno: 216
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Rojo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 216 Azul 2 4
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 217 Rojo 2 4
+Current move received. Moving...
+301 MOVED sent
+Move: 217 Rojo 2 4
+----------------
+Turno: 217
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Verde -9999 3
+301 MOVED sent
+Move: 218 Verde -9999 3
+----------------
+Turno: 218
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Amarillo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 218 Verde -9999 3
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 219 Amarillo 1 1
+Current move received. Moving...
+301 MOVED sent
+Move: 219 Amarillo 1 1
+----------------
+Turno: 219
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Amarillo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 220 Amarillo 3 10
+Current move received. Moving...
+301 MOVED sent
+Move: 220 Amarillo 3 10
+----------------
+Turno: 220
+Jugador actual: 1 (Master)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Azul 0 3
+301 MOVED sent
+Move: 221 Azul 0 3
+----------------
+Turno: 221
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Rojo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 221 Azul 0 3
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 222 Rojo 2 2
+Current move received. Moving...
+301 MOVED sent
+Move: 222 Rojo 2 2
+----------------
+Turno: 222
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Verde -9999 4
+301 MOVED sent
+Move: 223 Verde -9999 4
+----------------
+Turno: 223
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Amarillo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 223 Verde -9999 4
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 224 Amarillo 3 2
+Current move received. Moving...
+301 MOVED sent
+Move: 224 Amarillo 3 2
+----------------
+Turno: 224
+Jugador actual: 1 (Master)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Azul 2 1
+301 MOVED sent
+Move: 225 Azul 2 1
+----------------
+Turno: 225
+Jugador actual: 1 (Master)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Azul 3 20
+301 MOVED sent
+Move: 226 Azul 3 20
+----------------
+Turno: 226
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Rojo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 225 Azul 2 1
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 226 Azul 3 20
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 227 Rojo 1 6
+Current move received. Moving...
+301 MOVED sent
+Move: 227 Rojo 1 6
+----------------
+Turno: 227
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Rojo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 228 Rojo 1 1
+Current move received. Moving...
+301 MOVED sent
+Move: 228 Rojo 1 1
+----------------
+Turno: 228
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Verde 1 2
+301 MOVED sent
+Move: 229 Verde 1 2
+----------------
+Turno: 229
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Amarillo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 229 Verde 1 2
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 230 Amarillo -9999 6
+Current move received. Moving...
+301 MOVED sent
+Move: 230 Amarillo -9999 6
+----------------
+Turno: 230
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Amarillo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 231 Amarillo 2 5
+Current move received. Moving...
+301 MOVED sent
+Move: 231 Amarillo 2 5
+----------------
+Turno: 231
+Jugador actual: 1 (Master)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Azul 2 1
+301 MOVED sent
+Move: 232 Azul 2 1
+----------------
+Turno: 232
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Rojo
+----------------
+Esperando movimiento del oponente...
+102 TEST_ALIVE received
+102 TEST_ALIVE received. Still alive.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 232 Azul 2 1
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 233 Rojo 1 6
+Current move received. Moving...
+301 MOVED sent
+Move: 233 Rojo 1 6
+----------------
+Turno: 233
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Rojo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 234 Rojo 3 1
+Current move received. Moving...
+301 MOVED sent
+Move: 234 Rojo 3 1
+----------------
+Turno: 234
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Rojo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 235 Rojo 3 20
+Current move received. Moving...
+301 MOVED sent
+Move: 235 Rojo 3 20
+----------------
+Turno: 235
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Verde 1 5
+301 MOVED sent
+Move: 236 Verde 1 5
+----------------
+Turno: 236
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Amarillo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 236 Verde 1 5
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 237 Amarillo 2 2
+Current move received. Moving...
+301 MOVED sent
+Move: 237 Amarillo 2 2
+----------------
+Turno: 237
+Jugador actual: 1 (Master)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Azul 2 4
+301 MOVED sent
+Move: 238 Azul 2 4
+----------------
+Turno: 238
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Rojo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 238 Azul 2 4
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 239 Rojo 2 4
+Current move received. Moving...
+301 MOVED sent
+Move: 239 Rojo 2 4
+----------------
+Turno: 239
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Rojo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 240 Rojo 1 10
+Current move received. Moving...
+301 MOVED sent
+Move: 240 Rojo 1 10
+----------------
+Turno: 240
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Verde 1 2
+301 MOVED sent
+Move: 241 Verde 1 2
+----------------
+Turno: 241
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Amarillo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 241 Verde 1 2
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 242 Amarillo -9999 4
+Current move received. Moving...
+301 MOVED sent
+Move: 242 Amarillo -9999 4
+----------------
+Turno: 242
+Jugador actual: 1 (Master)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Azul 2 2
+301 MOVED sent
+Move: 243 Azul 2 2
+----------------
+Turno: 243
+Jugador actual: 1 (Master)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Azul 0 20
+301 MOVED sent
+Move: 244 Azul 0 20
+----------------
+Turno: 244
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Rojo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 243 Azul 2 2
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 244 Azul 0 20
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 245 Rojo 3 2
+Current move received. Moving...
+301 MOVED sent
+Move: 245 Rojo 3 2
+----------------
+Turno: 245
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Verde 1 6
+301 MOVED sent
+Move: 246 Verde 1 6
+----------------
+Turno: 246
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Verde 1 3
+301 MOVED sent
+Move: 247 Verde 1 3
+----------------
+Turno: 247
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Amarillo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 246 Verde 1 6
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 247 Verde 1 3
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 248 Amarillo -9999 3
+Current move received. Moving...
+301 MOVED sent
+Move: 248 Amarillo -9999 3
+----------------
+Turno: 248
+Jugador actual: 1 (Master)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Azul 2 6
+301 MOVED sent
+Move: 249 Azul 2 6
+----------------
+Turno: 249
+Jugador actual: 1 (Master)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Azul 0 5
+301 MOVED sent
+Move: 250 Azul 0 5
+----------------
+Turno: 250
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Rojo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 249 Azul 2 6
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 250 Azul 0 5
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 251 Rojo 1 5
+Current move received. Moving...
+301 MOVED sent
+Move: 251 Rojo 1 5
+----------------
+Turno: 251
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Verde 1 4
+301 MOVED sent
+Move: 252 Verde 1 4
+----------------
+Turno: 252
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Amarillo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 252 Verde 1 4
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 253 Amarillo -9999 1
+Current move received. Moving...
+301 MOVED sent
+Move: 253 Amarillo -9999 1
+----------------
+Turno: 253
+Jugador actual: 1 (Master)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Azul 0 3
+301 MOVED sent
+Move: 254 Azul 0 3
+----------------
+Turno: 254
+Jugador actual: 1 (Master)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Azul 3 10
+301 MOVED sent
+Move: 255 Azul 3 10
+----------------
+Turno: 255
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Rojo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 254 Azul 0 3
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 255 Azul 3 10
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 256 Rojo 1 3
+Current move received. Moving...
+301 MOVED sent
+Move: 256 Rojo 1 3
+----------------
+Turno: 256
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Verde 1 1
+301 MOVED sent
+Move: 257 Verde 1 1
+----------------
+Turno: 257
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Amarillo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 257 Verde 1 1
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 258 Amarillo -9999 6
+Current move received. Moving...
+301 MOVED sent
+Move: 258 Amarillo -9999 6
+----------------
+Turno: 258
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Amarillo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 259 Amarillo 2 5
+Current move received. Moving...
+301 MOVED sent
+Move: 259 Amarillo 2 5
+----------------
+Turno: 259
+Jugador actual: 1 (Master)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Azul 2 5
+301 MOVED sent
+Move: 260 Azul 2 5
+----------------
+Turno: 260
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Rojo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 260 Azul 2 5
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 261 Rojo 1 6
+Current move received. Moving...
+301 MOVED sent
+Move: 261 Rojo 1 6
+----------------
+Turno: 261
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Rojo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 262 Rojo 3 1
+Current move received. Moving...
+301 MOVED sent
+Move: 262 Rojo 3 1
+----------------
+Turno: 262
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Rojo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 263 Rojo 1 10
+Current move received. Moving...
+301 MOVED sent
+Move: 263 Rojo 1 10
+----------------
+Turno: 263
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Verde 1 6
+301 MOVED sent
+Move: 264 Verde 1 6
+----------------
+Turno: 264
+Jugador actual: 1 (Master)
+Color actual: Verde
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Verde 1 5
+301 MOVED sent
+Move: 265 Verde 1 5
+----------------
+Turno: 265
+Jugador actual: 0 (Ninja 2: una batalla de igual a igual.)
+Color actual: Amarillo
+----------------
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 264 Verde 1 6
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 265 Verde 1 5
+Old move received. Already up to date.
+Esperando movimiento del oponente...
+301 MOVED received
+Move: 266 Amarillo 2 4
+Current move received. Moving...
+301 MOVED sent
+Move: 266 Amarillo 2 4
+----------------
+Turno: 266
+Jugador actual: 1 (Master)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Azul 2 6
+301 MOVED sent
+Move: 267 Azul 2 6
+----------------
+Turno: 267
+Jugador actual: 1 (Master)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Azul 3 10
+301 MOVED sent
+Move: 268 Azul 3 10
+----------------
+Turno: 268
+Jugador actual: 1 (Master)
+Color actual: Azul
+----------------
+Realizo un movimiento automatico
+GrandMaster v2 pensando la mejor jugada...
+Movimiento elegido: Azul 3 2
+301 MOVED sent
+Move: 269 Azul 3 2
 ++++++++++++++++++++++++
 La partida ha terminado
-Ha ganado el jugador 0 (Rojo)
+Ha ganado el jugador 1 (Azul)
 ++++++++++++++++++++++++
